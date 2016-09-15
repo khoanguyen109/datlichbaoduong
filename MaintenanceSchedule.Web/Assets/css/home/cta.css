@@ -1,0 +1,263 @@
+﻿/* 
+* Hover states are darkened by 10% and active states are 20% darker than the original colour - For speed use - http://www.hexcolortool.com
+*/
+
+/* ********** Removes the browser applied styles - Taken directly (slight naming mod) from Bootstrap ********** */
+
+button { margin: 0; font: inherit; color: inherit; }
+button { width: auto; height: auto; overflow: visible; }
+button { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button::-moz-focus-inner, input::-moz-focus-inner { padding: 0; border: 0; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button { font-family: inherit; font-size: inherit; line-height: inherit; }
+
+/* ********** Default button style - A couple of styles have been taken from Bootstrap but most is new ********** */
+
+.rc-btn {
+display: inline-block;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: bold;
+line-height: 1.42857143;
+text-align: center;
+text-decoration: none;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+border-top: 1px solid transparent;
+border-right: 1px solid transparent;
+border-bottom: 1px solid transparent;
+border-left: 1px solid transparent;
+border-top-left-radius:6px;
+border-top-right-radius:6px;
+border-bottom-right-radius:6px;
+border-bottom-left-radius:6px;
+-webkit-font-smoothing: antialiased;
+-webkit-transition:background-color 0.32s;
+transition: background-color 0.32s;
+-webkit-transition-timing-function: ease-out;
+
+*display: inline;
+zoom:1;
+}
+
+
+.rc-btn:active, .inline-message a.rc-btn:active { padding-top: 11px; padding-bottom: 9px;}
+
+/* This is the only bit I'm not happy with. I want the inset shadow to be visible on every button except where a background colour is not declared. Open to suggestions on how to fix this. */
+
+.rc-btn:active { box-shadow: inset 0 1px 1px rgba(0,0,0,0.4);} /* Sets the inset shadow for the button */
+
+/* Removes the inset shadow for any button that only has a single .rc-btn class, ie. one without a background */
+.rc-btn[class=rc-btn]:active { box-shadow: none; } 
+/* Reapplies the inset shadow for the inline messages if a single rc-btn class is applied */
+.inline-message a.rc-btn:active { box-shadow: inset 0 1px 1px rgba(0,0,0,0.4); } 
+
+
+
+
+/* ********** Colours ********** */
+
+/* Most Common Buttons. Please note these will deliberately overide Steve's inline-message colours */
+.rc-btn.primary { background-color: #749E3A; color: #ffffff; }
+.rc-btn.primary:hover { background-color: #5B8521; }
+.rc-btn.primary:active  { background-color: #416B07; }
+
+.rc-btn.secondary { background-color: #F0901E; color: #ffffff; }
+.rc-btn.secondary:hover { background-color: #D77705; }
+.rc-btn.secondary:active  { background-color: #BD5D00; }
+
+
+/* ********** Size Classes ********** */
+/* ********** Adding the body tag allows the user to override the inline-message button sizes (except IE7) ********** */
+
+body .rc-btn.xl {
+	font-size: 28px;
+	padding-top: 14px;
+	padding-right: 30px;
+	padding-bottom: 14px;
+	padding-left: 30px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+}
+
+body .rc-btn.xl:active { padding-top: 15px; padding-bottom: 13px; }
+
+body .rc-btn.lg {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+body .rc-btn.lg:active { padding-top: 11px; padding-bottom: 9px; }
+
+body .rc-btn.sm {
+	font-size: 13px;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+	border-bottom-left-radius:4px;
+}
+
+body .rc-btn.sm:active { padding-top: 9px; padding-bottom: 7px; }
+
+body .rc-btn.xs {
+	font-size: 12px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+body .rc-btn.xs:active { padding-top: 7px; padding-bottom: 5px; }
+
+
+/* 
+
+   ********** Hover and Active colours based on Steve's general colour classes. 
+   ********** These deliberately won't overide the inline message colours 
+
+*/
+
+.rc-btn.bg-blue-1:hover { background-color: #024C8B;}
+.rc-btn.bg-blue-1:active { background-color: #003271;}
+
+.rc-btn.bg-blue-2:hover { background-color: #306B9D;}
+.rc-btn.bg-blue-2:active { background-color: #165183;}
+
+.rc-btn.bg-blue-3:hover { background-color: #5D8AAF;}
+.rc-btn.bg-blue-3:active { background-color: #437095;}
+
+.rc-btn.bg-blue-4:hover { background-color: #8BA8C2;}
+.rc-btn.bg-blue-4:active { background-color: #718EA8;}
+
+.rc-btn.bg-blue-5:hover { background-color: #B8C7D4;}
+.rc-btn.bg-blue-5:active { background-color: #9EADBA;}
+          
+.rc-btn.bg-blue-6:hover { background-color: #2F81CA;}
+.rc-btn.bg-blue-6:active { background-color: #1567B0;}
+
+.rc-btn.bg-blue-7:hover { background-color: #5495D0;}
+.rc-btn.bg-blue-7:active { background-color: #3A7BB6;}
+
+.rc-btn.bg-blue-8:hover { background-color: #78A9D5;}
+.rc-btn.bg-blue-8:active { background-color: #5E8FBB;}
+
+.rc-btn.bg-blue-9:hover { background-color: #9DBEDB;}
+.rc-btn.bg-blue-9:active { background-color: #83A4C1;}
+
+.rc-btn.bg-blue-10:hover { background-color: #C1D2E0;}
+.rc-btn.bg-blue-10:active { background-color: #A7B8C6;}
+
+/* BRAND - Yellows */               
+.rc-btn.bg-yellow-1:hover { background-color: #CEA621;}
+.rc-btn.bg-yellow-1:active { background-color: #B48C07;}
+
+.rc-btn.bg-yellow-2:hover { background-color: #D3B348;}
+.rc-btn.bg-yellow-2:active { background-color: #B9992E;}
+
+.rc-btn.bg-yellow-3:hover { background-color: #D8C070;}
+.rc-btn.bg-yellow-3:active { background-color: #BEA656;}
+
+.rc-btn.bg-yellow-4:hover { background-color: #DCCC97;}
+.rc-btn.bg-yellow-4:active { background-color: #C2B27D;}
+
+.rc-btn.bg-yellow-5:hover { background-color: #E1D9BF;}
+.rc-btn.bg-yellow-5:active { background-color: #C7BFA5;}
+
+/* BRAND - Greys */               
+.rc-btn.bg-grey-1:hover { background-color: #6F6F6F;}
+.rc-btn.bg-grey-1:active { background-color: #555555;}
+
+.rc-btn.bg-grey-2:hover { background-color: #666666;}
+.rc-btn.bg-grey-2:active { background-color: #555555;}
+
+.rc-btn.bg-grey-3:hover { background-color: #CDCDCD;}
+.rc-btn.bg-grey-3:active { background-color: #B3B3B3;}
+
+.rc-btn.bg-grey-4:hover { background-color: #DCDCDC;}
+.rc-btn.bg-grey-4:active { background-color: #C2C2C2;}
+
+.rc-btn.bg-grey-5:hover { background-color: #D8D9DF;}
+.rc-btn.bg-grey-5:active { background-color: #BEBFC5;}
+
+/* Other colours */
+.rc-btn.bg-green-1:hover { background-color: #5B8521;}
+.rc-btn.bg-green-1:active { background-color: #416B07;}
+
+.rc-btn.bg-blue-11:hover { background-color: #004BAF;}
+.rc-btn.bg-blue-11:active { background-color: #003195;}
+
+.rc-btn.bg-yellow-6:hover { background-color: #CEA622;}
+.rc-btn.bg-yellow-6:active { background-color: #B48C08;}
+
+.rc-btn.bg-yellow-8:hover { background-color: #E6C95C;}
+.rc-btn.bg-yellow-8:active { background-color: #CCAF42;}
+
+.rc-btn.bg-yellow-7:hover { background-color: #B3801A;}
+.rc-btn.bg-yellow-7:active { background-color: #996600;}
+
+.rc-btn.bg-yellow-9:hover { background-color: #E1D9BF;}
+.rc-btn.bg-yellow-9:active { background-color: #C7BFA5;}
+
+.rc-btn.bg-grey-6:hover { background-color: #C4C4C4;}
+.rc-btn.bg-grey-6:active { background-color: #AAAAAA;}
+
+.rc-btn.bg-grey-7:hover { background-color: #2B2B2B;}
+.rc-btn.bg-grey-7:active { background-color: #111111;}
+
+.rc-btn.bg-grey-8:hover { background-color: #B3B3B3;}
+.rc-btn.bg-grey-8:active { background-color: #999999;}
+
+.rc-btn.bg-orange-1:hover { background-color: #D77705;}
+.rc-btn.bg-orange-1:active { background-color: #BD5D00;} 
+
+.rc-btn.bg-white:hover { background-color: #E6E6E6; }
+.rc-btn.bg-white:active { background-color: #CCCCCC; }
+
+/* ********** Display Control ********** */
+
+body .rc-btn.block { display:block; border-top-right-radius: 3px; border-top-left-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+body input.rc-btn.block, body button.rc-btn.block { width: 100%; }
+
+/* ********** General Links (For those links within a, span and div elements) ********** */
+
+a.link-1 { text-decoration:underline; font-weight: bold; }
+a.link-1:hover { text-decoration:none; }
+ 
+a.link-2 { text-decoration:none; font-weight: bold; }
+a.link-2:hover { text-decoration:underline; } 
+
+/* ********** Disabled Links ********** */
+/* ********** Disabled effectively is applied twice. This is so it works in IE7 */
+
+a.disabled, .rc-btn.disabled, button[disabled], html input[disabled] {
+	pointer-events:none;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  	filter: alpha(opacity=50);
+	opacity: 0.5;
+}

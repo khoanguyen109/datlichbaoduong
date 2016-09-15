@@ -1,0 +1,30 @@
+﻿@model MaintenanceSchedule.Web.Areas.Admin.Models.ServiceFormModel
+@{
+    ViewBag.Title = "Dịch vụ";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="panel panel-">
+    <div class="panel-heading" primary style="float: right; margin-bottom: 20px;">
+        <button type="button" class="btn btn-danger" onclick="window.location.href='@Url.Action("Create")'">Tạo mới</button>
+    </div>
+    <div class="panel-body">
+        <table id="grid-service" data-url="@Url.Action("ServicePage")"
+               data-edit-url="@Url.Action("Edit")"
+               data-delete-message="Bạn có muốn xóa dịch vụ này không?"
+               data-delete-url="@Url.Action("Delete")" class="table table-condensed table-hover table-striped">
+            <thead>
+                <tr>
+                    <th data-column-id="Id">Id</th>
+                    <th data-column-id="DisplayImage">Hình ảnh</th>
+                    <th data-column-id="Title">Tiêu đề</th>
+                    <th data-column-id="commands" data-formatter="commands"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+
+
+

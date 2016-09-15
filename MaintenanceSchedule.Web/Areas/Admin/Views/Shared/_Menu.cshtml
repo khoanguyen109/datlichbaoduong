@@ -1,0 +1,30 @@
+﻿<ul class="nav navbar-nav side-nav">
+    <li class="active">
+        <a href="@Url.Action("Dashboard", "Admin", new { area = "Admin" })"><i class="fa fa-fw fa-dashboard"></i>Trang chủ</a>
+    </li>
+    <li>
+        <a href="javascript:;" data-toggle="collapse" data-target="#farm"><i class="fa fa-fw fa-edit"></i> Quản lý <i class="fa fa-fw fa-caret-down"></i></a>
+        <ul id="farm">
+            <li>
+                <a href="@Url.Action("Index", "Service", new { area = "Admin" })">Dịch vụ</a>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </li>
+    <li>
+        @*<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Danh mục <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>*@
+    </li>
+</ul>

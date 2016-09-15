@@ -1,0 +1,184 @@
+﻿
+#keysales_messages_container {
+    -moz-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+    background: #eee;
+}
+
+#keysales_messages_content {
+    overflow: auto;
+    padding: 30px 0;
+}
+
+.white_box_container h3 {
+    color: #0069a0;
+    font-weight: bold;
+    font-size: 115%;
+    margin-bottom: 0.5em;
+}
+
+.white_box_container p {
+    font-size: 0.875em;
+    color: #686868;
+}
+
+.white_box_container span {
+    font-size: 1.063em;
+    color: #749E3A;
+    display: inline;
+}
+
+.white_box_container p img {
+    width: 110px;
+    position: relative;
+    top: 3px;
+}
+
+.white_box_container .phone_number {
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.white_box_container {
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 3% 3% 3% 70px;
+    ;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 99%;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+    .white_box_container.container_a {
+        float: left;
+    }
+
+    .white_box_container.container_b {
+        float: right;
+    }
+
+#amend_booking_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_bookings.png');
+}
+
+#customer_ratings_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_ratings.png');
+}
+
+#worlds_biggest_car_hire_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_globe_icon.jpg');
+}
+
+#speech_bubble_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_speech_bubble.jpg');
+}
+
+#book_by_phone_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_book_by_phone.jpg');
+}
+
+#star_grey_icon {
+    background-image: url('http://cdn.rcstatic.com/images/site_graphics/newsite/worlds_biggest_care_hire_icon_star_grey.png');
+}
+
+@media screen and (max-width: 800px) {
+    .white_box_container {
+        width: 100%;
+    }
+
+        .white_box_container.container_b {
+            float: left;
+        }
+}
+/* Edited CSS that already exists for the reviews section */
+.reviews-list {
+    position: relative;
+    width: 100%;
+}
+
+#reviews {
+    min-height: 115px;
+    display: none;
+}
+    /* the reviews are visible only when there are more than five of them */
+
+
+    #reviews .reviews-list .review-item .comment {
+        border: 0;
+        float: left;
+        background: #f2f2fa;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px 15px;
+        position: relative;
+        width: 88%;
+    }
+
+.trustpilot_spike {
+    float: left;
+    margin-top: -4px;
+}
+
+#reviews .reviews-list .review-item .user {
+    float: left;
+    font-size: 13px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+
+
+
+#reviews .reviews-list .review-item .comment p {
+    font-size: 14px;
+    text-align: left;
+}
+
+#reviews {
+    margin: 10px 0;
+}
+
+.customer-rating-5 {
+    background: url('http://cdn.rcstatic.com/images/site_graphics/newsite/sprite-general-v2.png') no-repeat scroll 0 -759px transparent !important;
+    display: inline-block;
+    height: 20px;
+    margin: 5px 0 0 5px;
+    width: 73px;
+    clear: both;
+    float: left;
+}
+
+.customer-rating-4 {
+    background: url('http://cdn.rcstatic.com/images/site_graphics/newsite/sprite-general-v2.png') no-repeat scroll -17px -759px transparent !important;
+    display: inline-block;
+    height: 20px;
+    margin: 5px 0 0 5px;
+    width: 73px;
+    clear: both;
+    float: left;
+}
+
+@media screen and (max-width: 960px) {
+    #reviews {
+        padding: 0;
+    }
+}
+
+.white_box_container {
+    *width: 390px;
+}

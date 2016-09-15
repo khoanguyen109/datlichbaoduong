@@ -1,0 +1,875 @@
+﻿/* HEADER RESET CSS
+------------------------------------- */
+
+.logo-header {
+    border: 0;
+    float: left;
+}
+
+/* HEADER STYLING CSS
+------------------------------------- */
+#header-main {
+    background: #EEE;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#EEE));
+    background: -webkit-linear-gradient(top, #F9F9F9 0%,#EEE 100%);
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+    background: linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+    border-top: 4px solid #1B65A4;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 0;
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+#header-main .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#header-main .cf{
+	*height: 0;
+}
+#options-site {
+    padding-top: 12px;
+    float: right;
+    padding: 7px 0 0 0;
+}
+@media screen and (max-width: 568px) {
+	#header-main #options-site { margin-top: 0px !important; }
+}
+#options-site a {
+    border: 0;
+}
+/* BUTTON DROPDOWN (BTN-DD)
+------------------------------------- */
+.btn-dd {
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    border: 1px solid transparent;
+    font-size: 13px;
+}
+.btn-dd > a {
+    background: #E8E8E8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #0069a0;
+    position: relative;
+    z-index: 10;
+    font-size: 13px;
+}
+.btn-dd  a {
+    text-decoration: none;
+}
+.btn-dd:hover {
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.btn-dd:hover > a {
+    background: #f6f6f6;
+}
+.btn-dd.active {
+    border: 1px solid #e8e8e8;
+    border-bottom: 3px solid #fff;
+    border-radius: 2px 2px 0 0;
+    z-index: 20;
+}
+.btn-dd.active > a {
+    background: #fff;
+}
+.dd-menu.btn, .dd-menu a.btn, .dd-menu a.btn:visited, .dd-menu a.btn:link {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    line-height: 1.2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    zoom: 1;
+    *display: inline;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+}
+#btn-my-booking .dd-menu  {
+  *width: 230px !important;
+}
+#btn-language .dd-menu  {
+  *width: 200px !important;
+}
+#btn-currency .dd-menu  {
+  *width: 250px !important;
+}
+.dd-selected {
+    padding: 4px 14px 3px;
+    display: inline-block; 
+    zoom: 1; 
+    *display: inline;
+}
+#language {
+    background-image: url('/images/site_graphics/newsite/sprite-flags.png');
+    background-repeat: no-repeat;
+    height: 18px;
+    padding-top: 6px;
+    width: 24px;
+}
+.btn-dd i, .btn-dd em {
+    height: 19px;
+    padding-top: 5px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-style: normal;
+}
+.btn-dd i {
+    margin-left: 10px;
+}
+#currency {
+     font-size: 15px; 
+     line-height: .9;
+     font-weight: bold; 
+     color: #3b9dd1; 
+     border-right: 0 solid #c2c2c2; 
+     margin-right: 0;
+     float: left !important;
+}
+.dd-menu {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    z-index: 9;
+    position: absolute;
+    right: -1px;
+    top: 30px;
+    display: none;
+    padding: 10px 15px;
+    overflow-y: auto;
+    max-height: 150px;
+    -webkit-border-radius: 2px 0 2px 2px;
+    -moz-border-radius: 2px 0 2px 2px;
+    border-radius: 2px 0 2px 2px;
+}
+.dd-menu a {
+    text-decoration: none;
+    color: #0064C8;
+    border: none;
+}
+.dd-menu a:hover {
+    border: none;
+    color: #629ED5;
+}
+.dd-menu-inner.dd-list {
+    margin-right: 0;
+}
+.dd-menu p{
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+.dd-menu form{
+    margin-bottom: 10px;
+}
+.btn-dd.active .dd-menu {
+    border: 1px solid #e8e8e8;
+    display: block !important;
+}
+
+.dd-list li {
+    list-style: none;
+}
+.dd-list li > a{
+    display: block;
+    padding: 8px 10px;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.dd-list li a span{
+    width: 50px;
+    display: inline-block; 
+    zoom: 1; 
+    *display: inline;
+}
+.dd-list li a:hover{
+    background: #dcebf1;
+}
+.dd-list h3{
+    white-space: nowrap;
+    font-size: 16px;
+    margin: 5px 0 5px;
+    padding: 0 3px 3px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 1.3em;
+    color: #555;
+    float: none;
+    font-weight: 700;
+}
+#btn-language ul li a {
+    position: relative;
+    padding-left: 50px;
+}
+#btn-language ul li a span {
+    background-image: url('/images/site_graphics/newsite/sprite-flags.png');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+
+/* CRM LOGIN
+------------------------------------- */
+.booking-slider-container {
+    width: 922px;
+    background: red;
+}
+#my-booking {
+    background-image: url('/images/site_graphics/newsite/icon-my-booking.png');
+    background-repeat: no-repeat;
+    background-position:  0 3px;
+    height: 19px;
+    padding-top: 5px;
+    width: 19px;
+}
+#btn-my-booking.active #my-booking {
+    background-position: 0 -32px;
+}
+#btn-my-booking > a {
+    color: #fff;
+    cursor: pointer;
+    background: #3f72b9;    
+    background: -moz-linear-gradient(top,  #3f72b9 0%, #2f578f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f72b9), color-stop(100%,#2f578f));
+    background: -webkit-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: -o-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: -ms-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: linear-gradient(to bottom,  #3f72b9 0%,#2f578f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f72b9', endColorstr='#2f578f',GradientType=0 );
+}
+
+#btn-my-booking:hover, #btn-my-booking.active {
+    border: 1px solid #3f72b9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#btn-my-booking:hover > a, #btn-my-booking.active > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    filter: none;
+}
+#btn-my-booking:hover > a {
+    color: #fff;
+    background: #3f72b9;
+}
+#btn-my-booking.active > a {
+    color: #3f72b9;
+    background: #fff;
+}
+#btn-my-booking.active .dd-menu {
+    overflow: hidden;
+    border: 1px solid #3f72b9;
+    display: block !important;
+    height: auto;
+    max-height: none;
+    padding: 0;
+}
+.dropdown-login-wrapper {
+    width: 956px;
+    overflow: hidden;
+    position: relative;
+}
+.dropdown-container, .dropdown-container-bg {
+    width: 214px;
+    float: left;
+    padding: 10px;
+    border-radius: 3px;
+}
+.dropdown-login-panel {
+  display: block;
+  margin: 5px;
+  padding: 0;
+  width: 468px;
+  overflow: hidden;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.dropdown-login-panel h3 {
+margin-bottom: 5px;
+padding: 0;
+font-size: 16px;
+font-weight: 300;
+float: none;
+color: #1B65A4;
+} 
+.dropdown-login-panel p {
+margin-bottom: 5px;
+font-weight: 300;
+font-size: 12px;
+border: none;
+font-weight: 300;
+line-height: 1.4;
+padding: 0;
+}
+.dropdown-login-panel .tb {
+width: 190px;
+margin: 0 0 8px 0;
+padding: 5px;
+border: 1px solid #CCC;
+border-radius: 3px;
+font-size: 12px;
+}
+.dropdown-login-panel a.forgot {
+width: 100%;
+font-size: 11px;
+display: block;
+text-decoration: underline;
+}
+.dropdown-container-bg {
+background: #E2ECF5;
+margin-bottom: 5px;
+}
+
+a.button_signin, a#mybookinglogin {
+float: left;
+margin: 10px 0;
+background: #95B966;
+border: 1px solid #688A33 !important;
+border-radius: 5px;
+padding: 0 20px;
+font-size: 14px;
+font-weight: 300;
+line-height: 2em;
+color: #FFF;
+text-decoration: none;
+text-align: center;
+text-shadow: none;
+border: 1px solid #688A33;
+width: auto;
+}
+.create_account {
+clear: both;
+padding: 10px;
+margin-top: 5px;
+border-radius: 3px;
+cursor: pointer;
+width: 448px;
+background: #5D94C9;
+background-image: -moz-linear-gradient(top, #5d94c9 0%, #4484c3 97%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5D94C9), color-stop(97%,#4484C3));
+background-image: -webkit-linear-gradient(top, #5D94C9 0%,#4484C3 97%);
+background-image: -o-linear-gradient(top, #5d94c9 0%,#4484c3 97%);
+background-image: -ms-linear-gradient(top, #5d94c9 0%,#4484c3 97%);
+background-image: linear-gradient(to bottom, #5D94C9 0%,#4484C3 97%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d94c9', endColorstr='#4484c3',GradientType=0 );
+
+}
+.create_account h3, .create_account p {
+color: #FFF;
+margin: 0;
+}
+.fm.chk-box label {
+width: auto;
+font-size: 11px;
+}.dropdown-usps {
+padding: 5px;
+margin: 0;
+}
+ul.dropdown-usps li {
+margin-bottom: 9px;
+padding-left: 22px;
+background: url('/images/site_graphics/newsite/tick-list.png') 0 2px no-repeat;
+font-size: 13px;
+line-height: 1.2;
+list-style: none;
+}
+
+#showLoginErrorMessage, #showAccountErrorMessage {
+padding: 5px;
+background: #FADDDD;
+border: 1px solid #EDBDBD;
+font-size: 12px;
+border-radius: 6px;
+-moz-border-radius: 6px;
+-khtml-border-radius: 6px;
+-webkit-border-radius: 6px;
+color: #E02424;
+margin-bottom: 5px;
+}
+
+
+
+
+/* FORMS
+------------------------------------- */
+.fm {
+    margin: 5px 0;
+    min-height: 28px;
+    display: inline-blocks;
+    vertical-align: middle;
+}
+.dd-menu .fm {
+    margin: 3px 0;
+}
+.fm.chk-box {
+    margin: 0 0 6px;
+    min-height: 0;
+    display: inline-blocks;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.fm.chk-box input {
+    margin: 0;
+}
+.fm.chk-box label{
+    width: auto;
+    font-size: 11px;
+}
+.tb {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #A7ADB1;
+    width: 240px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    zoom: 1;
+}
+.tb.small {
+    font-size: 14px;
+    padding: 4px 4px;
+    border: 1px solid #A7ADB1;
+    width: 180px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    zoom: 1;
+}
+.dd-menu .tb {
+    font-size: 13px;
+    width: 190px;
+}
+.forgot {
+    width: 100%;
+    font-size: 11px;
+    display: block;
+    text-decoration: underline;
+    margin: 2px 0 5px;
+}
+.forgot:hover {
+    text-decoration: none;
+}
+/* BUTTONS
+------------------------------------- */
+#options-site a.btn {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    line-height: 1.2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    display: inline-block; 
+    zoom: 1; 
+    *display: inline;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    height: auto;
+}
+#options-site a:focus, #options-site a:active {
+top: 0;
+}
+#options-site .btn.small {
+    padding: 7px 15px;
+    font-size: 13px;
+}
+#options-site .btn.primary {
+    margin: 10px 0 0;
+    background: #95B966;
+    border: 1px solid #688A33
+}
+#options-site .primary:hover {
+    background: #87ad60;
+}
+#options-site a.btn:hover {
+    text-decoration: none;
+    background-image: none;
+    filter: none;
+    cursor: pointer;
+    color: #fff;
+}
+@media screen and (max-width: 1099px) {
+    #header-main .container {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #options-site i {
+        display: none;
+    }
+    #btn-currency a {   
+        height: 24px;
+    }
+}
+
+@media screen and  (max-width: 568px) {
+    
+    #options-site {
+        display: none;
+    }
+}
+
+#settings-content .error, .dropdown-container-bg .error{
+  border: 1px solid #C00 !important;
+  background: #FADDDD !important;
+}
+
+.loggedin_container {
+  padding: 5px;
+}
+.goto-account {
+  border-radius: 2px;
+  padding: 7px 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #3f72b9;  
+  background-image: -moz-linear-gradient(top, #3f72b9 0%, #2f578f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f72b9), color-stop(100%,#2f578f));
+  background-image: -webkit-linear-gradient(top, #3f72b9 0%,#2f578f 100%);
+  background-image: -o-linear-gradient(top, #3f72b9 0%,#2f578f 100%);
+  background-image: -ms-linear-gradient(top, #3f72b9 0%,#2f578f 100%);
+  background-image: linear-gradient(to bottom, #3f72b9 0%,#2f578f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f72b9', endColorstr='#2f578f',GradientType=0 );
+  cursor: pointer;
+}
+.goto-account:hover {
+    background-image: none;
+    filter: none;
+}
+.my_account_avatar {
+  width: 32px;
+  height: 29px;
+  background: url('/images/site_graphics/newsite/booking-avatar.png') 0 0 no-repeat;
+  float: left;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+.goto-account h3, .goto-account p {
+    color: #FFF;
+    margin: 0;
+}
+.goto-account h3 {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 3px;
+    float: none;
+}
+.signout {
+  margin: 8px 0 4px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #0064C8;
+  margin-left: 50px;
+  display: block;
+}
+
+.dd-my-account { 
+    width: 211px!important; 
+}
+.dd-list ul { 
+    margin: 0; 
+    padding: 0;
+}
+.dd-list li { 
+    margin: 0; 
+}
+#loginLoadingImage {
+    background: #fff;
+    zoom: 1;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+}
+#loginLoadingImage img{
+    display: block;
+    margin: 10px auto 0;
+}
+#loginLoadingImage h3 {
+    text-align: center;
+    margin-top: 65px;
+}
+
+#createAccountLoadingImage {
+    background: #fff;
+    zoom: 1;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+}
+#createAccountLoadingImage img{
+    display: block;
+    margin: 10px auto 0;
+}
+#createAccountLoadingImage h3 {
+    text-align: center;
+    margin-top: 65px;
+}
+
+#loginerror {
+    padding: 7px 5px;
+    background: #FADDDD;
+    /*border: 1px solid #EDBDBD;*/
+    font-size: 12px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #E02424;
+    margin: 5px 5px 0;
+}
+
+#loginjserror {
+    padding: 7px 5px;
+    background: #FADDDD;
+    /*border: 1px solid #EDBDBD;*/
+    font-size: 12px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #E02424;
+    margin: 5px 5px 0;
+}
+
+#btn-my-booking .dd-menu-inner {
+display: block;
+float: left;
+margin: 0 ;
+padding: 10px 15px;
+width: 200px;
+}
+
+
+#forgotten-box > a {float: right;font-size: 1em;margin: -10px 0 0;background: url('/images/site_graphics/newsite/sprite-general.png') 0 -367px no-repeat;padding: 0 0 0 15px;}
+p.forgotten,.manage-login-panel p.forgotten {font-size: 12px;margin:0;padding: 10px 0 0;}
+#forgotten-box {display: none;background: #f1f1f1;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;border: 1px solid #E5E5E5;box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;-webkit-box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;-moz-box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;width: 320px;color: #666;font-size: 12px;padding: 24px 20px 20px;text-shadow:1px 1px 0 #fff;}   
+#forgotten-box a.close:link, a.close:visited {border-bottom:0px; right: 6px;top: 6px;position: absolute;height: 14px;padding: 0 18px 0 0;display: block;background: url('/images/site_graphics/newsite/close-x.png') no-repeat 100% 50%;z-index: 1;color:#666;font-size: 10px;}
+#forgotten-box div {display: block;}
+#forgotten-box h2 {font-size: 16px;margin: 0;padding: 0;color:#444;}
+#forgotten-box p {margin: 0;padding: 10px 0 0;font-size: 14px;}
+#forgotten-box label {display:block;font-size: 16px;padding: 0 0 5px;color:#444;}
+#forgotten-box input {width: 300px;border-radius: 4px;-moz-border-radius: 4px;-khtml-border-radius: 4px;-webkit-border-radius: 4px;background: #FEFEFE;background-repeat: no-repeat; border-color:#8E8E8E #E1E1E1 #E1E1E1 #8E8E8E; border-style:solid;border-width:1px;font-size: 14px;padding: 8px;margin: 0;color: #444;}
+#forgotten-box input.button {width: auto;padding: 6px 14px;background-color: #7AA040;background-image: url('images/site_graphics/newsite/search_butt_bg.gif'); background-repeat: repeat-x;border: 1px solid #688a34;border-radius: 6px;-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;font-size: 22px;font-weight: bold;color: #fff;text-decoration: none;text-shadow:-1px -1px 0 #34571b;cursor: pointer;}
+#forgotten-box input.button:hover { background-position: 0 -43px;}
+#forgotten-box input.button:active { background-position: 0 -86px;}
+#forgotten-box .sent h2 { background: url('/images/site_graphics/newsite/tick-circle.png') 0 50% no-repeat;padding:0 0 0 34px;color: #678A32;line-height: 30px;}
+#forgotten-box .not-found h2 {color: #c00;}  
+
+
+/* Overwriting styles */
+#container {float: none; width:100%;}
+#top {float: none; margin: 0 auto; width: 100%}
+#content_wrap  {float: none; margin: 0 auto;} 
+#content_inner  {float: none;}
+#currency {height: auto; float: none; margin: 0; cursor: pointer; position: static;}
+#language {width: 24px; float: none; margin-top: 0; padding-left:0!important;}
+div.cf {clear: both; float: none!important;}
+#wrap {float:none!important; margin: 0 auto; border: none !important; width:980px!important;}
+#footer {clear: both;}
+        
+.ad-crm{background-position:0 0;}
+.ag-crm{background-position:-48px 0;}
+.ai-crm{background-position:-72px 0;}
+.al-crm{background-position:-96px 0;}
+.ao-crm{background-position:-120px 0;}
+.at-crm{background-position:-144px 0;}
+.au-crm{background-position:-168px 0;}
+.aw-crm{background-position:-192px 0;}
+.bb-crm{background-position:-216px 0;}
+.be-crm{background-position:-240px 0;}
+.bg-crm{background-position: -384px 0;}
+.bh-crm{background-position:-264px 0;}
+.bn-crm{background-position:-288px 0;}
+.bo-crm{background-position:-312px 0;}
+.br-crm{background-position:-336px 0;}
+.bs-crm{background-position:-360px 0;}
+.bu-crm{background-position:-384px 0;}
+.by-crm{background-position:-408px 0;}
+.bz-crm{background-position:-432px 0;}
+.ca-crm{background-position:-456px 0;}
+.ch-crm{background-position:-480px 0;}
+.cl-crm{background-position:-504px 0;}
+.cm-crm{background-position:-528px 0;}
+.co-crm{background-position:-576px 0;}
+.cr-crm{background-position:-600px 0;}
+.cy-crm{background-position:-648px 0;}
+.de-crm{background-position:-696px 0;}
+.do-crm{background-position:-720px 0;}
+.ec-crm{background-position:-744px 0;}
+.ee-crm{background-position:-768px 0;}
+.eg-crm{background-position:-792px 0;}
+.es-crm{background-position:-24px -24px;}
+.fi-crm{background-position:-48px -24px;}
+.fj-crm{background-position:-72px -24px;}
+.fr-crm{background-position:-96px -24px;}
+.gd-crm{background-position:-120px -24px;}
+.gf-crm{background-position:-144px -24px;}
+.gh-crm{background-position:-168px -24px;}
+.gi-crm{background-position:-192px -24px;}
+.gp-crm{background-position:-216px -24px;}
+.gr-crm{background-position:-240px -24px;}
+.gt-crm{background-position:-264px -24px;}
+.gu-crm{background-position:-288px -24px;}
+.gy-crm{background-position:-312px -24px;}
+.he-crm{background-position:-336px -24px;}
+.hn-crm{background-position:-384px -24px;}
+.hr-crm{background-position:-408px -24px;}
+.ht-crm{background-position:-432px -24px;}
+.hu-crm{background-position:-456px -24px;}
+.id-crm{background-position:-480px -24px;}
+.ie-crm{background-position:-504px -24px;}
+.il-crm{background-position:-528px -24px;}
+.in-crm{background-position:-552px -24px;}
+.ir-crm{background-position:-576px -24px;}
+.is-crm{background-position:-600px -24px;}
+.im-crm{background-position:-624px -24px;}
+.it-crm{background-position:-648px -24px;}
+.je-crm{background-position:-696px -24px;}
+.jm-crm{background-position:-720px -24px;}
+.jo-crm{background-position:-744px -24px;}
+.ke-crm{background-position:-768px -24px;}
+.kn-crm{background-position:-792px -24px;}
+.kw-crm{background-position:-24px -48px;}
+.ky-crm{background-position:-48px -48px;}
+.la-crm{background-position:-72px -48px;}
+.lb-crm{background-position:-120px -48px;}
+.lc-crm{background-position:-96px -48px;}
+.lk-crm{background-position:-144px -48px;}
+.ls-crm{background-position:-168px -48px;}
+.lt-crm{background-position:-192px -48px;}
+.lu-crm{background-position:-216px -48px;}
+.lv-crm{background-position:-240px -48px;}
+.ma-crm{background-position:-264px -48px;}
+.md-crm{background-position:-288px -48px;}
+.mk-crm{background-position:-312px -48px;}
+.mo-crm{background-position:-336px -48px;}
+.mp-crm{background-position:-360px -48px;}
+.mq-crm{background-position:-384px -48px;}
+.mt-crm{background-position:-408px -48px;}
+.mu-crm{background-position:-432px -48px;}
+.mx-crm{background-position:-456px -48px;}
+.my-crm{background-position:-480px -48px;}
+.mz-crm{background-position:-504px -48px;}
+.na-crm{background-position:-528px -48px;}
+.nc-crm{background-position:-552px -48px;}
+.ni-crm{background-position:-576px -48px;}
+.nl-crm{background-position:-600px -48px;}
+.no-crm{background-position:-624px -48px;}
+.nr-crm{background-position:-648px -48px;}
+.nz-crm{background-position:-672px -48px;}
+.om-crm{background-position:-696px -48px;}
+.pa-crm{background-position:-720px -48px;}
+.pe-crm{background-position:-744px -48px;}
+.ph-crm{background-position:-768px -48px;}
+.pl-crm{background-position:-792px -48px;}
+.pr-crm{background-position:-24px -72px;}
+.pw-crm{background-position:-48px -72px;}
+.py-crm{background-position:-72px -72px;}
+.qa-crm{background-position:-96px -72px;}
+.re-crm{background-position:-120px -72px;}
+.ro-crm{background-position:-144px -72px;}
+.rs-crm{background-position:-168px -72px;}
+.ru-crm{background-position:-192px -72px;}
+.sa-crm{background-position:-216px -72px;}
+.sb-crm{background-position:-240px -72px;}
+.sd-crm{background-position:-264px -72px;}
+.sy-crm{background-position:-312px -72px;}
+.sg-crm{background-position:-336px -72px;}
+.si-crm{background-position:-360px -72px;}
+.sm-crm{background-position:-384px -72px;}
+.sk-crm{background-position:-408px -72px;}
+.sl-crm{background-position:-432px -72px;}
+.sz-crm{background-position:-456px -72px;}
+.ta-crm{background-position:-480px -72px;}
+.tc-crm{background-position:-504px -72px;}
+.th-crm{background-position:-528px -72px;}
+.tr-crm{background-position:-552px -72px;}
+.tt-crm{background-position:-576px -72px;}
+.tu-crm{background-position:-600px -72px;}
+.tw-crm{background-position:-624px -72px;}
+.us-crm{background-position:-672px -72px;}
+.uy-crm{background-position:-696px -72px;}
+.ve-crm{background-position:-720px -72px;}
+.vi-crm{background-position:-744px -72px;}
+.ye-crm{background-position:-768px -72px;}
+.za-crm{background-position:-792px -72px;}
+.zm-crm{background-position:0 -96px;}
+.zw-crm{background-position:-24px -96px;}
+.ae-crm,.ar-crm{background-position:-24px 0;}
+.cn-crm,.zs-crm{background-position:-552px 0;}
+.cs-crm,.cz-crm{background-position:-624px 0;}
+.da-crm,.dk-crm{background-position:-672px 0;}
+.en-crm,.gb-crm{background-position:0 -24px;}
+.hk-crm,.zh-crm{background-position:-360px -24px;}
+.ja-crm,.jp-crm{background-position:-672px -24px;}
+.ko-crm,.kr-crm{background-position:0 -48px;}
+.po-crm,.pt-crm{background-position:0 -72px;}
+.se-crm,.sv-crm{background-position:-288px -72px;}
+.ua-crm,.uk-crm{background-position:-648px -72px;}
+.cw-crm { background-position: -97px -96px; } 
+.ba-crm { background-position: -120px -96px; } 
+.tn-crm { background-position: -145px -96px; } 
+.mf-crm { background-position: -168px -96px; } 
+.bq-crm { background-position: -192px -96px; } 
+.pf-crm { background-position: -216px -96px; } 
+.sr-crm { background-position: -240px -96px; } 
+.vg-crm { background-position: -265px -96px; } 
+.vu-crm { background-position: -289px -96px; } 
+.me-crm { background-position: -313px -96px; } 
+
+#header-main form {
+border-radius: 0;
+background: none;http://www.rentalcars.com/en/help/
+overflow: visible;
+}
+
+#rs-user {
+background: url(/images/site_graphics/newsite/rs-user.png) no-repeat 50% 50%;
+float: left;
+margin: 3px -4px;
+padding: 0;
+width: 23px;
+height: 18px;
+}

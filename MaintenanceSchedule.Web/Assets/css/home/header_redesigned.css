@@ -1,0 +1,840 @@
+﻿/*  
+
+Sections of this CSS file, created March 2016:
+
+    Main Header CSS
+    Drop Down Boxes
+    Inline Message
+    Breadcrumbs
+    Welcome Message
+    Hub styling
+    Internet Explorer 7 Fixes
+    Internet Explorer 8 Fixes
+    Custom Page CSS
+    Map Search CSS
+    Responsive CSS
+
+*/
+
+.rch-container * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.rch-container {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #eee \9;
+    position: relative;
+    z-index: 1001;
+    min-width: 190px;
+}
+
+    .rch-container .rch-content {
+        height: auto;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        min-width: 1100px \9;
+    }
+
+    .rch-container .rch-content-table {
+        display: table;
+        width: 100%;
+        position: relative;
+    }
+
+    .rch-container .rch-logo {
+        display: table-cell;
+        *display: relative;
+        *float: left;
+        width: 30%;
+    }
+
+    .rch-container .rch-logo-image {
+        height: auto;
+        margin: 10px 0 10px;
+    }
+
+    .rch-container img.rch-logo-image[src="http://cdn.rcstatic.com/images/rclogo/blue/2x/wordmark-rclogo_194x30.png"], .rch-container img.rch-logo-image[src="https://cdn.rcstatic.com/images/rclogo/blue/2x/wordmark-rclogo_194x30.png"] {
+        height: 24px;
+        margin: 12px 0 14px;
+    }
+
+    .rch-container .rch-navigation {
+        right: 0;
+        top: 0;
+        display: table-cell;
+        *display: relative;
+        *float: left;
+        height: 100%;
+        width: 70%;
+        vertical-align: top;
+        text-align: right;
+        position: absolute;
+        z-index: 1002;
+    }
+
+    .rch-container .rch-navigation-button {
+        color: #0064c8;
+        line-height: 49px;
+        border-right: 1px solid #eee;
+        padding: 0 20px 0 20px;
+        font-style: normal;
+        font-size: 12px;
+        margin-left: -4px;
+        height: 50px;
+        display: inline-block;
+        position: relative;
+        *display: inline;
+        *zoom: 1;
+        *margin-left: 0;
+        cursor: pointer;
+    }
+
+    .rch-container #langCurrencyForm {
+        height: 100%;
+    }
+
+    .rch-container .rch-navigation-button:hover {
+        background: #f7f7f7;
+    }
+
+    .rch-container .rch-icon {
+        font-size: 20px;
+        line-height: 40px;
+        vertical-align: middle;
+        color: #6daee9;
+        font-weight: bold;
+        margin-right: 8px;
+        position: relative;
+    }
+
+    .rch-container #rch-language {
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 23px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.rch-navigation-button, .rch-navigation-button img, .rch-navigation-button em, .rch-navigation-button i {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.rch-container .rch-navigation-button, .rch-container .rch-navigation-button img, .rch-container .rch-navigation-button em, .rch-container .rch-navigation-button i {
+    font-style: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#rch-icon-manage-booking {
+    display: none;
+}
+
+.rch-navigation-button .badge-unread {
+    top: 2px;
+    right: -7px;
+    line-height: 12px;
+    background-color: #de4034;
+    color: #fff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 4px 6px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: -1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.rch-container .rch-burgermenu {
+    display: none;
+}
+
+.rch-container .rch-drop-down {
+    white-space: normal;
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: 4px solid #0771c4;
+    width: 370px;
+    text-align: left;
+    padding: 20px;
+    -webkit-border-radius: 2px 0 2px 2px;
+    -moz-border-radius: 2px 0 2px 2px;
+    border-radius: 2px 0 2px 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: initial;
+    *top: 50px;
+}
+
+    .rch-container .rch-drop-down h4 {
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 1.438em;
+        line-height: 1.5em;
+        color: #0771c4;
+    }
+
+    .rch-container .rch-drop-down p {
+        float: left;
+        font-size: 13px;
+        margin-bottom: 7px;
+        font-weight: normal;
+        color: #666;
+        line-height: 1.4;
+    }
+
+    .rch-container .rch-drop-down input[type='password'], .rch-container .rch-drop-down input[type='text'] {
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #bfbfbf;
+        min-width: 100%;
+        *min-width: 90%;
+        background: #f8f8f8;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+.rch-container .tb.small.remember-me {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 12px;
+    border-radius: 2px;
+    display: inline-block;
+    zoom: 1;
+    color: #444;
+    line-height: 1.5em;
+}
+
+.rch-container .forgot-res {
+    margin: 10px 0px 20px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    line-height: 1.5em;
+}
+
+.rch-container .rc-btn.primary {
+    margin-right: 10px;
+    background-color: #749E3A;
+    color: #ffffff;
+    float: left;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+    .rch-container .rc-btn.primary:hover {
+        background-color: #5B8521;
+    }
+
+.rch-container .create-account {
+    margin-left: 5px;
+    color: #666;
+    font-size: 14px;
+    width: auto;
+    border: 0;
+    line-height: 40px;
+    top: 14px;
+}
+
+.rch-container #rch-language-select, .rch-container #rch-currency-select {
+    max-height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.rch-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.rch-fontfam {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rch-container li {
+    margin: 0;
+    list-style: none;
+    line-height: 1.5em;
+    white-space: nowrap;
+    clear: both;
+    *clear: none;
+}
+
+    .rch-container li > a {
+        display: block;
+        padding: 8px 10px;
+        white-space: nowrap;
+        font-size: 13px;
+        position: relative;
+        line-height: 1.5em;
+        text-decoration: none;
+        color: #0064C8;
+        border: none;
+        font-weight: normal;
+    }
+
+.rch-container #rch-language-select li > a {
+    padding-left: 50px;
+}
+
+.rch-container li a:hover {
+    background: #e7f1f9;
+}
+
+.rch-container #rch-language-select ul li a span {
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 23px;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+
+.rch-container #rch-currency-select h3 {
+    white-space: nowrap;
+    font-size: 16px;
+    margin: 5px 0 5px;
+    padding: 0 3px 3px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 1.3em;
+    color: #555;
+    float: none;
+    font-weight: 700;
+}
+
+.rch-container li a span {
+    font-weight: bold;
+    color: #0e94f7;
+    width: 50px;
+    display: inline-block;
+    zoom: 1;
+    float: right;
+}
+
+.rch-container ul {
+    width: 100%;
+}
+
+.rch-container .rch-navigation-button.active {
+    background: #0771c4;
+    color: #fff;
+}
+
+.rch-container .rch-icon-button {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: none;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    *height: 20px;
+    *width: 20px;
+}
+
+.rch-container .inline-message.promo_sign_in, .inline-message.modal_promo_success {
+    margin-top: 0px;
+}
+
+.rch-container a.hide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 22px;
+    height: 22px;
+}
+
+.rch-container .rch-drop-down INPUT[type='text'], .rch-container .rch-drop-down INPUT[type='password'] {
+    *height: 20px;
+    *line-height: 20px;
+}
+
+.rch-container h1, .rch-container h2, .rch-container h3, .rch-container h4, .rch-container p, .rch-container a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rch-container .rch-logo {
+    width: auto;
+}
+
+/* Drop Down Boxes */
+
+.rch-container .rch-navigation .rch-drop-down a {
+    color: #0064C8;
+}
+
+.rch-container #rch-currency-select {
+    display: none;
+}
+
+.rch-container #rch-language-select {
+    display: none;
+}
+
+.rch-container #rch-manage-booking {
+    display: none;
+}
+
+.rch-container #rch-sign-in {
+    display: none;
+}
+
+.rch-container #rch-signed-in {
+    display: none;
+}
+
+.rch-container #rch-logged-in {
+    display: none;
+}
+
+.rch-container #rch-hubmember {
+    display: none;
+}
+
+.rch-container #rch-signed-in, .rch-container #rch-hubmember {
+    width: 220px;
+}
+
+.rch-container a {
+    border-bottom: 0;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+    .rch-container a:hover {
+        text-decoration: none;
+        color: #0e94f7;
+    }
+
+.rch-create-account {
+    margin-top: -5px;
+    float: left;
+    color: #666;
+}
+
+.rch-container .rch-drop-down label {
+    float: left;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    text-shadow: none;
+    line-height: 1.5em;
+}
+
+#rch-currency-select, #rch-language-select, #rch-logged-in {
+    width: 300px;
+}
+
+#showLoginErrorMessage {
+    line-height: 1.5em;
+}
+
+/* Inline Message */
+
+.rch-container .inline-message.warning.promo_sign_in {
+    width: 100%;
+    position: relative;
+}
+
+    .rch-container .inline-message.warning.promo_sign_in.cta .cta-wrap a {
+        border-bottom: 0px;
+        background-color: #f0901e;
+        font-size: 16px;
+        font-size: 13px;
+        color: #fff;
+        font-weight: bold;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .rch-container .inline-message.warning.promo_sign_in.cta .cta-wrap {
+        width: auto;
+        clear: left;
+        float: none;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .rch-container .inline-message.warning.promo_sign_in.cta p {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+    .rch-container .inline-message.warning.promo_sign_in h4 {
+        color: #f0901e;
+        max-width: 100%;
+    }
+
+.rch-container .promo_sign_in.inline-message {
+    *width: 90% !important;
+}
+
+/* Breadcrumbs */
+
+#rch-breadcrumbs-container {
+    min-height: 0;
+    background: #eee;
+    bottom: -28px;
+    position: absolute;
+    min-height: 28px;
+}
+
+#rch-breadcrumbs-content {
+    height: auto;
+    padding: 5px 0;
+    font-size: 0.688em;
+    text-transform: uppercase;
+}
+
+    #rch-breadcrumbs-content a {
+        margin-right: 10px;
+        color: #999;
+    }
+
+        #rch-breadcrumbs-content a:hover {
+            color: #333;
+        }
+
+    #rch-breadcrumbs-content p {
+        color: #999;
+    }
+
+.rch-header-container-bc {
+    margin-bottom: 28px;
+}
+
+/* Welcome Message */
+
+.rch-welcome-message img {
+    margin: 5px 10px 5px 0px;
+    height: 35px;
+    float: left;
+}
+
+.rch-welcome-message {
+    width: 300px;
+    display: block;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 4px solid #1B65A4;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    top: 51px;
+    z-index: 1002;
+    padding: 10px;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+    .rch-welcome-message p span {
+        font-weight: 900;
+        color: #489AE3;
+        display: block;
+    }
+
+    .rch-welcome-message p {
+        white-space: normal;
+        color: #000;
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+        float: left;
+    }
+
+    .rch-welcome-message div {
+        width: 220px;
+        float: left;
+    }
+
+/* Hub styling */
+
+.rch-container .hubmember .rch-drop-down {
+    max-width: 300px;
+    border-top: 4px solid #f76242;
+}
+
+    .rch-container .hubmember .rch-drop-down a {
+        color: #f76242;
+    }
+
+.logged-in-wrap li.sign-out {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.rch-container .hubmember {
+    color: #f76242;
+}
+
+    .rch-container .hubmember.active#rch-select-sign-in {
+        color: #fff;
+        background-color: #f76242;
+    }
+
+/* Internet Explorer 7 Fixes */
+
+.rch-container #rch-language-select, .rch-container #rch-currency-select {
+    *height: 310px;
+}
+
+.rch-container .rch-navigation .rch-navigation-button {
+    *height: auto;
+}
+
+.rch-container #rch-language {
+    *line-height: normal;
+}
+
+.rch-container DIV.cf {
+    *display: none;
+}
+
+.rch-container .rch-navigation #rch-language-select UL LI A SPAN {
+    *position: relative;
+}
+
+.rch-container .rch-navigation a {
+    *text-decoration: none;
+}
+
+.rch-container #rch-language-select UL LI A SPAN {
+    *left: 5px;
+    *margin-right: 15px;
+}
+
+.rch-container .active {
+    *border-bottom: none;
+    *border: none;
+}
+
+.rch-container #rch-select-language I, .rch-container #rch-select-sign-in I {
+    *zoom: 1;
+}
+
+.rch-container .rch-navigation #rch-language-select UL LI A SPAN {
+    *top: 0;
+}
+
+.rch-container .rch-navigation .rch-drop-down {
+    *top: 49px;
+}
+
+.rch-container .rch-navigation #rch-language-select {
+    *width: 280px;
+}
+
+.rch-container #rch-language-select LI > A {
+    *padding-left: 20px;
+}
+
+.rch-container #rch-breadcrumbs-container {
+    *left: 0;
+}
+
+.rch-container #rch-breadcrumbs-content A {
+    *vertical-align: middle;
+}
+
+/* Internet Explorer 8 fixes */
+
+body .rch-container .rch-drop-down INPUT[type='text'], body .rch-container .rch-drop-down INPUT[type='password'] {
+    min-width: 90% \9;
+}
+
+/* Map Search CSS  */
+
+body.allAreas .rch-container {
+    position: fixed;
+}
+
+    body.allAreas .rch-container .rch-content {
+        max-width: initial;
+        margin: 0 1%;
+        width: 98%;
+    }
+
+/* Responsive CSS  */
+
+@media screen and (max-width: 1099px) {
+    .rch-container .rch-icon, .rch-container #rch-language {
+        margin-right: 0;
+    }
+
+    .rch-container #rch-manage-booking-icon {
+        display: inline-block;
+    }
+
+    .rch-container .rch-content {
+        height: auto;
+        max-width: 1100px;
+        width: 95%;
+        margin: 0 auto;
+        min-width: 0;
+    }
+
+    .rch-container i {
+        font-size: 0;
+        font-style: normal;
+    }
+
+    .rch-container .rch-navigation-button {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .rch-container .rch-drop-down {
+        top: 50px;
+    }
+
+    #rch-icon-manage-booking {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .rch-container .rch-navigation-button {
+        position: inherit;
+        width: 25%;
+        border: none;
+    }
+
+    .rch-container .rch-drop-down, .rch-container #rch-language-select, .rch-container #rch-currency-select {
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 50px;
+    }
+
+    .rch-container .rch-burgermenu {
+        width: 20px;
+        height: 40px;
+        float: right;
+        margin-top: 0px;
+        display: block;
+    }
+
+    .rch-container .rch-logo {
+        display: block;
+        width: 90%;
+        float: left;
+    }
+
+    .rch-container .rch-navigation {
+        display: none;
+        width: 100%;
+        vertical-align: top;
+        text-align: center;
+        border-top: 1px solid #eee;
+        margin-top: 7px;
+        float: left;
+        position: relative;
+    }
+
+    .rch-container .rch-content {
+        height: auto;
+    }
+
+    .rch-container .rch-toggle {
+        margin: 0;
+        display: block;
+        float: right;
+        padding: 5px 0;
+        margin-top: 10px;
+        border-bottom: 0;
+        cursor: pointer;
+    }
+
+    .rch-container .rch-toggle2 {
+        background-color: #0771c4;
+        display: block;
+        height: 3px;
+        width: 20px;
+        line-height: 14px;
+        margin-top: 3px;
+        vertical-align: text-top;
+    }
+
+    .rch-container .rch-navigation-button .badge-unread {
+        top: 0;
+        right: 0;
+        right: auto;
+    }
+
+    .rch-container .hubmember .rch-drop-down {
+        max-width: 95%;
+    }
+
+    .rch-container #rch-signed-in, .rch-container #rch-hubmember {
+        width: 95%;
+    }
+
+    body .rch-container .rch-navigation {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+
+    body .rch-container .rch-navigation-button {
+        border: none;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .rch-navigation {
+        display: table-cell !important;
+    }
+
+    .rch-container .rch-navigation-button {
+        top: 50%;
+        top: 0%/9;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+.searchResultsPage .rch-container .rch-content, .extras .rch-container .rch-content, .details .rch-container .rch-content, .payment .rch-container .rch-content, .confirmation .rch-container .rch-content {
+    min-width: 960px;
+}
+
+.searchResultsPage .rch-container, .extras .rch-container, .details .rch-container, .payment .rch-container, .confirmation .rch-container {
+    min-width: 980px;
+}

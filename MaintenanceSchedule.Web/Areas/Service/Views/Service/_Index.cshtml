@@ -1,0 +1,93 @@
+﻿<!-- Css -->
+<link href="http://carspa.vn/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" />
+@Styles.Render("~/Css/Service/_Index")
+<!-- Script -->
+@Scripts.Render("~/Js/Jquery")
+@Scripts.Render("~/Js/JqueryTemplate")
+@Scripts.Render("~/Js/Service/_Index")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var commentUrl = window.location.href;
+        parent.top.$(".fb-comments").attr("data-href", commentUrl);
+    });
+</script>
+
+<div class="sppb-container">
+    <div class="sppb-row">
+        <div class="sppb-col-sm-12">
+            <div class="sppb-addon-container">
+                <div class="sppb-empty-space  clearfix" style="margin-bottom:20px;"></div><div class="sppb-addon sppb-addon-text-block sppb-text-center">
+                    <h3 class="sppb-addon-title" style="text-transform: uppercase;">Đặt lịch bảo dưỡng</h3>
+                    <div class="sppb-addon-describe">
+                        <div class="aot-separator">
+                            <div class="aot-separator-style"> </div>
+                        </div>
+                        <p><strong>Bảo dưỡng định kỳ xe ôtô</strong></p>
+                        <p>Để đảm bảo xe ở trong tình trạng tốt nhất, điều quan trọng nhất là xe phải được kiểm tra và bảo dưỡng định kỳ theo nhà sản xuất. </p>
+                        <p><strong>Tác dụng của việc bảo dưỡng định kỳ:</strong></p>
+                        <ul class="describe">
+                            <li>Lái xe an toàn, tự tin.</li>
+                            <li>Tiết kiệm nhiên liệu.</li>
+                            <li>Kéo dài tuổi thọ của xe.</li>
+                            <li>Đáp ứng các điều kiện bảo hành.</li>
+                            <li>Chấp hành các quy định của Nhà nước.</li>
+                        </ul>
+                        <p style="font-size: 15px; font-weight: bold; color: #a50b0b;">
+                            Tổng đài tư vấn: 0909 878 369 – 0915 878759
+                        </p>
+                        <p>
+                            <strong>Dưới đây là một số công việc cần làm thường xuyên để công việc bảo dưỡng xe được tốt hơn</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="sppb-addon sppb-addon-module ">
+                    <div class="sppb-addon-content">
+                        <div class="sprocket-strips-s" data-strips="143">
+                            <div class="sprocket-strips-s-overlay">
+                                <div class="css-loader-wrapper">
+                                    <div class="css-loader"></div>
+                                </div>
+                            </div>
+                            <script id="stripServicesTemplate" type="text/html">
+                                <li class="sprocket-strips-s-block" data-strips-item>
+                                    <div class="sprocket-strips-s-item" data-strips-content>
+                                        <img alt="" src="${DisplayImage}" />
+                                        <div class="sprocket-strips-s-content">
+                                            <h4 class="sprocket-strips-s-title" data-strips-toggler>
+                                                <a href="/dich-vu/${TitleFriendlyName}-${Id}.html" target="_parent">
+                                                    ${Title}
+                                                </a>
+                                            </h4>
+                                            <span class="sprocket-strips-s-text">
+                                                ${Description}<span class="roksprocket-ellipsis"></span>
+                                            </span>
+                                            <a href="/dich-vu/${TitleFriendlyName}-${Id}.html" target="_parent" class="readon"><span>Xem chi tiết</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </script>
+                            <ul id="stripServiceList" class="sprocket-strips-s-container cols-4" data-strips-items></ul>
+                            <div class="sprocket-strips-s-nav">
+                                <div class="sprocket-strips-s-pagination">
+                                    <script id="stripPagesTemplate" type="text/html">
+                                        <li data-strips-page="${Page}">
+                                            <span>${Page}</span>
+                                        </li>
+                                    </script>
+                                    <ul id="stripServicePagination"></ul>
+                                </div>
+                                <div class="sprocket-strips-s-arrows">
+                                    <a href="#" id="toogle" style="display: none;"></a>
+                                    <span class="arrow next" data-strips-next onclick="onNextStrip();"></span>
+                                    <span class="arrow prev" data-strips-previous onclick="onPreviousStrip();"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

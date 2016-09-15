@@ -1,0 +1,4057 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}.clearfix{clear:both; height: 0}legend{display:none}
+
+
+/* GLOBAL */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    min-width: 640px;
+}
+
+h1 {
+    font-size:3.25em;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size:2em;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: #000;
+}
+
+h3 {
+    font-size:1.750em;
+    line-height: 1.3em;
+    color: #555;
+}
+
+h4 {
+    font-size:1.375em;
+    line-height: 1.3em;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #0064c8;
+    border-bottom: 1px solid #0064c8;
+    padding: 0 0 2px;
+}
+
+a:hover {
+    border: none;
+    color: #629ed5;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.left, .right {
+    float: left;
+    width: 50%;
+}
+
+#form .left {
+    float: left;
+    width: 48%;
+    margin: -100px 0 20px;
+}
+
+#form .right {
+    float: right;
+    width: 48%;
+    margin: -120px 0 0;
+}
+
+ul.ticks {
+    padding: 10px 0;
+}
+
+ul.ticks li {
+    padding: 7px 20px 25px 40px;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/img-bullet-tick.png') 0 0 no-repeat transparent;
+}
+
+div.cf {clear: both; float: none!important;}
+
+/* END GLOBAL */
+
+/* OLD BRAND HEADERS */
+
+    #header.carhire3000  {
+        background: #487dcd;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#487dcd), color-stop(100%,#224dbb));
+        background: -webkit-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: -moz-linear-gradient(top, #487dcd 0%, #224dbb 100%);
+        background: -o-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: -ms-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: linear-gradient(to bottom, #487dcd 0%,#224dbb 100%);
+        border: none;
+    }
+    
+    #header.carhire3000 .opt-toggle {
+        padding: 10px 0;
+    }
+    
+    #header.carhire3000 .opt-toggle-bar {
+        background-color: #fff;
+    }
+    
+    #header.carhire3000 #options {
+        background: #2450BB;
+        top: 58px;
+    }
+    
+    #header.carhire3000 .logo img, #header.carhire3000 .rc-logo-link {
+        height: 41px;
+    }
+    
+    #mybooking-ch3000 {
+        margin: 0 -5% -10px;
+        padding: 0 5% 5%;
+    }
+
+/* END OLD BRAND HEADER */
+
+/* HEADER */
+#header {
+    background: #eee; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top, #f9f9f9 0%, #eeeeee 100%); /* FF3.6+ */
+    background:      -o-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%); /* IE10+ */
+    background:         linear-gradient(top, #f9f9f9 0%,#eeeeee 100%); /* W3C */
+    border-top: 4px solid #1b65a4;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 10;
+}
+
+#header .container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#header form {
+    padding: 0;
+}
+
+#header a {
+    border: none;
+}
+
+#logo {
+    display: block;
+    height:48px;
+    background:url('http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png') -5px -128px no-repeat transparent;
+    float: left;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logo {
+    display: block;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+}
+
+#header form {
+    background: none;
+    border-radius: 0;
+    overflow: visible;
+}
+
+/* OPTIONS    */
+
+.opt-toggle {
+    display: none;
+}
+
+#options {
+    float: right;
+    padding: 10px 0 0 0;
+
+}
+
+#currency-container,
+#language-container,
+#booking-container {
+    position: relative;
+    height: 30px;
+    float: left;
+}
+
+
+.opt-btn {
+    float: left;
+    display: block;
+    margin: 0 0 0 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #499ce4;
+    font-size: 0.875em;
+    box-shadow: 1px 1px 1px #d1d1d1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opt-icon,
+.opt-label,
+.opt-arrow {
+    display: block;
+    float: left;
+} 
+
+.opt-icon { 
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #5a96ca;
+    
+    background: #2567a7; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#509ad9), color-stop(100%,#1c66a5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #509ad9 0%,#1c66a5 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top, #509ad9 0%, #1c66a5 100%); /* FF3.6+ */
+    background:      -o-linear-gradient(top, #509ad9 0%,#1c66a5 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #509ad9 0%,#1c66a5 100%); /* IE10+ */
+    background:         linear-gradient(top, #509ad9 0%,#1c66a5 100%); /* W3C */
+}
+
+.opt-icon span {
+    display: block;
+    height: 30px;
+    width: 44px;
+    border: none;
+}
+
+em#language span {
+    height: 24px;
+    width: 24px;
+    margin: 3px 10px;
+    background-image: url(http://www.rentalcars.com/images/site_graphics/newsite/sprite-flags.png);
+    background-repeat: no-repeat;
+}
+
+em#currency span {
+    background: url(http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png) -374px -78px no-repeat transparent;
+}
+
+em#booking span {
+    background: url(http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png) -429px -78px no-repeat transparent;
+}
+
+.opt-label {
+    background: #4a9ce4; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9acdfb), color-stop(100%,#499ce4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top, #9acdfb 0%, #499ce4 100%); /* FF3.6+ */
+    background:      -o-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* IE10+ */
+    background:         linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* W3C */
+    
+    font-weight: 300;
+    padding: 8px 5px;
+    border-left: 1px solid #9abfdf;
+    border-right: 1px solid #59a7eb;
+}
+
+.opt-arrow {
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid #9abfdf;
+    background: #4a9ce4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9acdfb), color-stop(100%,#499ce4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top, #9acdfb 0%, #499ce4 100%); /* FF3.6+ */
+    background:      -o-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* IE10+ */
+    background:         linear-gradient(top, #9acdfb 0%,#499ce4 100%); /* W3C */
+}
+
+.opt-arrow span {
+    display: block;
+    height: 30px;
+    width: 26px;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png') -485px -79px no-repeat transparent;
+}
+
+/* OPTIONS DROP DOWNS     */
+
+.dropdown {
+    top: 35px;
+    width: 214px;
+    position: absolute;
+    background: #fff;
+    border: 2px solid #5A96CA;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown p {
+    font-size: 0.750em;
+    font-weight: 700;
+    color: #666;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown ul {
+    padding: 5px;
+}
+
+.dropdown ul li a {
+    display: block;
+    font-size: 0.750em;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown ul li a span {
+    display: inline-block;
+    width: 34px;
+}
+
+.dropdown ul li a:hover {
+    background-color: #94c2fa;
+    border-radius: 5px;
+}
+
+.dropscroll {
+    height: 200px;
+    overflow-y: scroll;
+    margin: 5px;
+}
+
+#currencies,
+#languages{
+    left: 10px;
+}
+
+#mybooking {
+    left: -53px;
+}
+
+#languages ul li a {
+    display: block;
+    height: 25px;
+    width: 153px;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+#languages ul li a span {
+    background-image: url('http://www.rentalcars.com/images/site_graphics/newsite/sprite-flags.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 24px;
+    width: 24px;
+    float: left;
+}
+
+#languages ul li a em {
+    float: left;
+    padding: 7px 0 0 10px;
+}
+
+#mybooking .dropscroll {
+    overflow: hidden;
+    height: auto;
+    padding: 0 0 10px;
+}
+
+#mybooking p {
+    border: none;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#mybooking a {
+    font-size: 0.750em; 
+    width: 109px;
+    float: left;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+#mybooking input {
+    width: 190px;
+    margin: 0 0 8px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+a#mybookinglogin {
+    float: right;
+    background: #95b966;
+    border: 1px solid #688a33;
+    border-radius: 5px;
+    width: 88px;
+    padding: 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 2em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #688a33;
+}
+
+#forgotten-box {
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    
+    background: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 25px;
+    z-index: 100;
+}
+
+#forgotten-box * {
+    clear: both;
+}
+
+#forgotten-box > a {
+    float: right;
+    font-size: 0.688em;
+    margin: -10px 0 0;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png') 0 -367px no-repeat;
+    padding: 0 0 0 15px;
+}
+
+#forgotten-box p {
+    line-height: 1.5;
+    padding: 5px 0 10px;
+}
+
+#forgotten-box label {
+    display: block;
+    width: 100%;
+    padding: 0 0 7px;
+    font-weight: 700;
+}
+
+#forgotten-box input{
+    width: 340px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#forgotten-box input#forgotSubmit {
+    display: block;
+    height:38px;
+    width:122px;
+    margin: 10px auto;
+    
+    background: #8db35b; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2c375), color-stop(100%,#749e3a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a2c375 0%,#749e3a 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top, #a2c375 0%, #749e3a 100%); /* FF3.6+ */
+    background:      -o-linear-gradient(top, #a2c375 0%,#749e3a 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #a2c375 0%,#749e3a 100%); /* IE10+ */
+    background:         linear-gradient(top, #a2c375 0%,#749e3a 100%); /* W3C */
+    
+    border-radius: 5px;
+    border: 1px solid  #688a34;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #688a34;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 2px #9b8128;
+    cursor: pointer;
+}
+
+#not-found h5 {
+    color: red;
+}
+
+/* NAV BAR     */
+
+#nav {
+    background: #f5f5f5;
+    border-top: 1px solid #fff;
+    box-shadow: 0 2px 2px #c6c6c6;
+}
+
+#nav .container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#nav a {
+    border: none;
+}
+
+#nav p {
+    font-size: 0.875em;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 12px 0 0 0;
+    float: left;
+    height: 27px;
+}
+
+#nav p span {
+    float: left;
+}
+
+#nav img {
+    margin: 6px 0 0 5px;
+    float: left;
+}
+
+#nav ul {
+    float: right;
+    font-size: 0.750em;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 14px;
+    margin: -1px 0 0 0;
+    text-decoration: none;
+    color: #000;
+}
+
+#nav ul li a:hover {
+    background: #e6e6e6;
+}
+
+
+/* END HEADER */
+
+/*FEATURE */
+
+#feature {
+    /*background: url('http://www.rentalcars.com/images/site_graphics/newsite/img-feature.jpg') 50% 0 no-repeat transparent;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/bg.jpg') 50% 0 no-repeat transparent;*/
+    width: 100%;
+    height: 650px;
+    position: absolute;
+}
+
+/* END FEATURE */
+
+/* SUB */
+
+#sub {
+    padding: 20px 0 100px;
+    margin: 0 0 30px;
+    position: relative;
+    background-color: #489AE3;
+    -moz-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+        -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#title {height:65px; width:100%; line-height:65px;}
+#subTitle {height: 36px; width:100%; line-height:36px;}
+
+/* COUNTRIES */
+
+.sub_es {
+    background: url(http://www.rentalcars.com/images/destinations/es.jpg) 100% 100% no-repeat #489AE3;
+}
+
+/* END COUNTRIES */
+
+/* CITIES */
+
+.alicante {
+    background: url(http://www.rentalcars.com/images/destinations/alicante.jpg) 100% 100% no-repeat #489AE3;
+}
+
+/* END CITIES */
+
+#sub * {
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#sub p {
+    color: #ffe89c;
+    font-size: 1.375em;
+}
+
+#sub p#reviewcentre {
+    color: #fff;
+    font-size: 1em;
+    line-height: 29px;
+    text-align: right;
+    text-decoration: none;
+}
+
+#sub em {
+    display: inline-block;
+    height:26px;
+    line-height: 26px;
+    width:32px;
+    background:url('http://www.rentalcars.com/images/site_graphics/newsite/img-1st.png') 3px 0 no-repeat transparent;
+    text-align: center;
+    padding: 2px 0;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 0.9em;
+    font-style: normal;
+}
+
+#sub span {
+    display: inline-block;
+    background:url('http://www.rentalcars.com/images/site_graphics/newsite/img-reviewcentre.png') 0 0 no-repeat transparent;
+    padding: 0 0 10px 0;
+    text-align: left;
+    text-indent: -9999px;
+    width: 124px;
+}
+
+#feature span.trustpilot {
+    display: inline-block;
+    background:url('http://www.rentalcars.com/images/site_graphics/newsite/trust-pilot.png') 0 0 no-repeat transparent;
+    padding: 0 0 10px 0;
+    text-indent: -9999px;
+    width: 127px;
+}
+
+
+
+/* END SUB */
+
+/* FORM */
+
+#form {
+    margin: 0 auto;
+    display: block;
+    max-width: 1100px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#form .left {
+    background: #006639; /* Old browsers */
+    background: -moz-linear-gradient(top,  #006639 0%, #586545 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006639), color-stop(100%,#586545)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #006639 0%,#586545 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #006639 0%,#586545 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #006639 0%,#586545 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #006639 0%,#586545 100%); /* W3C */
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+
+#search, form#SearchResultsForm {
+    padding: 5%;
+}
+
+form h2 {
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+    padding: 0 0 15px;
+    color: #fff;
+}
+
+form#search fieldset div,
+form#SearchResultsForm fieldset div {
+    clear: both;
+    height: 30px;
+    line-height: 27px;
+    padding: 0 0 5px;
+}
+
+form#search div.clearfix,
+form#SearchResultsForm div.clearfix {
+    height: 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    width: 25%;
+    float: left;
+    font-size: 0.875em;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+form fieldset#location-fieldset select,
+form fieldset#do-location-fieldset select {
+    width: 74%;
+    height: 30px;
+    float: left;
+    margin: 0;
+    *margin: 4px 0 0;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 5px;
+}
+
+form#search div.checkboxcontainer,
+form#SearchResultsForm div.checkboxcontainer {
+    height: auto;
+    margin: 0 0 0 25%;
+    float: left;
+}
+
+.checkboxcontainer label,
+.checkboxcontainer input {
+    float: left
+}
+
+.checkboxcontainer label {
+    width:auto;
+    padding: 0;
+}
+
+.checkboxcontainer input {
+    width: 13px;
+    height: 13px;
+    margin: 8px 5px 0 0;
+}
+
+form#search div.tooltip,
+form#SearchResultsForm div.tooltip {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 20px;
+    float: left;
+    background: url(http://www.rentalcars.com/images/site_graphics/newsite/information.png) no-repeat 50% 50%;
+    border: none;
+    margin: 0 0 0 5px;
+    padding: 0;
+    clear: none;
+}
+
+.tooltip span {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: #fff;
+    font-size: 0.875em;
+    font-weight: 300;
+    width: 200px;
+    line-height: 1.5em;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+}
+
+.tooltip:hover span {
+    display: block;
+}
+
+.checkboxcontainer #driver-input {
+    margin: 0 0 0 18px;
+}
+.checkboxcontainer #driver-input input {
+    width: 26px;
+    height: auto;
+    margin: 0 0 0 5px;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 5px;
+    text-align: center;
+}
+
+#do-location-fieldset {
+    display: none;
+}
+
+#pu-fieldset,
+#do-fieldset {
+    width: 260px;
+    *width: 260px;
+    float: left;
+    padding: 0 0 15px;
+}
+
+#pu-fieldset label,
+#do-fieldset label {
+    width: 100%;
+    padding: 0 0 5px;
+}
+
+#pu-fieldset select,
+#do-fieldset select,
+#putime-fieldset select,
+#dotime-fieldset select {
+    float: left;
+    margin: 0 5px 0 0;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 5px;
+    height: 30px;
+}
+
+#putime-fieldset,
+#dotime-fieldset {
+    float: left;
+    width: 30%;
+    *width: 154px;
+}
+
+#putime-fieldset label,
+#dotime-fieldset label {
+    width: 100%;
+    padding: 0 0 5px;
+}
+
+#location-fieldset, #btn-fieldset {
+    *width: 416px;
+    *clear: both;
+    *float: right;
+}
+
+.datepicker {
+    display: block;
+    float: left;
+    height:30px;
+    *height:22px;
+    width:23px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/ico-calendar.png') 0 50% no-repeat transparent;
+}
+
+#form form input[type="submit"]{
+    /*width: 100%;*/
+    display: block;
+    float: right;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+            border-radius: 5px; 
+    font-size: 1.75em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 14px 30px;
+    *padding: 14px 0px;
+    margin: 10px auto 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #7ca249;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    
+    /* Fallback */
+    background-color: #a2c375;
+    
+    background: -moz-linear-gradient(top,  #6f9e2f 0%, #57752c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6f9e2f), color-stop(100%,#57752c));
+    background: -webkit-linear-gradient(top,  #6f9e2f 0%,#57752c 100%);
+    background: -o-linear-gradient(top,  #6f9e2f 0%,#57752c 100%);
+    background: -ms-linear-gradient(top,  #6f9e2f 0%,#57752c 100%);
+    background: linear-gradient(to bottom,  #6f9e2f 0%,#749e3a 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          
+    filter:chroma(color=#000000);
+    -webkit-appearance: none;
+}
+
+#form form input[type="submit"]:hover {
+    background: #89af55;
+}
+#form form input[type="submit"]:active,#form form input[type="submit"]:focus {
+    -webkit-appearance: none;
+}
+
+form fieldset#location-fieldset input[type="text"],
+form fieldset#do-location-fieldset input[type="text"] {
+    width: 96%;
+    height: 30px;
+    float: left;
+    margin: 0;
+    *margin: 4px 0 0;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 2%;
+}
+
+form .discountcode {
+    padding: 2% 0;
+}
+
+form#search fieldset.discountcode div {
+    line-height: 32px;
+    height: 32px;
+    padding: 10px 0 0;
+}
+
+form#search fieldset.discountcode div#discountcodenumbers {
+    padding: 0;
+}
+
+form .discountcode a {
+    display: inline-block;
+}
+
+form .discountcode label {
+    display: block;
+    width: 50%;
+    float: left;
+    font-size: 0.875em;
+    color: #000;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+form .discountcode input[type="text"] {
+    width: 44%;
+    float: left;
+    margin: 0;
+    *margin: 4px 0 0;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 2%;
+}
+
+form .discountcode select {
+    width: 44%;
+    height: 30px;
+    float: left;
+    margin: 0;
+    *margin: 4px 0 0;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+    padding: 5px;
+}
+
+.datetime-section #putime-fieldset label, .datetime-section #putime-fieldset label, .datetime-section #dotime-fieldset label, .datetime-section  #dotime-fieldset label {
+    padding: 0 2% 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+    #putime-fieldset, #dotime-fieldset {
+        height: auto;
+        float: left;
+        width: 35%;
+    }
+}
+
+/* END FORM */
+
+/* MAP */
+#map {
+    display: block;
+    height:330px;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/temp-map.png') 0 0 no-repeat transparent;
+    border-radius: 5px 0 0 0;
+}
+
+#callus {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 25px 0 0;*/
+    color: #749E3A;
+}
+
+#callus span {
+    font-weight: bolder;
+    color: #444;
+}
+
+body #callHours {
+    font-weight: 500;
+    font-size: 1.0em !important;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 25px !important;
+    color: #444;
+}
+
+#cityLocationsMap {
+    height: 330px; z-index: 1;
+}
+
+#mapitemprice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0 0 0 5px;
+    z-index: 100;
+}
+
+.mapitem {
+position: relative;
+}
+
+/*#callus span {
+    color: #479ae3;
+}*/
+
+/* END MAP */
+
+/* TOP DEALS SMALL */
+#topdeals-small .destination {
+    padding: 0;
+    margin: 0;
+}
+
+#topdeals-small p {
+    font-size: 1em;
+}
+/* END TOP DEALS SMALL */
+
+/* HERO */
+
+.hero {
+    width: 100%;
+}
+.pic {
+    width: 100%;
+    position: relative;
+}
+
+.postcard {
+    margin: 20px 0 0;
+    background: #fff;
+    padding: 6px;
+    *padding: 5px;
+    *border: 1px solid;
+    *border-color: #ddd #ccc #ccc #ddd;
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    position: relative;
+    /*-webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);*/
+}
+
+.postcard img {
+    width: 100%;
+}
+
+.postcard h3 {
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    top: 16px;
+    left: 6px;
+    *left: 5px;
+    padding: 6px 10px;
+    color: #1B65A4;
+    font-size: 1.375em;
+}
+
+.postcard h3 span {
+    color: #489AE3;
+    font-weight: bold;
+}
+
+.pic.country .cars {
+    height:160px;
+    width:100%;
+    position: relative;
+    margin: -100px 10px 0 0;
+    background-image: url(http://www.rentalcars.com/images/site_graphics/newsite/cars-country.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+/* END HERO */
+
+/* PROVIDERS */
+
+#providers {
+}
+
+#providers .content {
+    padding: 25px 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+#providers h3 {
+    margin: 0 0 20px;
+    font-size:1.375em;
+    font-weight: bold;
+    color: #1B65A4;
+}
+
+#providers img {
+    margin: 0 10px 10px 0;
+    padding: 0;
+    height: 48px;
+    width: 98px;
+}
+
+#providers .logos span {
+    display: inline-block;
+    height:50px;
+    width:100px;
+    margin: 0 10px 10px 0;
+    background-image: url(http://www.rentalcars.com/images/site_graphics/newsite/sprite-providers.png);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+}
+
+/* END PROVIDERS */
+
+/* REVIEWS */
+
+#reviews {
+    margin: 20px 0 0;
+}
+
+#reviews h3 {
+    margin: 0 0 20px;
+    font-size:1.375em;
+    font-weight: bold;
+    color: #1B65A4;
+}
+
+#reviews ul {
+    width:100%;
+}
+
+#reviews ul li {
+    position:relative;
+    width:100%;
+}
+
+/*#reviews ul li .comment {
+    background: #489AE3;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: -1px -1px 0 #317cbe;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 25px 15px;
+}
+
+#reviews ul li .comment-arrow {
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    width: 40px;
+    height: 20px;
+    background: url(http://www.rentalcars.com/images/site_graphics/newsite/comment.gif) no-repeat 0 100%;
+}*/
+
+#reviews ul li .comment {
+    background: #D8F0FA;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid;
+    border-color: #D8F0FA #DDDDDD #DDDDDD #D8F0FA;
+    text-shadow: 1px 1px 0 #fff;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 25px 15px;
+}
+
+#reviews ul li .comment-arrow {
+    position: absolute;
+    left: 30px;
+    top: 71px;
+    *top: 72px;
+    width: 41px;
+    height: 20px;
+    background: url(http://www.rentalcars.com/images/site_graphics/newsite/comment-arrow.gif) no-repeat 0 100%;
+}
+
+#reviews ul li .user {
+    padding: 5px 0 5px 75px;
+}
+
+.customer-rating-5 {
+    background: url("http://www.rentalcars.com/images/site_graphics/newsite/sprite-general.png") no-repeat scroll -26px -106px transparent;
+    display: inline-block;
+    height: 12px;
+    margin: 0 0 0 5px;
+    width: 65px;
+}
+
+#reviews ul li .trustpilot {
+    padding: 0 0 0 75px;
+    font-size: .75em;
+}
+
+
+/* END REVIEWS */
+
+/* TOP DEALS */
+#topdeals {
+    background: #eee;
+    padding: 25px 0 50px;
+}
+
+#topdeals .content > p {
+    clear: both;
+    font-size: 0.750em;
+    color: #555;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px dotted #ded2c2;
+    border-bottom: 1px dotted #ded2c2;
+}
+
+.destination {
+    clear: both;
+    height: 81px;
+    margin: 25px 0;
+    color: #000;
+}
+
+.left .destination {
+    margin: 30px 25px 30px 0
+}
+
+.right .destination {
+    margin: 30px 0 30px 25px;
+}
+
+.destination > img {
+    border: 3px solid #fff;
+    width: 25%;
+    height: auto;
+    float: right;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.destinationinfo {
+    float: left;
+    width: 52%;
+    padding: 12px 0 0 0;
+}
+
+.destinationinfo img, .destinationinfo p {
+    float: left;
+}
+
+.destinationinfo img {
+    padding: 3px 5px 0 0;
+}
+
+.destinationprice {
+    float: left;
+    font-size: 0.875em;
+    padding: 7px 0 0 0;
+    width: 18%;
+}
+
+.destinationprice span {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #479ae3;
+}
+/* END TOP DEALS */
+
+.map {
+    border: 10px solid #fff;
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+
+/* MAP */
+
+.content > h4 {
+    padding-bottom: 5px;
+}
+
+/* END MAP */
+
+/* CONTENT */
+#secondary {
+    padding: 75px 0 50px;
+}
+
+#secondary h3 {
+    padding: 0 0 15px;
+}
+
+#secondary h3 span {
+    color:#489ae3;
+}
+
+#secondary h3 span span {
+    color: #1a65a4;
+}
+
+#usps {
+    padding: 0;
+}
+
+/* END CONTENT */
+
+/* NEWSLETTER */
+#newsletter {
+    padding: 15px 0 50px;
+    background: #fbfbfb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fbfbfb 0%, #f5f5f5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fbfbfb 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fbfbfb 0%,#f5f5f5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fbfbfb 0%,#f5f5f5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fbfbfb 0%,#f5f5f5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#newsletter h4 {
+    color: #2f578f;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+#newsletter p {
+    text-align: center;
+    padding: 5px 0 10px;
+}
+
+#newsletter form {
+    padding: 0;
+}
+
+#newsletter label {
+    display: none;
+}
+
+#newsletter input {
+    display:block;
+}
+
+#newsletter input[type="text"] {
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 248px;
+    max-width: 90%;
+    padding: 15px 5px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#newsletter input[type="submit"] {
+    width: 50%;
+    display:block;
+    padding: 20px 15px;
+    margin: 25px auto 0;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #3564a5;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+    /* Fallback */
+    background-color: #2f578f;
+    background-image: url('http://www.rentalcars.com/images/site_graphics/newsite/bg-grad.png');
+    background-repeat: repeat-x;
+    background-position: 0 -258px;
+    
+    background: -moz-linear-gradient(top,  #3f72b9 0%, #2f578f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f72b9), color-stop(100%,#2f578f));
+    background: -webkit-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: -o-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: -ms-linear-gradient(top,  #3f72b9 0%,#2f578f 100%);
+    background: linear-gradient(to bottom,  #3f72b9 0%,#2f578f 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          
+    filter:chroma(color=#000000);
+    -webkit-appearance: none;
+}
+
+#newsletter input[type="submit"]:hover{
+    background: #3f72b9;
+}
+
+#newsletter span.top {
+    display: block;
+    height:12px;
+    width:100%;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/bg-stripes.png') 0 0 repeat-x;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#newsletter span.bottom {
+    display: block;
+    height:12px;
+    width:100%;
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/bg-stripes.png') 0 0 repeat-x;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#subscribeSuccess {
+    font-size: 1.3em;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0 !important;
+    color: #749E3A;
+    font-weight: 600;
+}
+
+#subscribeFail {
+    color: #F15353;
+}
+
+#signup {
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+/* END NEWSLETTER */
+
+/* FOOTER */
+#footer {
+    background: #eee;
+    border-top: 1px solid #e6e6e6;
+    padding: 50px 0;
+}
+
+#footer p {
+    color: #000;
+}
+
+#footer .content div {
+    width: 25%;
+    float: left;
+}
+
+#footer .content div p {
+    padding: 15px 0 0 0;
+}
+
+#footer ul {
+    padding: 10px 0 35px 0;
+    font-size: 0.875em;
+}
+
+#footer ul li {
+    padding: 0 0 15px;
+}
+
+#footercopy {
+    float: none;
+    clear: both;
+    width: auto;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+#footercopy p {
+    padding: 25px 0 0 0;
+}
+
+#footer .content div#footerlogos {
+    width: 500px;
+    padding: 25px 0 0 0;
+    margin: 0 auto;
+    float: none;
+}
+
+#footerlogos img {
+    margin: 0 20px;
+}
+
+#footer #norton {
+    background: url('http://www.rentalcars.com/images/site_graphics/newsite/norton.png') 0 0 no-repeat transparent;
+    display: block;
+    height: 130px;
+    width: 241px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1099px) {
+    #header .container, .content {
+        width: 95%;
+    }
+    
+    #sub {
+        background-position: 300px 100%;
+    }
+    
+    #sub h1 {
+        font-size: 2.6em;
+        
+    }
+    
+    #title {
+        height:auto;
+    }
+    
+    #form .left {
+        margin: -100px auto 0;
+        width: 95%;
+        float: none;
+    }
+    
+    #form .right {
+        margin: 0 auto;
+        width: 95%;
+        float: none;
+    }
+    
+    #form, #form .content {
+        width: auto;
+    }
+    
+    /*#form, #form .content, #form .right {
+        border-radius: 0
+    }*/
+    
+    form h2 {
+        text-align: left;
+    }
+    
+    #pu-fieldset,
+    #do-fieldset {
+        height: 30px;
+        line-height: 30px;
+        width: 62%;
+        padding: 0 0 10px;
+    }
+    
+    #putime-fieldset,
+    #dotime-fieldset {
+        height: 30px;
+        line-height: 30px;
+        width: 38%;
+        padding: 0 0 10px;
+    }
+    
+    #pu-fieldset label,
+    #do-fieldset label {
+        width: 40%;
+        padding: 0;
+    }
+    
+    #putime-fieldset label,
+    #dotime-fieldset label {
+        width: auto;
+        padding: 0 2% 0 6%;
+    }
+    
+    /*#pu-hour, #do-hour, #pu-minute, #do-minute  {
+        width: 71px;
+        margin: 0 2px 0 0;
+    }*/
+    
+    #form form input[type="submit"] {
+        width: 100%;
+        padding: 16px 0;
+    }
+    
+    .tooltip span {
+        top: -132px;
+        right: -210px;
+        width: 171px;
+    }
+    
+    .hero {
+        display: none;
+    }
+    
+    #providers {
+        padding: 40px 0 0;
+    }
+    
+    #providers .content {
+        width: 100%;
+    }
+    
+    #providers .logos {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    #providers span {
+        margin: 0 50px 20px 0;
+    }
+    
+    #providers span.p-fourth {
+        margin: 0 0 20px 0;
+    }
+    
+    #reviews {
+        padding: 20px 0 0;
+    }
+    
+    .destination > img {
+        margin: 3% 0 0 0;
+    }
+    
+    #footer #norton {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #header .content > a {
+        margin: 0 auto;
+        float: none;
+    }   
+    
+    #headeroptions {
+        float: none;
+        height: 40px;
+        width: 540px;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+    
+    #options {
+        padding: 6px 0 0;
+    }
+    
+    #currency-container, #language-container, #booking-container {
+        height: 38px;
+    }
+
+    .opt-icon {
+        border-right: none;
+        border-radius: 5px;
+        padding: 4px;
+    }
+    
+    .opt-label, .opt-arrow {
+        display: none;
+    }
+    
+    #form .left p {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #header .container, .content{
+        width: 90%;
+    }
+
+    #currencies,
+    #languages,
+    #mybooking {
+        left: -156px;
+        top: 40px;
+    }
+
+    #sub h1 {
+        font-size: 32px !important;
+    }
+
+    .left, .right {
+        float: none;
+        width: auto;
+    }
+    
+    #form .left, #form .right {
+        float: none;
+        width: 90%;
+    }
+    
+    #form .right {
+        margin: -20px auto 0;
+        text-align: center;
+    }
+    
+    #form .right #providers, #form .right #reviews {
+        text-align: left;
+    }
+    
+    #form .right > img {
+        width: 480px;
+        margin: 0 auto;
+    }
+    
+    #form .right #providers h3 {
+        font-size: 1.75em;
+    }
+    
+    /*#h1sub {
+        width: 70%;
+        margin: 0 auto;
+    }*/
+    
+    /*#pu-fieldset label,
+    #do-fieldset label {
+        width: 25%;
+    }
+    
+    #putime-fieldset label,
+    #dotime-fieldset label {
+        width: 25%;
+    }*/
+    
+    /*form#search div, form label, #pu-fieldset label, #do-fieldset label, #putime-fieldset label, #dotime-fieldset label {
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    form div select, #pu-fieldset select, #do-fieldset select, #putime-fieldset select, #dotime-fieldset select {
+        height: 40px;
+        padding: 10px;
+    }*/
+
+    #pu-fieldset,
+    #do-fieldset {
+        height: 30px;
+        line-height: 30px;
+        width: 70%;
+        padding: 0 0 10px;
+    }
+    
+    #putime-fieldset,
+    #dotime-fieldset {
+        height: 30px;
+        line-height: 30px;
+        width: 30%;
+        padding: 0 0 10px;
+    }
+    
+    #pu-fieldset label,
+    #do-fieldset label {
+        width: 36%;
+        padding: 0;
+    }
+    
+    .datetime-section #putime-fieldset label, .datetime-section #putime-fieldset label, .datetime-section #dotime-fieldset label, .datetime-section #dotime-fieldset label {
+    	padding: 0;
+    }
+
+    #pu-fieldset select, #do-fieldset select, #putime-fieldset select, #dotime-fieldset select {
+        padding: 4px;
+    }
+
+    .checkboxcontainer input {
+        width: 19px;
+        height: 19px;
+        margin: 5px 5px 0 0;
+    }
+    
+    #map {
+        background-size: 100%;
+        height: 390px;
+    }
+    
+    #form .left p {
+        width: 100%;
+    }
+    
+    .content {
+        width: 90%;
+    }
+    
+    #providers {
+        overflow: hidden;
+    }
+
+    #providers .logos-wrap {
+        width: 100%;
+        height: 50px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    #providers .logos {
+        width: 920px;
+    }
+    
+    #providers span {
+        margin: 0 10px 0 0;
+    }
+    
+    #providers span.p-fourth {
+        margin: 0 10px 0 0;
+    }
+    
+    .right .destination, .left .destination {
+        margin: 30px 0;
+    }
+    
+    .destination > img {
+        width: 119px;
+        margin: 0;
+    }
+    
+    #providers .content {
+        width: 95%
+    }
+    
+    #secondary {
+        padding: 50px 0;
+    }
+    
+    #usps {
+        padding: 0 0 50px
+    }
+    
+    /*#footer {
+        text-align: center;
+    }*/
+    
+    #footer .content div {
+        width: 50%;
+        min-height: 200px;
+        *height: 200px;
+        /*float: none;*/
+    }
+    
+    #footer #norton {
+        width: 241px;
+        background-size:inherit;
+        margin: 0 auto 40px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    #form .left, #form .right {
+        float: none;
+        width: 90%;
+    }
+
+
+    #pu-fieldset,
+    #do-fieldset {
+        height: auto;
+        width: 58%;
+        float: left;
+    }   
+    #putime-fieldset,
+    #dotime-fieldset {
+        height: auto;
+        float: left;
+        width: 42%;
+    }   
+    #pu-fieldset label, #do-fieldset label, #putime-fieldset label, #dotime-fieldset label {
+            width: 100%;
+    }
+    
+    #pu-fieldset select, #do-fieldset select, #putime-fieldset select, #dotime-fieldset select {
+            height: 30px;
+            padding: 5px;
+    }
+}
+
+
+@media screen and (max-width: 568px) {
+    
+    body {
+        min-width: 100%;
+    }
+    
+    .logo {
+        width: auto;
+        height: auto;
+    }
+    
+    .logo img {
+        width: 200px;
+    }
+
+    /* OLD BRAND HEADERS */
+
+    #header.carhire3000  {
+        background: #487dcd;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#487dcd), color-stop(100%,#224dbb));
+        background: -webkit-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: -moz-linear-gradient(top, #487dcd 0%, #224dbb 100%);
+        background: -o-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: -ms-linear-gradient(top, #487dcd 0%,#224dbb 100%);
+        background: linear-gradient(to bottom, #487dcd 0%,#224dbb 100%);
+        border: none;
+        border-bottom: 1px solid #153c9e;
+    }
+    
+    #header.carhire3000 .opt-toggle {
+            padding: 10px 0;
+    }
+    
+    #header.carhire3000 .opt-toggle-bar {
+        background-color: #fff;
+    }
+    
+    #header.carhire3000 #options {
+        background: #2450BB;
+        top: 58px;
+    }
+    
+    #header.carhire3000 .logo img, #header.carhire3000 .rc-logo-link {
+            width: auto;
+        height: 41px;
+    }
+    
+    #mybooking-ch3000 {
+        margin: 0 -5% -10px;
+        padding: 0 5% 5%;
+    }
+
+    /* END OLD BRAND HEADER */
+    
+    #options {
+        display: none;
+    }
+
+    .opt-toggle {
+        margin: 0;
+            display: block;
+            float: right;
+            padding: 5px 0;
+    }
+    
+    .opt-toggle-bar {
+            background-color: #1B65A4;
+            display: block;
+            height: 3px;
+            width: 20px;
+        line-height: 14px;
+            margin-top: 3px;
+            vertical-align: text-top;
+    }
+
+    #options {
+        width: 100%;
+        padding: 15px 0 0;
+
+    }
+
+    #currency-container,
+    #language-container,
+    #booking-container {
+        margin: 0 0 5px;
+            width: 100%;
+    }
+
+    .opt-btn {
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        box-shadow: 0 0 0 #f5f5f5;
+    } 
+
+    .opt-icon { 
+        border-radius: 5px 0 0 5px;
+        border-right: none;
+        padding: 4px 1%;
+        width: 14%;
+    }
+
+    .opt-icon span {
+        display: block;
+        height: 30px;
+        width: auto;
+        border: none;
+    }   
+
+    .opt-label {
+        width: 68%; 
+        font-weight: 300;
+        padding: 12px 2%;
+        border: none;
+    }
+
+    .opt-arrow {
+        width: 12%;
+        padding: 4px 0;
+        border-left: none;
+    }
+
+    .opt-arrow span {
+        display: block;
+        width: auto;
+        height: 30px;
+    }
+
+    #currencies, #languages, #mybooking {
+        left: 0;
+        top: 43px;
+        z-index: 100;
+        width: 98%;
+    }
+    
+    #sub {
+        display: none;
+    }
+        
+    #form .left {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+    
+    form h2 {
+        font-size: 1.6em;
+        padding: 0;
+    }
+
+    form#search fieldset div,
+    form#SearchResultsForm fieldset div {
+        height: 26px;
+        line-height: 26px;
+        padding: 0;
+    }
+    
+    form label,
+    form div select {
+        width: 100%;
+    }
+
+    form fieldset#location-fieldset select,
+    form fieldset#do-location-fieldset select {
+        width: 100%;
+    }
+
+    form fieldset#info-fieldset input[type=text] {
+        width: 96.5% !important;
+    }
+
+    form fieldset#info-fieldset textarea {
+        width: 98.3% !important;
+    }
+
+    form#search div.checkboxcontainer,
+    form#SearchResultsForm div.checkboxcontainer {
+        margin: 0;
+        padding: 5px 0;
+    }
+    
+    #pu-fieldset,
+    #do-fieldset {
+        height: auto;
+        width: 62%;
+        float: left;
+    }
+    
+    #putime-fieldset,
+    #dotime-fieldset {
+        height: auto;
+        float: left;
+        width: 38%;
+    }
+    
+    #pu-fieldset label, #do-fieldset label, #putime-fieldset label, #dotime-fieldset label {
+            width: 100%;
+        padding: 0;
+    }
+    
+    #pu-fieldset select, #do-fieldset select, #putime-fieldset select, #dotime-fieldset select {
+            width: 46%;
+        height: 30px;
+            padding: 5px 1%;
+        margin: 0 2% 0 0;
+    }
+
+    #putime-fieldset select.twelvehour, #dotime-fieldset select.twelvehour {
+            width: auto;
+    }
+    
+    .datepicker {
+        display: none;
+    }
+    
+    .hero {
+        display: none;
+    }
+    
+    /*#providers, #reviews {
+        width: 100%;
+    }*/
+
+    #providers .logos-wrap {
+        width: 100%;
+        overflow: visible;
+        height: auto;
+    }
+    
+    #providers .logos-wrap .logos {
+        width: 100% !important;
+    }
+    
+    #providers img {
+        height: auto;
+        margin: 0 1% 2% 0;
+        padding: 0;
+        width: 22%;
+    }
+    
+    #reviews {
+        width: 100%;
+    }
+    
+    /*#providers span, #providers span.p-fourth {
+        margin: 0 20px 20px;
+    }*/
+    
+    #reviews {
+        width: 100%;
+    }
+    
+    #reviews ul li .comment-arrow {
+        display: none;
+    }
+    
+    #reviews ul li .user {
+        padding: 5px 0 5px 10px;
+    }
+    
+    #reviews ul li .trustpilot {
+        padding: 0 0 0 10px;
+    }
+    
+    #callus {
+        width: 90%;
+    }
+    
+    #topdeals h3 {
+        font-size: 1.375em;
+        line-height: 1.3em;
+    }
+    
+    .destinationinfo {
+        width: 100%;
+        padding: 4px 0 0;
+        font-size: 0.8em;
+    }
+    
+    .destinationprice {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .destinationprice span {
+        display: inline-block;
+    }
+    
+    .destination > img {
+        position: absolute;
+        right: 6%;
+        width: 100px;
+    }
+
+    #usps {
+        padding: 0;
+    }
+    
+    #footer {
+        padding: 20px 0;
+    }
+    
+    #footer .content div {
+        min-height: 100%;
+        width: 100%;
+    }
+    
+    #footer .content div p {
+        padding: 0;
+    }
+    
+    #footer ul {
+        padding: 15px 0;
+    }
+    
+    #footer .content div#footerlogos {  
+        width: 90%;
+    }
+    
+    #footer #norton {
+        width: 241px;
+        margin: 0 auto 40px;
+    }
+    
+    #footercopy {
+        width: 90%;
+    }
+
+    .k_float {
+        display: none;
+    }
+    
+}
+
+
+/* PROVIDER LOGOS LARGE     */
+
+/* PROVIDER LOGOS LARGE     */
+
+#providers .logos span.p-353{background-position:0 0;}
+#providers .logos span.p-alpha{background-position: -200px -400px;}
+#providers .logos span.p-aurigacrown{background-position:-100px 0;}
+#providers .logos span.p-ace{background-position:-200px 0;}
+#providers .logos span.p-ace_rent_a_car {background-position: -200px 0px;}
+#providers .logos span.p-acropolis{background-position:-300px 0;}
+#providers .logos span.p-addcar{background-position:-400px 0;}
+#providers .logos span.p-advantage1{background-position:-500px 0;}
+#providers .logos span.p-advantage2{background-position:-600px 0;}
+#providers .logos span.p-advantage{background-position:-500px 0;}
+#providers .logos span.p-aircar{background-position:-700px 0;}
+#providers .logos span.p-almuftah{background-position:-800px 0;}
+#providers .logos span.p-alamo{background-position:-900px 0;}
+#providers .logos span.p-amc{background-position:0 -50px;}
+#providers .logos span.p-arnoldclark{background-position:-100px -50px;}
+#providers .logos span.p-assist{background-position:-200px -50px;}
+#providers .logos span.p-athol{background-position:-300px -50px;}
+#providers .logos span.p-autonom{background-position:-400px -50px;}
+#providers .logos span.p-avantcar{background-position:-500px -50px;}
+#providers .logos span.p-avis{background-position:-600px -50px;}
+#providers .logos span.p-britz{background-position:-700px -50px;}
+#providers .logos span.p-buchbinder{background-position:-800px -50px;}
+#providers .logos span.p-budget{background-position:-900px -50px;}
+#providers .logos span.p-caldera{background-position:0 -100px;}
+#providers .logos span.p-caro{background-position:-100px -100px;}
+#providers .logos span.p-centauro{background-position:-200px -100px;}
+#providers .logos span.p-chilean{background-position:-300px -100px;}
+#providers .logos span.p-croauto{background-position:-400px -100px;}
+#providers .logos span.p-target{background-position:-500px -100px;}
+#providers .logos span.p-direct{background-position:-600px -100px;}
+#providers .logos span.p-dollar{background-position:-700px -100px;}
+#providers .logos span.p-driveamatic{background-position:-800px -100px;}
+#providers .logos span.p-ez{background-position:-900px -100px;}
+#providers .logos span.p-eastcoast{background-position:0 -150px;}
+#providers .logos span.p-east_coast_car_rentals{background-position: 0px -150px;}
+#providers .logos span.p-easycar{background-position:-100px -150px;}
+#providers .logos span.p-eco{background-position:-200px -150px;}
+#providers .logos span.p-economy{background-position:-300px -150px;}
+#providers .logos span.p-enterprise{background-position:-400px -150px;}
+#providers .logos span.p-euromotorhome{background-position:-500px -150px;}
+#providers .logos span.p-europcar{background-position:-600px -150px;}
+#providers .logos span.p-europcar_prestige{background-position: -200px -400px;}
+#providers .logos span.p-ezirent{background-position:-700px -150px;}
+#providers .logos span.p-first{background-position:-800px -150px;}
+#providers .logos span.p-first_car_new {background-position: -800px -150px;}
+#providers .logos span.p-foxrentacar{background-position:-900px -150px;}
+#providers .logos span.p-foxautorent{background-position:0 -200px;}
+#providers .logos span.p-goldcar{background-position:-100px -200px;}
+#providers .logos span.p-greenmotion{background-position:-200px -200px;}
+#providers .logos span.p-guerin{background-position:-300px -200px;}
+#providers .logos span.p-guysalmon{background-position:-400px -200px;}
+#providers .logos span.p-hertz{background-position:-500px -200px;}
+#providers .logos span.p-hiper{background-position:-600px -200px;}
+#providers .logos span.p-kompas{background-position:-700px -200px;}
+#providers .logos span.p-locauto{background-position:-800px -200px;}
+#providers .logos span.p-maggiore{background-position:-900px -200px;}
+#providers .logos span.p-northgate{background-position:0 -250px;}
+#providers .logos span.p-maui{background-position:-100px -250px;}
+#providers .logos span.p-nationwide{background-position:-200px -250px;}
+#providers .logos span.p-nu{background-position:-300px -250px;}
+#providers .logos span.p-national{background-position:-400px -250px;}
+#providers .logos span.p-orlando{background-position:-500px -250px;}
+#providers .logos span.p-os{background-position:-600px -250px;}
+#providers .logos span.p-owners{background-position:-700px -250px;}
+#providers .logos span.p-payless{background-position:-800px -250px;}
+#providers .logos span.p-pnr{background-position:-900px -250px;}
+#providers .logos span.p-recordgo{background-position:0 -300px;}
+#providers .logos span.p-redspot{background-position:-100px -300px;}
+#providers .logos span.p-scandiarent{background-position:-200px -300px;}
+#providers .logos span.p-sicilybycar{background-position:-300px -300px;}
+#providers .logos span.p-sixt{background-position:-400px -300px;}
+#providers .logos span.p-solmar{background-position:-500px -300px;}
+#providers .logos span.p-sternrent{background-position:-600px -300px;}
+#providers .logos span.p-targarent{background-position:-700px -300px;}
+#providers .logos span.p-thai{background-position:-800px -300px;}
+#providers .logos span.p-thrifty{background-position:-900px -300px;}
+#providers .logos span.p-touring{background-position:0 -350px;}
+#providers .logos span.p-usave{background-position:-100px -350px;}
+#providers .logos span.p-unidas{background-position:-200px -350px;}
+#providers .logos span.p-foco{background-position:-400px -350px;}
+#providers .logos span.p-movida{background-position:-300px -350px;}
+#providers .logos span.p-nissan{background-position:-500px -350px;}
+#providers .logos span.p-atesa{background-position:-600px -350px;}
+#providers .logos span.p-citer{background-position:-700px -350px;}
+#providers .logos span.p-foxrentacar {background-position: -900px -150px;}
+#providers .logos span.p-locarx {background-position: -800px -350px;}
+#providers .logos span.p-america_car_rental {background-position: -900px -350px;}
+#providers .logos span.p-avis {background-position: 0 -400px}
+#providers .logos span.p-budget {background-position: -100px -400px}
+#providers .logos span.p-alpha {background-position: -200px -400px}
+#providers .logos span.p-prestige {background-position: -300px -400px}
+#providers .logos span.p-firefly {background-position: -400px -400px}
+#providers .logos span.p-express {background-position: -500px -400px}
+
+#providers .logos span.p-foxautorent {
+    background-position: 0 -200px;
+}
+
+#providers .logos span.p-goldcar {
+    background-position: -100px -200px;
+}
+
+#providers .logos span.p-greenmotion {
+    background-position: -200px -200px;
+}
+
+#providers .logos span.p-guerin {
+    background-position: -300px -200px;
+}
+
+#providers .logos span.p-guysalmon {
+    background-position: -400px -200px;
+}
+
+#providers .logos span.p-hertz {
+    background-position: -500px -200px;
+}
+
+#providers .logos span.p-hiper {
+    background-position: -600px -200px;
+}
+
+#providers .logos span.p-kompas {
+    background-position: -700px -200px;
+}
+
+#providers .logos span.p-locauto {
+    background-position: -800px -200px;
+}
+
+#providers .logos span.p-maggiore {
+    background-position: -900px -200px;
+}
+
+#providers .logos span.p-northgate {
+    background-position: 0 -250px;
+}
+
+#providers .logos span.p-maui {
+    background-position: -100px -250px;
+}
+
+#providers .logos span.p-nationwide {
+    background-position: -200px -250px;
+}
+
+#providers .logos span.p-nu {
+    background-position: -300px -250px;
+}
+
+#providers .logos span.p-national {
+    background-position: -400px -250px;
+}
+
+#providers .logos span.p-orlando {
+    background-position: -500px -250px;
+}
+
+#providers .logos span.p-os {
+    background-position: -600px -250px;
+}
+
+#providers .logos span.p-owners {
+    background-position: -700px -250px;
+}
+
+#providers .logos span.p-payless {
+    background-position: -800px -250px;
+}
+
+#providers .logos span.p-pnr {
+    background-position: -900px -250px;
+}
+
+#providers .logos span.p-recordgo {
+    background-position: 0 -300px;
+}
+
+#providers .logos span.p-redspot {
+    background-position: -100px -300px;
+}
+
+#providers .logos span.p-scandiarent {
+    background-position: -200px -300px;
+}
+
+#providers .logos span.p-sicilybycar {
+    background-position: -300px -300px;
+}
+
+#providers .logos span.p-sixt {
+    background-position: -400px -300px;
+}
+
+#providers .logos span.p-solmar {
+    background-position: -500px -300px;
+}
+
+#providers .logos span.p-sternrent {
+    background-position: -600px -300px;
+}
+
+#providers .logos span.p-targarent {
+    background-position: -700px -300px;
+}
+
+#providers .logos span.p-thai {
+    background-position: -800px -300px;
+}
+
+#providers .logos span.p-thrifty {
+    background-position: -900px -300px;
+}
+
+#providers .logos span.p-touring {
+    background-position: 0 -350px;
+}
+
+#providers .logos span.p-usave {
+    background-position: -100px -350px;
+}
+
+
+/* LARGE FLAG SPRITE POSITION     */
+
+.ad, .ad-crm {
+    background-position: 0 0;
+}
+
+.ae, .ae-crm {
+    background-position: -24px 0;
+}
+
+.ag, .ag-crm {
+    background-position: -48px 0;
+}
+
+.ai, .ai-crm {
+    background-position: -72px 0;
+}
+
+.al, al-crm {
+    background-position: -96px 0;
+}
+
+.ao, .ao-crm {
+    background-position: -120px 0;
+}
+
+.ar, .ar-crm {
+    background-position: -24px 0;
+}
+
+.at, .at-crm {
+    background-position: -144px 0;
+}
+
+.au, .au-crm {
+    background-position: -168px 0;
+}
+
+.aw, .aw-crm {
+    background-position: -192px 0;
+}
+
+.bb, .bb-crm {
+    background-position: -216px 0;
+}
+
+.be, .be-crm {
+    background-position: -240px 0;
+}
+
+.bh, .bh-crm {
+    background-position: -264px 0;
+}
+
+.bn, .bn-crm {
+    background-position: -288px 0;
+}
+
+.bo, .bo-crm {
+    background-position: -312px 0;  
+}
+
+.br, .br-crm {
+    background-position: -336px 0;
+}
+
+.bs, .bs-crm {
+    background-position: -360px 0;
+}
+
+.bg, .bg-crm {
+    background-position: -384px 0;
+}
+
+.by, .by-crm {
+    background-position: -408px 0;
+}
+
+.bz, .bz-crm {
+    background-position: -432px 0;
+}
+
+.ca, .ca-crm {
+    background-position: -456px 0;
+}
+
+.ch, .ch-crm {
+    background-position: -480px 0;
+}
+
+.cl, .cl-crm {
+    background-position: -504px 0;
+}
+
+.cm, .cm-crm {
+    background-position: -528px 0;
+}
+
+.cn, .cn-crm {
+    background-position: -552px 0;
+}
+
+.co, .co-crm {
+    background-position: -576px 0;
+}
+
+.cr, .cr-crm {
+    background-position: -600px 0;
+}
+
+.cs, ,cs-crm {
+    background-position: -624px 0;
+}
+
+.cy, .cy-crm {
+    background-position: -648px 0;
+}
+
+.cz, .cy-crm {
+    background-position: -624px 0;
+}
+
+.da, .da-crm {
+    background-position: -672px 0;
+}
+
+.de, .de-crm {
+    background-position: -696px 0;
+}
+
+.dk, .dk-crm {
+    background-position: -672px 0;
+}
+
+.do, .do-crm {
+    background-position: -720px 0;
+}
+
+.ec, .ec-crm {
+    background-position: -744px 0;
+}
+
+.ee, .ee-crm {
+    background-position: -768px 0;
+}
+
+.eg, .eg-crm {
+    background-position: -792px 0;
+}
+
+.en, .en-crm {
+    background-position: 0 -24px;
+}
+
+.es, .es-crm {
+    background-position: -24px -24px;
+}
+
+.fi, .fi-crm {
+    background-position: -48px -24px;
+}
+
+.fj, .fj-crm {
+    background-position: -72px -24px;
+}
+
+.fr, .fr-crm {
+    background-position: -96px -24px;
+}
+
+.gb, .gb-crm {
+    background-position: 0 -24px;
+}
+
+.gd, .gd-crm {
+    background-position: -120px -24px;
+}
+
+.gf, .gf-crm {
+    background-position: -144px -24px;
+}
+
+.gh, .gh-crm {
+    background-position: -168px -24px;
+}
+
+.gi, .gi-crm {
+    background-position: -192px -24px;
+}
+
+.gp, .gp-crm {
+    background-position: -216px -24px;
+}
+
+.gr, .gr-crm {
+    background-position: -240px -24px;
+}
+
+.gt, .gt-crm {
+    background-position: -264px -24px;
+}
+
+.gu, .gu-crm {
+    background-position: -288px -24px;
+}
+
+.gy, .gy-crm {
+    background-position: -312px -24px;
+}
+
+.he, .he-crm {
+    background-position: -336px -24px;
+}
+
+.hk, .hk-crm {
+    background-position: -360px -24px;
+}
+
+.hn, .hn-crm {
+    background-position: -384px -24px;
+}
+
+.hr, .hr-crm {
+    background-position: -408px -24px;
+}
+
+.ht, .ht-crm {
+    background-position: -432px -24px;
+}
+
+.hu, .hu-crm {
+    background-position: -456px -24px;
+}
+
+.id, .id-crm {
+    background-position: -480px -24px;
+}
+
+.ie, .ie-crm {
+    background-position: -504px -24px;
+}
+
+.il, .il-crm {
+    background-position: -528px -24px;
+}
+
+.in, .in-crm {
+    background-position: -552px -24px;
+}
+
+.ir, .ir-crm {
+    background-position: -576px -24px;
+}
+
+.is, .is-crm {
+    background-position: -600px -24px;
+}
+
+.im, .im-crm {
+    background-position: -624px -24px;
+}
+
+.it, .it-crm {
+    background-position: -648px -24px;
+}
+
+.ja, .ja-crm {
+    background-position: -672px -24px;
+}
+
+.je, .je-crm {
+    background-position: -696px -24px;
+}
+
+.jm, .jm-crm {
+    background-position: -720px -24px;
+}
+
+.jo, .jo-crm {
+    background-position: -744px -24px;
+}
+
+.jp, .jp-crm {
+    background-position: -672px -24px;
+}
+
+.ke, .ke-crm {
+    background-position: -768px -24px;
+}
+
+.kn, .kn-crm {
+    background-position: -792px -24px;
+}
+
+.ko, .ko-crm {
+    background-position: 0 -48px;
+}
+
+.kr, .kr-crm {
+    background-position: 0 -48px;
+}
+
+.kw, .kw-crm {
+    background-position: -24px -48px;
+}
+
+.ky, .ky-crm {
+    background-position: -48px -48px;
+}
+
+.la, .la-crm {
+    background-position: -72px -48px;
+}
+
+.lb, .lb-crm {
+    background-position: -120px -48px;
+}
+
+.lc, .lc-crm {
+    background-position: -96px -48px;
+}
+
+.lk, .lk-crm {
+    background-position: -144px -48px;
+}
+
+.ls, .ls-crm {
+    background-position: -168px -48px;
+}
+
+.lt, .lt-crm {
+    background-position: -192px -48px;
+}
+
+.lu, .lu-crm {
+    background-position: -216px -48px;
+}
+
+.lv, .lv-crm {
+    background-position: -240px -48px;
+}
+
+.ma, .ma-crm {
+    background-position: -264px -48px;
+}
+
+.md, .md-crm {
+    background-position: -288px -48px;
+}
+
+.mk, .mk-crm {
+    background-position: -312px -48px;
+}
+
+.mo, .mo-crm {
+    background-position: -336px -48px;
+}
+
+.mp, .mp-crm {
+    background-position: -360px -48px;
+}
+
+.mq, .mq-crm {
+    background-position: -384px -48px;
+}
+
+.mt, .mt-crm {
+    background-position: -408px -48px;
+}
+
+.mu, .mu-crm {
+    background-position: -432px -48px;
+}
+
+.mx, .mx-crm {
+    background-position: -456px -48px;
+}
+
+.my, .my-crm {
+    background-position: -480px -48px;
+}
+
+.mz, .mz-crm {
+    background-position: -504px -48px;
+}
+
+.na, .na-crm {
+    background-position: -528px -48px;
+}
+
+.nc, .nc-crm {
+    background-position: -552px -48px;
+}
+
+.ni, .ni-crm {
+    background-position: -576px -48px;
+}
+
+.nl, .nl-crm {
+    background-position: -600px -48px;
+}
+
+.no, .no-crm {
+    background-position: -624px -48px;
+}
+
+.nr, .nr-crm {
+    background-position: -648px -48px;
+}
+
+.nz, .nz-crm {
+    background-position: -672px -48px;
+}
+
+.om, .om-crm {
+    background-position: -696px -48px;
+}
+
+.pa, .pa-crm {
+    background-position: -720px -48px;
+}
+
+.pe, .pe-crm {
+    background-position: -744px -48px;
+}
+
+.ph, .ph-crm {
+    background-position: -768px -48px;
+}
+
+.pl, .pl-crm {
+    background-position: -792px -48px;
+}
+
+.po, .po-crm {
+    background-position: 0 -72px;
+}
+
+.pr, .pr-crm {
+    background-position: -24px -72px;
+}
+
+.pt, .pt-crm {
+    background-position: 0 -72px;
+}
+
+.pw, .pw-crm {
+    background-position: -48px -72px;
+}
+
+.py, .py-crm {
+    background-position: -72px -72px;
+}
+
+.qa, .qa-crm {
+    background-position: -96px -72px;
+}
+
+.re, .re-crm {
+    background-position: -120px -72px;  
+}
+
+.ro, .ro-crm {
+    background-position: -144px -72px;  
+}
+
+.rs, .rs-crm {
+    background-position: -168px -72px;  
+}
+
+.ru, .ru-crm {
+    background-position: -192px -72px;  
+}
+
+.sa, .sa-crm {
+    background-position: -216px -72px;  
+}
+
+.sb, .sb-crm {
+    background-position: -240px -72px;  
+}
+
+.sd, .sd-crm {
+    background-position: -264px -72px;  
+}
+
+.se, .se-crm {
+    background-position: -288px -72px;  
+}
+
+.sy, .sy-crm {
+    background-position: -312px -72px;  
+}
+
+.sg, .sg-crm {
+    background-position: -336px -72px;  
+}
+
+.si, .si-crm {
+    background-position: -360px -72px;      
+}
+
+.sm, .sm-crm {
+    background-position: -384px -72px;  
+}
+
+.sk, .sk-crm {
+    background-position: -408px -72px;  
+}
+
+.sl, .sl-crm {
+    background-position: -432px -72px;  
+}
+
+.sv, .sv-crm {
+    background-position: -288px -72px;
+}
+
+.sz, .sz-crm {
+    background-position: -456px -72px;  
+}
+
+.ta, .ta-crm {
+    background-position: -480px -72px;  
+}
+
+.tc, .tc-crm {
+    background-position: -504px -72px;  
+}
+
+.th, .th-crm {
+    background-position: -528px -72px;  
+}
+
+.tr, .tr-crm {
+    background-position: -552px -72px;  
+}
+
+.tt, .tt-crm {
+    background-position: -576px -72px;  
+}
+
+.tu, .tu-crm {
+    background-position: -600px -72px;  
+}
+
+.tw, .tw-crm {
+    background-position: -624px -72px;  
+}
+
+.ua, .ua-crm {
+    background-position: -648px -72px;
+}
+
+.uk, .uk-crm {
+    background-position: -648px -72px;
+}
+
+.us, .us-crm {
+    background-position: -672px -72px;  
+}
+
+.uy, .uy-crm {
+    background-position: -696px -72px;  
+}
+
+.ve, .ve-crm {
+    background-position: -720px -72px;  
+}
+
+.vi, .vi-crm {
+    background-position: -744px -72px;  
+}
+
+.ye, .ye-crm {
+    background-position: -768px -72px;  
+}
+
+.za, .za-crm {
+    background-position: -792px -72px;
+}
+
+.zh, .zh-crm {
+    background-position: -360px -24px;
+}
+
+.zm, .zm-crm {
+    background-position: 0 -96px;
+}
+
+.zs, .zs-crm {
+    background-position: -552px 0;
+}
+
+.zw, .zw-crm {
+    background-position: -24px -96px;
+}
+
+
+/*Added Ian Hislop 09/05/14*/
+
+.ke, .ke-crm {
+    background-position: -48px -96px;
+}
+.tz, .tz-crm {
+    background-position: -48px -96px;
+}
+.ug, .ug-crm {
+    background-position: -48px -96px;
+}
+
+.sw, .sw-crm {
+    background-position: -48px -96px;
+}
+
+
+/* Worldwide search */
+form#search #trymapsearch, form#SearchResultsForm #trymapsearch {height:auto;background: #DBB73B;margin: 0 0 10px;border-radius: 5px;font-size: 12px;color: #444;padding: 7px;}
+form#search #trymapsearch span, form#SearchResultsForm #trymapsearch span{display: block;height: 29px;width: 24px;background: url('http://www.rentalcars.com/images/site_graphics/newsite/ico-mappin-form.png') 0 0 no-repeat transparent;float: left;margin: 0 7px 0 0;}
+form#search #trymapsearch p, form#SearchResultsForm #trymapsearch p {line-height: 14px;padding: 7px 0;margin: 0;}
+form#search #trymapsearch p a, form#SearchResultsForm #trymapsearch p a {font-weight: 700;}
+
+
+
+/*   Countries    */
+.albania {background:url(http://www.rentalcars.com/images/destinations/albania.jpg) no-repeat scroll 100% 100% #489AE3;}
+.andorra {background:url(http://www.rentalcars.com/images/destinations/andorra.jpg) no-repeat scroll 100% 100% #489AE3;}
+.angola {background:url(http://www.rentalcars.com/images/destinations/angola.jpg) no-repeat scroll 100% 100% #489AE3;}
+.anguilla {background:url(http://www.rentalcars.com/images/destinations/anguilla.jpg) no-repeat scroll 100% 100% #489AE3;}
+.antigua {background:url(http://www.rentalcars.com/images/destinations/antigua.jpg) no-repeat scroll 100% 100% #489AE3;}
+.argentina {background:url(http://www.rentalcars.com/images/destinations/argentina.jpg) no-repeat scroll 100% 100% #489AE3;}
+.armenia {background:url(http://www.rentalcars.com/images/destinations/armenia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.aruba {background:url(http://www.rentalcars.com/images/destinations/aruba.jpg) no-repeat scroll 100% 100% #489AE3;}
+.australia {background:url(http://www.rentalcars.com/images/destinations/australia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.austria {background:url(http://www.rentalcars.com/images/destinations/austria.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bahamas {background:url(http://www.rentalcars.com/images/destinations/bahamas.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bahrain {background:url(http://www.rentalcars.com/images/destinations/bahrain.jpg) no-repeat scroll 100% 100% #489AE3;}
+.barbados {background:url(http://www.rentalcars.com/images/destinations/barbados.jpg) no-repeat scroll 100% 100% #489AE3;}
+.belarus {background:url(http://www.rentalcars.com/images/destinations/belarus.jpg) no-repeat scroll 100% 100% #489AE3;}
+.belgium {background:url(http://www.rentalcars.com/images/destinations/belgium.jpg) no-repeat scroll 100% 100% #489AE3;}
+.belize {background:url(http://www.rentalcars.com/images/destinations/belize.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bolivia {background:url(http://www.rentalcars.com/images/destinations/bolivia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bonaire {background:url(http://www.rentalcars.com/images/destinations/bonaire.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bosnia {background:url(http://www.rentalcars.com/images/destinations/bosnia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.botswana {background:url(http://www.rentalcars.com/images/destinations/botswana.jpg) no-repeat scroll 100% 100% #489AE3;}
+.brazil {background:url(http://www.rentalcars.com/images/destinations/brazil.jpg) no-repeat scroll 100% 100% #489AE3;}
+.brunei {background:url(http://www.rentalcars.com/images/destinations/brunei.jpg) no-repeat scroll 100% 100% #489AE3;}
+.bulgaria {background:url(http://www.rentalcars.com/images/destinations/bulgaria.jpg) no-repeat scroll 100% 100% #489AE3;}
+.cameroon {background:url(http://www.rentalcars.com/images/destinations/cameroon.jpg) no-repeat scroll 100% 100% #489AE3;}
+.canada {background:url(http://www.rentalcars.com/images/destinations/canada.jpg) no-repeat scroll 100% 100% #489AE3;}
+.cayman_islands {background:url(http://www.rentalcars.com/images/destinations/cayman_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.chile {background:url(http://www.rentalcars.com/images/destinations/chile.jpg) no-repeat scroll 100% 100% #489AE3;}
+.colombia {background:url(http://www.rentalcars.com/images/destinations/colombia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.costa_rica {background:url(http://www.rentalcars.com/images/destinations/costa_rica.jpg) no-repeat scroll 100% 100% #489AE3;}
+.croatia {background:url(http://www.rentalcars.com/images/destinations/croatia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.curacao {background:url(http://www.rentalcars.com/images/destinations/curacao.jpg) no-repeat scroll 100% 100% #489AE3;}
+.cyprus {background:url(http://www.rentalcars.com/images/destinations/cyprus.jpg) no-repeat scroll 100% 100% #489AE3;}
+.czech_-_republic {background:url(http://www.rentalcars.com/images/destinations/czech_-_republic.jpg) no-repeat scroll 100% 100% #489AE3;}
+.denmark {background:url(http://www.rentalcars.com/images/destinations/denmark.jpg) no-repeat scroll 100% 100% #489AE3;}
+.dominican_republic {background:url(http://www.rentalcars.com/images/destinations/dominican_republic.jpg) no-repeat scroll 100% 100% #489AE3;}
+.ecuador {background:url(http://www.rentalcars.com/images/destinations/ecuador.jpg) no-repeat scroll 100% 100% #489AE3;}
+.egypt {background:url(http://www.rentalcars.com/images/destinations/egypt.jpg) no-repeat scroll 100% 100% #489AE3;}
+.el_salvador {background:url(http://www.rentalcars.com/images/destinations/el_salvador.jpg) no-repeat scroll 100% 100% #489AE3;}
+.estonia {background:url(http://www.rentalcars.com/images/destinations/estonia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.fiji {background:url(http://www.rentalcars.com/images/destinations/fiji.jpg) no-repeat scroll 100% 100% #489AE3;}
+.finland {background:url(http://www.rentalcars.com/images/destinations/finland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.france_-_corsica {background:url(http://www.rentalcars.com/images/destinations/france_-_corsica.jpg) no-repeat scroll 100% 100% #489AE3;}
+.france_-_mainland {background:url(http://www.rentalcars.com/images/destinations/france_-_mainland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.french_guiana {background:url(http://www.rentalcars.com/images/destinations/french_guiana.jpg) no-repeat scroll 100% 100% #489AE3;}
+.french_polynesia {background:url(http://www.rentalcars.com/images/destinations/french_polynesia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.georgia {background:url(http://www.rentalcars.com/images/destinations/georgia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.germany {background:url(http://www.rentalcars.com/images/destinations/germany.jpg) no-repeat scroll 100% 100% #489AE3;}
+.ghana {background:url(http://www.rentalcars.com/images/destinations/ghana.jpg) no-repeat scroll 100% 100% #489AE3;}
+.gibraltar {background:url(http://www.rentalcars.com/images/destinations/gibraltar.jpg) no-repeat scroll 100% 100% #489AE3;}
+.greece {background:url(http://www.rentalcars.com/images/destinations/greece.jpg) no-repeat scroll 100% 100% #489AE3;}
+.grenada {background:url(http://www.rentalcars.com/images/destinations/grenada.jpg) no-repeat scroll 100% 100% #489AE3;}
+.guadeloupe {background:url(http://www.rentalcars.com/images/destinations/guadeloupe.jpg) no-repeat scroll 100% 100% #489AE3;}
+.guam {background:url(http://www.rentalcars.com/images/destinations/guam.jpg) no-repeat scroll 100% 100% #489AE3;}
+.guatemala {background:url(http://www.rentalcars.com/images/destinations/guatemala.jpg) no-repeat scroll 100% 100% #489AE3;}
+.guernsey {background:url(http://www.rentalcars.com/images/destinations/guernsey.jpg) no-repeat scroll 100% 100% #489AE3;}
+.haiti {background:url(http://www.rentalcars.com/images/destinations/haiti.jpg) no-repeat scroll 100% 100% #489AE3;}
+.holland {background:url(http://www.rentalcars.com/images/destinations/holland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.honduras {background:url(http://www.rentalcars.com/images/destinations/honduras.jpg) no-repeat scroll 100% 100% #489AE3;}
+.honduras_roatan_island {background:url(http://www.rentalcars.com/images/destinations/honduras_roatan_island.jpg) no-repeat scroll 100% 100% #489AE3;}
+.hong_kong {background:url(http://www.rentalcars.com/images/destinations/hong_kong.jpg) no-repeat scroll 100% 100% #489AE3;}
+.hungary {background:url(http://www.rentalcars.com/images/destinations/hungary.jpg) no-repeat scroll 100% 100% #489AE3;}
+.iceland {background:url(http://www.rentalcars.com/images/destinations/iceland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.india {background:url(http://www.rentalcars.com/images/destinations/india.jpg) no-repeat scroll 100% 100% #489AE3;}
+.indonesia {background:url(http://www.rentalcars.com/images/destinations/indonesia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.iraq {background:url(http://www.rentalcars.com/images/destinations/iraq.jpg) no-repeat scroll 100% 100% #489AE3;}
+.ireland {background:url(http://www.rentalcars.com/images/destinations/ireland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.isle_of_man {background:url(http://www.rentalcars.com/images/destinations/isle_of_man.jpg) no-repeat scroll 100% 100% #489AE3;} 
+.israel {background:url(http://www.rentalcars.com/images/destinations/israel.jpg) no-repeat scroll 100% 100% #489AE3;}
+.italy_-_sardinia {background:url(http://www.rentalcars.com/images/destinations/italy_-_sardinia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.italy_-_sicily {background:url(http://www.rentalcars.com/images/destinations/italy_-_sicily.jpg) no-repeat scroll 100% 100% #489AE3;}
+.italy {background:url(http://www.rentalcars.com/images/destinations/italy.jpg) no-repeat scroll 100% 100% #489AE3;}
+.jamaica {background:url(http://www.rentalcars.com/images/destinations/jamaica.jpg) no-repeat scroll 100% 100% #489AE3;}
+.japan {background:url(http://www.rentalcars.com/images/destinations/japan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.jersey {background:url(http://www.rentalcars.com/images/destinations/jersey.jpg) no-repeat scroll 100% 100% #489AE3;}
+.jordan {background:url(http://www.rentalcars.com/images/destinations/jordan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.kazakhstan {background:url(http://www.rentalcars.com/images/destinations/kazakhstan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.kenya {background:url(http://www.rentalcars.com/images/destinations/kenya.jpg) no-repeat scroll 100% 100% #489AE3;}
+.korea {background:url(http://www.rentalcars.com/images/destinations/korea.jpg) no-repeat scroll 100% 100% #489AE3;}
+.kosovo {background:url(http://www.rentalcars.com/images/destinations/kosovo.jpg) no-repeat scroll 100% 100% #489AE3;}
+.kuwait {background:url(http://www.rentalcars.com/images/destinations/kuwait.jpg) no-repeat scroll 100% 100% #489AE3;}
+.laos {background:url(http://www.rentalcars.com/images/destinations/laos.jpg) no-repeat scroll 100% 100% #489AE3;}
+.latvia {background:url(http://www.rentalcars.com/images/destinations/latvia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.lebanon {background:url(http://www.rentalcars.com/images/destinations/lebanon.jpg) no-repeat scroll 100% 100% #489AE3;}
+.lesotho {background:url(http://www.rentalcars.com/images/destinations/lesotho.jpg) no-repeat scroll 100% 100% #489AE3;}
+.lithuania {background:url(http://www.rentalcars.com/images/destinations/lithuania.jpg) no-repeat scroll 100% 100% #489AE3;}
+.luxembourg {background:url(http://www.rentalcars.com/images/destinations/luxembourg.jpg) no-repeat scroll 100% 100% #489AE3;}
+.macedonia {background:url(http://www.rentalcars.com/images/destinations/macedonia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.madagascar {background:url(http://www.rentalcars.com/images/destinations/madagascar.jpg) no-repeat scroll 100% 100% #489AE3;}
+.malaysia {background:url(http://www.rentalcars.com/images/destinations/malaysia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.malta {background:url(http://www.rentalcars.com/images/destinations/malta.jpg) no-repeat scroll 100% 100% #489AE3;}
+.martinique {background:url(http://www.rentalcars.com/images/destinations/martinique.jpg) no-repeat scroll 100% 100% #489AE3;}
+.mauritius {background:url(http://www.rentalcars.com/images/destinations/mauritius.jpg) no-repeat scroll 100% 100% #489AE3;}
+.mayotte {background:url(http://www.rentalcars.com/images/destinations/mayotte.jpg) no-repeat scroll 100% 100% #489AE3;}
+.mexico {background:url(http://www.rentalcars.com/images/destinations/mexico.jpg) no-repeat scroll 100% 100% #489AE3;}
+.moldova {background:url(http://www.rentalcars.com/images/destinations/moldova.jpg) no-repeat scroll 100% 100% #489AE3;}
+.montenegro {background:url(http://www.rentalcars.com/images/destinations/montenegro.jpg) no-repeat scroll 100% 100% #489AE3;}
+.morocco {background:url(http://www.rentalcars.com/images/destinations/morocco.jpg) no-repeat scroll 100% 100% #489AE3;}
+.mozambique {background:url(http://www.rentalcars.com/images/destinations/mozambique.jpg) no-repeat scroll 100% 100% #489AE3;}
+.namibia {background:url(http://www.rentalcars.com/images/destinations/namibia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.new_caledonia {background:url(http://www.rentalcars.com/images/destinations/new_caledonia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.new_-_zealand {background:url(http://www.rentalcars.com/images/destinations/new_-_zealand.jpg) no-repeat scroll 100% 100% #489AE3;}
+.nicaragua {background:url(http://www.rentalcars.com/images/destinations/nicaragua.jpg) no-repeat scroll 100% 100% #489AE3;}
+.northern_cyprus {background:url(http://www.rentalcars.com/images/destinations/northern_cyprus.jpg) no-repeat scroll 100% 100% #489AE3;}
+.northern_-_ireland {background:url(http://www.rentalcars.com/images/destinations/northern_-_ireland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.northern_mariana_islands {background:url(http://www.rentalcars.com/images/destinations/northern_mariana_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.norway {background:url(http://www.rentalcars.com/images/destinations/norway.jpg) no-repeat scroll 100% 100% #489AE3;}
+.oman {background:url(http://www.rentalcars.com/images/destinations/oman.jpg) no-repeat scroll 100% 100% #489AE3;}
+.pakistan {background:url(http://www.rentalcars.com/images/destinations/pakistan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.panama {background:url(http://www.rentalcars.com/images/destinations/panama.jpg) no-repeat scroll 100% 100% #489AE3;}
+.paraguay {background:url(http://www.rentalcars.com/images/destinations/paraguay.jpg) no-repeat scroll 100% 100% #489AE3;}
+.peru {background:url(http://www.rentalcars.com/images/destinations/peru.jpg) no-repeat scroll 100% 100% #489AE3;}
+.philippines {background:url(http://www.rentalcars.com/images/destinations/philippines.jpg) no-repeat scroll 100% 100% #489AE3;}
+.poland {background:url(http://www.rentalcars.com/images/destinations/poland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.portugal {background:url(http://www.rentalcars.com/images/destinations/portugal.jpg) no-repeat scroll 100% 100% #489AE3;}
+.portugal_-_azores {background:url(http://www.rentalcars.com/images/destinations/portugal_-_azores.jpg) no-repeat scroll 100% 100% #489AE3;}
+.portugal_-_madeira {background:url(http://www.rentalcars.com/images/destinations/portugal_-_madeira.jpg) no-repeat scroll 100% 100% #489AE3;}
+.puerto_rico {background:url(http://www.rentalcars.com/images/destinations/puerto_rico.jpg) no-repeat scroll 100% 100% #489AE3;}
+.qatar {background:url(http://www.rentalcars.com/images/destinations/qatar.jpg) no-repeat scroll 100% 100% #489AE3;}
+.reunion_island {background:url(http://www.rentalcars.com/images/destinations/reunion_island.jpg) no-repeat scroll 100% 100% #489AE3;}
+.romania {background:url(http://www.rentalcars.com/images/destinations/romania.jpg) no-repeat scroll 100% 100% #489AE3;}
+.russia {background:url(http://www.rentalcars.com/images/destinations/russia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.saipan {background:url(http://www.rentalcars.com/images/destinations/saipan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.saudi_arabia {background:url(http://www.rentalcars.com/images/destinations/saudi_arabia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.serbia {background:url(http://www.rentalcars.com/images/destinations/serbia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.shetland_islands {background:url(http://www.rentalcars.com/images/destinations/shetland_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.singapore {background:url(http://www.rentalcars.com/images/destinations/singapore.jpg) no-repeat scroll 100% 100% #489AE3;}
+.slovakia {background:url(http://www.rentalcars.com/images/destinations/slovakia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.slovenia {background:url(http://www.rentalcars.com/images/destinations/slovenia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.south_-_africa {background:url(http://www.rentalcars.com/images/destinations/south_-_africa.jpg) no-repeat scroll 100% 100% #489AE3;}
+.south_korea {background:url(http://www.rentalcars.com/images/destinations/south_korea.jpg) no-repeat scroll 100% 100% #489AE3;}
+.spain_-_balearic_-_islands {background:url(http://www.rentalcars.com/images/destinations/spain_-_balearic_-_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.spain_-_canary_-_islands {background:url(http://www.rentalcars.com/images/destinations/spain_-_canary_-_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.spain_-_mainland {background:url(http://www.rentalcars.com/images/destinations/spain_-_mainland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.sri_lanka {background:url(http://www.rentalcars.com/images/destinations/sri_lanka.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_barthelemy {background:url(http://www.rentalcars.com/images/destinations/st_barthelemy.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_croix {background:url(http://www.rentalcars.com/images/destinations/st_croix.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_kitts {background:url(http://www.rentalcars.com/images/destinations/st_kitts.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_lucia {background:url(http://www.rentalcars.com/images/destinations/st_lucia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_maarten {background:url(http://www.rentalcars.com/images/destinations/st_maarten.jpg) no-repeat scroll 100% 100% #489AE3;}
+.st_thomas {background:url(http://www.rentalcars.com/images/destinations/st_thomas.jpg) no-repeat scroll 100% 100% #489AE3;}
+.suriname {background:url(http://www.rentalcars.com/images/destinations/suriname.jpg) no-repeat scroll 100% 100% #489AE3;}
+.swaziland {background:url(http://www.rentalcars.com/images/destinations/swaziland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.sweden {background:url(http://www.rentalcars.com/images/destinations/sweden.jpg) no-repeat scroll 100% 100% #489AE3;}
+.switzerland {background:url(http://www.rentalcars.com/images/destinations/switzerland.jpg) no-repeat scroll 100% 100% #489AE3;}
+.tahiti {background:url(http://www.rentalcars.com/images/destinations/tahiti.jpg) no-repeat scroll 100% 100% #489AE3;}
+.taiwan {background:url(http://www.rentalcars.com/images/destinations/taiwan.jpg) no-repeat scroll 100% 100% #489AE3;}
+.tanzania {background:url(http://www.rentalcars.com/images/destinations/tanzania.jpg) no-repeat scroll 100% 100% #489AE3;}
+.thailand {background:url(http://www.rentalcars.com/images/destinations/thailand.jpg) no-repeat scroll 100% 100% #489AE3;}
+.tortola {background:url(http://www.rentalcars.com/images/destinations/tortola.jpg) no-repeat scroll 100% 100% #489AE3;}
+.trinidad {background:url(http://www.rentalcars.com/images/destinations/trinidad.jpg) no-repeat scroll 100% 100% #489AE3;}
+.tunisia {background:url(http://www.rentalcars.com/images/destinations/tunisia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.turkey {background:url(http://www.rentalcars.com/images/destinations/turkey.jpg) no-repeat scroll 100% 100% #489AE3;}
+.turks_and_caicos_islands {background:url(http://www.rentalcars.com/images/destinations/turks_and_caicos_islands.jpg) no-repeat scroll 100% 100% #489AE3;}
+.uae {background:url(http://www.rentalcars.com/images/destinations/uae.jpg) no-repeat scroll 100% 100% #489AE3;}
+#sub.uk {background:url(http://www.rentalcars.com/images/destinations/uk.jpg) no-repeat scroll 100% 100% #489AE3;}
+.ukraine {background:url(http://www.rentalcars.com/images/destinations/ukraine.jpg) no-repeat scroll 100% 100% #489AE3;}
+.uruguay {background:url(http://www.rentalcars.com/images/destinations/uruguay.jpg) no-repeat scroll 100% 100% #489AE3;}
+.usa_-_california {background:url(http://www.rentalcars.com/images/destinations/usa_-_california.jpg) no-repeat scroll 100% 100% #489AE3;}
+.usa_-_florida {background:url(http://www.rentalcars.com/images/destinations/usa_-_florida.jpg) no-repeat scroll 100% 100% #489AE3;}
+.usa_-_las_-_vegas {background:url(http://www.rentalcars.com/images/destinations/usa_-_las_-_vegas.jpg) no-repeat scroll 100% 100% #489AE3;}
+.usa_-_new_-_york {background:url(http://www.rentalcars.com/images/destinations/usa_-_new_-_york.jpg) no-repeat scroll 100% 100% #489AE3;}
+.usa_-_other {background:url(http://www.rentalcars.com/images/destinations/usa_-_other.jpg) no-repeat scroll 100% 100% #489AE3;}
+.vanuatu {background:url(http://www.rentalcars.com/images/destinations/vanuatu.jpg) no-repeat scroll 100% 100% #489AE3;}
+.venezuela {background:url(http://www.rentalcars.com/images/destinations/venezuela.jpg) no-repeat scroll 100% 100% #489AE3;}
+.yemen {background:url(http://www.rentalcars.com/images/destinations/yemen.jpg) no-repeat scroll 100% 100% #489AE3;}
+.zambia {background:url(http://www.rentalcars.com/images/destinations/zambia.jpg) no-repeat scroll 100% 100% #489AE3;}
+.zimbabwe {background:url(http://www.rentalcars.com/images/destinations/zimbabwe.jpg) no-repeat scroll 100% 100% #489AE3;}
+
+/* Cities */
+
+.alicante {
+background:url(http://www.rentalcars.com/images/destinations/alicante.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.aberdeen {
+background:url(http://www.rentalcars.com/images/destinations/aberdeen.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.ajaccio {
+background:url(http://www.rentalcars.com/images/destinations/ajaccio.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.alghero {
+background:url(http://www.rentalcars.com/images/destinations/alghero.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.amsterdam {
+background:url(http://www.rentalcars.com/images/destinations/amsterdam.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.athens {
+background:url(http://www.rentalcars.com/images/destinations/athens.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.barcelona {
+background:url(http://www.rentalcars.com/images/destinations/barcelona.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bari {
+background:url(http://www.rentalcars.com/images/destinations/bari.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.belfast {
+background:url(http://www.rentalcars.com/images/destinations/belfast.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bergamo {
+background:url(http://www.rentalcars.com/images/destinations/bergamo.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.berlin {
+background:url(http://www.rentalcars.com/images/destinations/berlin.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bilbao {
+background:url(http://www.rentalcars.com/images/destinations/bilbao.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.birmingham {
+background:url(http://www.rentalcars.com/images/destinations/birmingham.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bologna {
+background:url(http://www.rentalcars.com/images/destinations/bologna.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bordeaux {
+background:url(http://www.rentalcars.com/images/destinations/bordeaux.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.boston {
+background:url(http://www.rentalcars.com/images/destinations/boston.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.brindisi {
+background:url(http://www.rentalcars.com/images/destinations/brindisi.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.brisbane {
+background:url(http://www.rentalcars.com/images/destinations/brisbane.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.bristol {
+background:url(http://www.rentalcars.com/images/destinations/bristol.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.brussels {
+background:url(http://www.rentalcars.com/images/destinations/brussels.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.cagliari {
+background:url(http://www.rentalcars.com/images/destinations/cagliari.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.cape_town {
+background:url(http://www.rentalcars.com/images/destinations/cape_town.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.catania {
+background:url(http://www.rentalcars.com/images/destinations/catania.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.chicago {
+background:url(http://www.rentalcars.com/images/destinations/chicago.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.cork {
+background:url(http://www.rentalcars.com/images/destinations/cork.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.crete {
+background:url(http://www.rentalcars.com/images/destinations/crete.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.dubai {
+background:url(http://www.rentalcars.com/images/destinations/dubai.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.dublin {
+background:url(http://www.rentalcars.com/images/destinations/dublin.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.durban {
+background:url(http://www.rentalcars.com/images/destinations/durban.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.dusseldorf {
+background:url(http://www.rentalcars.com/images/destinations/dusseldorf.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.edinburgh {
+background:url(http://www.rentalcars.com/images/destinations/edinburgh.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.faro {
+background:url(http://www.rentalcars.com/images/destinations/faro.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.florence {
+background:url(http://www.rentalcars.com/images/destinations/florence.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.frankfurt {
+background:url(http://www.rentalcars.com/images/destinations/frankfurt.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.fuerteventura {
+background:url(http://www.rentalcars.com/images/destinations/fuerteventura.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.funchal {
+background:url(http://www.rentalcars.com/images/destinations/funchal.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.geneva {
+background:url(http://www.rentalcars.com/images/destinations/geneva.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.gerona {
+background:url(http://www.rentalcars.com/images/destinations/gerona.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.glasgow {
+background:url(http://www.rentalcars.com/images/destinations/glasgow.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.gran_canaria {
+background:url(http://www.rentalcars.com/images/destinations/gran_canaria.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.hawaii_oahu_island {
+background:url(http://www.rentalcars.com/images/destinations/hawaii_oahu_island.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.ibiza {
+background:url(http://www.rentalcars.com/images/destinations/ibiza.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.jfk_airport {
+background:url(http://www.rentalcars.com/images/destinations/jfk_airport.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.johannesburg {
+background:url(http://www.rentalcars.com/images/destinations/johannesburg.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.lamazia_terme {
+background:url(http://www.rentalcars.com/images/destinations/lamazia_terme.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.lanzarote {
+background:url(http://www.rentalcars.com/images/destinations/lanzarote.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.larnaca {
+background:url(http://www.rentalcars.com/images/destinations/larnaca.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.las_vegas {
+background:url(http://www.rentalcars.com/images/destinations/las_vegas.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.lisbon {
+background:url(http://www.rentalcars.com/images/destinations/lisbon.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.liverpool {
+background:url(http://www.rentalcars.com/images/destinations/liverpool.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.london_gatwick_airport {
+background:url(http://www.rentalcars.com/images/destinations/london_gatwick_airport.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.london_heathrow_airport {
+background:url(http://www.rentalcars.com/images/destinations/london_heathrow_airport.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.london_stansted_airport {
+background:url(http://www.rentalcars.com/images/destinations/london_stansted_airport.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.london {
+background:url(http://www.rentalcars.com/images/destinations/london.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.los_angeles {
+background:url(http://www.rentalcars.com/images/destinations/los_angeles.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.lyon {
+background:url(http://www.rentalcars.com/images/destinations/lyon.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.madrid {
+background:url(http://www.rentalcars.com/images/destinations/madrid.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.malaga {
+background:url(http://www.rentalcars.com/images/destinations/malaga.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.mallorca {
+background:url(http://www.rentalcars.com/images/destinations/mallorca.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.manchester {
+background:url(http://www.rentalcars.com/images/destinations/manchester.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.marseille {
+background:url(http://www.rentalcars.com/images/destinations/marseille.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.melbourne {
+background:url(http://www.rentalcars.com/images/destinations/melbourne.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.menorca {
+background:url(http://www.rentalcars.com/images/destinations/menorca.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.miami {
+background:url(http://www.rentalcars.com/images/destinations/miami.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.milan {
+background:url(http://www.rentalcars.com/images/destinations/milan.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.montreal {
+background:url(http://www.rentalcars.com/images/destinations/montreal.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.murcia {
+background:url(http://www.rentalcars.com/images/destinations/murcia.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.nantes {
+background:url(http://www.rentalcars.com/images/destinations/nantes.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.naples {
+background:url(http://www.rentalcars.com/images/destinations/naples.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.newark {
+background:url(http://www.rentalcars.com/images/destinations/newark.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.nice {
+background:url(http://www.rentalcars.com/images/destinations/nice.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.olbia {
+background:url(http://www.rentalcars.com/images/destinations/olbia.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.orlando_international_airport {
+background:url(http://www.rentalcars.com/images/destinations/orlando_international_airport.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.orlando {
+background:url(http://www.rentalcars.com/images/destinations/orlando.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.palermo {
+background:url(http://www.rentalcars.com/images/destinations/palermo.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.paphos {
+background:url(http://www.rentalcars.com/images/destinations/paphos.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.paris_charles_de_gaulle {
+background:url(http://www.rentalcars.com/images/destinations/paris_charles_de_gaulle.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.paris_orly {
+background:url(http://www.rentalcars.com/images/destinations/paris_orly.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.paris {
+background:url(http://www.rentalcars.com/images/destinations/paris.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.pisa {
+background:url(http://www.rentalcars.com/images/destinations/pisa.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.porto {
+background:url(http://www.rentalcars.com/images/destinations/porto.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.prague {
+background:url(http://www.rentalcars.com/images/destinations/prague.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.rome {
+background:url(http://www.rentalcars.com/images/destinations/rome.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.san_francisco {
+background:url(http://www.rentalcars.com/images/destinations/san_francisco.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.santiago_de_compostela {
+background:url(http://www.rentalcars.com/images/destinations/santiago_de_compostela.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.sevilla {
+background:url(http://www.rentalcars.com/images/destinations/sevilla.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.sydney {
+background:url(http://www.rentalcars.com/images/destinations/sydney.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.tampa {
+background:url(http://www.rentalcars.com/images/destinations/tampa.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.tel_aviv {
+background:url(http://www.rentalcars.com/images/destinations/tel_aviv.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.tenerife {
+background:url(http://www.rentalcars.com/images/destinations/tenerife.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.toulouse {
+background:url(http://www.rentalcars.com/images/destinations/toulouse.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.trapani {
+background:url(http://www.rentalcars.com/images/destinations/trapani.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.treviso {
+background:url(http://www.rentalcars.com/images/destinations/treviso.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.turin {
+background:url(http://www.rentalcars.com/images/destinations/turin.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.valencia {
+background:url(http://www.rentalcars.com/images/destinations/valencia.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.venice {
+background:url(http://www.rentalcars.com/images/destinations/venice.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.verona {
+background:url(http://www.rentalcars.com/images/destinations/verona.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.vienna {
+background:url(http://www.rentalcars.com/images/destinations/vienna.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.washington_dc {
+background:url(http://www.rentalcars.com/images/destinations/washington_dc.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.zurich {
+background:url(http://www.rentalcars.com/images/destinations/zurich.jpg) no-repeat scroll 100% 100% #489AE3;
+}
+
+.airport { 
+background: url(http://www.rentalcars.com/images/destinations/airport_image.jpg) no-repeat scroll 100% 100% #489AE3; 
+}
+
+#cityAirportMap {
+    height: 240px;
+    width: 100%;
+}
+
+.ui-autocomplete.ui-menu{position:absolute !important;clear:both;top:0;background:#fff;border: 1px solid #e6e6e6;font-size: 1em;z-index: 9999;margin: 0;padding:0;overflow-y:scroll;}
+.ui-menu-item {padding:0;}
+.ui-menu-item ul{padding:0;margin:0;list-style:none;}
+.ui-menu-item.ac_odd {background:#f9f9f9;border-bottom: 1px solid #f0f0f0;}
+.ui-menu-item.ac_even {background:#fff;border-bottom: 1px solid #f0f0f0;}
+.ui-menu-item a {color:#0064C8;padding:4% 3%;display:block;cursor:pointer;text-decoration: none;top:0;border: none;}
+.ui-menu-item a:hover {background:#e6f1f9;border:none !important;-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;}
+.ui-menu-item a img {display:none;}
+
+/* Loading Screen for US M-Site */
+
+#loading .content {padding: 10% 0 5%;}
+#loading .row {margin: auto;text-align: center;}
+#loading .row p {margin: 0 0 5%;}
+#loading .row p strong {font-weight: bold;color: #489AE3;}
+#loading span {width: 22%;display: inline-block;max-width: 100px;margin: 0 1% 5%;}
+#loading img {width: 100%;max-width: 100px;margin: 0 0 5px;}
+#loading img.loader {width: 19px;margin: 0;}
+#after-loading img.no_logos_load {width: 38px;margin: 0 0 10px;}
+#loading img.tick {width: 23px;margin: 0;}
+#loading p span {width: auto;max-width: none;margin: 0 5px;padding: 0 0 2% 22px;background: url(http://www.rentalcars.com/images/site_graphics/newsite/why_tick.png) no-repeat 0 0;line-height: 16px;}
+
+
+
+/* IE 7 fixes for new header */
+#btn-my-booking .dd-menu  {
+    *width: 230px;
+}
+#btn-language .dd-menu  {
+    *width: 130px;
+}
+#btn-currency .dd-menu  {
+    *width: 200px;
+}
+.dd-selected {
+    padding: 4px 14px 3px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.dd-list li a span{
+    width: 50px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.dd-menu.btn, .dd-menu a.btn, .dd-menu a.btn:visited, .dd-menu a.btn:link {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    line-height: 1.2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    zoom: 1;
+    *display: inline;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+}
+
+#chinese-driver-license { display: none; }
+#chinese-driver-license label { width: 84%; line-height: normal; padding-top: 6px; }
+
+@media screen and (max-width: 1099px){
+    #providers .logos-wrap { height: 69px; overflow-x: scroll; overflow-y: hidden; }
+    .right #providers .logos { width: 920px !important; }
+    #providers img { width: 98px !important; }
+}
+
+/*** Date Picker interface styling ***/
+#ui-datepicker-div { display: none; }
+.ui-datepicker { padding: 0.2em; -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: none repeat scroll 0 0 #E7F2FB !important; }
+.ui-state-disabled { cursor: default !important; }
+.ui-datepicker .ui-datepicker-header { background: none repeat scroll 0 0 #489AE3 !important; color: #FFFFFF !important; height: 2.8em !important; padding: 0.2em 0 0.4em !important; position: relative; }
+.ui-datepicker table { margin: 0em; }
+.ui-datepicker td span, .ui-datepicker td a { border: 1px solid #FFF !important; display: block !important; height: 1em; padding: 0.6em 0.4em 0.6em !important; text-align: center !important; text-decoration: none; }
+.ui-datepicker td a:hover { border: 1px solid #489AE3 !important; }
+.ui-datepicker .ui-datepicker-prev { background: url("http://www.rentalcars.com/images/site_graphics/newsite/arrow-left-date-picker.gif") no-repeat scroll 0 0 transparent !important; left: 6px !important;  }
+.ui-datepicker .ui-datepicker-next { background: url("http://www.rentalcars.com/images/site_graphics/newsite/arrow-right-date-picker.gif") no-repeat scroll 0 0 transparent !important; right: -2px !important; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { cursor: pointer; height: 2.5em !important; position: absolute !important; top: 6px !important; width: 2.5em !important; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: none !important; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border-bottom-right-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-bottom-left-radius: 4px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-top-right-radius: 4px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top-left-radius: 4px; }
+.ui-datepicker .ui-datepicker-title { font-size: 1.2em; line-height: 1.8em; margin: 0 2.4em; padding-top: 3px !important; text-align: center; }
+.ui-datepicker .ui-datepicker-header { background: none repeat scroll 0 0 #489AE3 !important; border: medium none; color: #FFFFFF !important; margin: 0; padding: 0.2em 0 !important; position: relative; height: 2.3em !important; }
+.ui-datepicker-current-day  { color: #fff !important; }
+.ui-datepicker-calendar .ui-state-active { background-color: #085394 !important; color: #fff !important; }
+.ui-datepicker-header.ui-corner-all { border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; }
+.ui-datepicker-div.ui-corner-all { border-top-left-radius: 0px; border-top-right-radius: 0px; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled { background: #fff; }
+
+/* Highlight weekends */
+.ui-state-default, body .ui-widget-content .ui-state-default, body .ui-widget-header .ui-state-default { background: none repeat scroll 0 0 #fff !important; }
+.ui-widget-content .ui-datepicker-week-end .ui-state-default, body .ui-widget-header .ui-datepicker-week-end .ui-state-default{ background-color: #E7F2FB !important; }
+.ui-datepicker-current-day .ui-state-default.ui-state-active, .ui-datepicker-current-day .ui-widget-content .ui-state-default.ui-state-active, .ui-widget-header .ui-datepicker-current-day .ui-state-default.ui-state-active { background-color: #085394 !important; }
+
+
+/*** GoogleMaps fix ***/
+#supplierLocationMap { z-index: 1; }
+#sameSupplierLocationsMap { z-index: 1; }
+
+/*** [10636] Lifestyle homepage image ***/
+.home .lifestyle_img { background-image: url('http://www.rentalcars.com/images/site_graphics/newsite/lifestyle_bg_no_blur.jpg'); background-position: center bottom !important; background-repeat: no-repeat; }
+.home .lifestyle_img.glen_the_hero { background-image: url('http://www.rentalcars.com/images/site_graphics/newsite/glen_hero.jpg'); background-position: center bottom !important; background-repeat: no-repeat; }
+.home #sub { padding: 20px 0 181px }
+.home #sub em { background: url('http://www.rentalcars.com/images/site_graphics/newsite/img-1st.png') 3px 0 no-repeat transparent; }
+.home #sub span { background: url('http://www.rentalcars.com/images/site_graphics/newsite/img-reviewcentre.png') 0 0 no-repeat transparent; }
+.home #form .left { margin-top: -130px; }
+.home #form .right { margin: -10px 0 0; }
+.home #title h1 { background: url('http://www.rentalcars.com/images/site_graphics/newsite/title_bg_block.png') repeat; float: left; padding: 4px 15px 0px; }
+.home #subTitle { margin-top: -1px; *margin-top: 8px; }
+.home #h1sub { background: url('http://www.rentalcars.com/images/site_graphics/newsite/title_bg_block.png') repeat; float: left; padding: 0px 15px 0px; }
+@media screen and (max-width: 1099px) {
+    .home #form .right { margin: 0 auto !important; }
+    .home #providers .logos { width: 100%; }
+    .home #sub { background-position: -680px 60% !important; }
+    .home #sub h1 { font-size: 32px !important; }
+    .home #h1sub { float: none; }
+    .home #title { margin-bottom: 1px; }
+    .home #title h1 { float: none; }
+}
+@media screen and (max-width: 568px) {
+    .home #form .left { margin: 0 auto !important; }
+}
+
+/*** [11393] Content messages next to search button ***/
+#why_book_bullets { float: left; width: 50%; margin-bottom: 15px; margin-top: -63px; *margin-top: -74px; }
+#why_book_bullets li { color: #FFF; font-size: 0.750em; line-height: 1.313em; background: url('http://www.rentalcars.comhttp://www.rentalcars.com/images/site_graphics/newsite/why_book_bullet.png') left top no-repeat; padding: 2px 0px 2px 24px; margin-bottom: 2px; }
+@media screen and (max-width: 1099px) {
+    #why_book_bullets { float: none; overflow: hidden; width: 100%; margin-bottom: 0px; margin-top: 16px; }
+    #why_book_bullets li { width: 29%; float: left; }
+}
+@media screen and (max-width: 800px) {
+    #why_book_bullets li { width: 28%; }
+}
+@media screen and (max-width: 568px) {
+    #why_book_bullets li { width: 26%; }
+}
+
+/*** [11946] Reduce size of static map on ALP ***/
+body #topdeals #more_destination_info { clear: both !important; padding-top: 20px; }
+.more_destination_info_box { border-top: 1px solid #eee; border-left: 1px solid #eee; width: 73% !important; }
+.more_destination_info_tabs li.destinations_active_tab { border-top: 1px solid #eee; border-right: 1px solid #eee; }
+
+/*** [12248] Key sales messages section ***/
+#form .left { margin-bottom: 15px; }
+#sub_search { background-color: #EEE; padding: 34px 0 46px; -moz-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); }
+#sub_search .content { overflow: hidden; }
+.sub_search_section { min-height: 138px; width: 28%; margin-right: 2%; float: left; background-color: #FFF; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; text-align: center; padding: 37px 2% 2%; position: relative; margin-top: 21px; }
+.sub_search_section h2 { color: #0069a0; font-size: 1.125em; }
+.sub_search_section:last-child { margin-right: 0; }
+#sub_search #callHours { padding-bottom: 0px !important; line-height: 1.2em; }
+.sub_search_icons { position: absolute; top: -23px; left: 43%; width: 50px; height: 47px; }
+#sub_search_phone_icon { background: url('http://www.rentalcars.com/images/site_graphics/newsite/sub_search_phone_icon.jpg') top left no-repeat; }
+#sub_search_why_icon { background: url('http://www.rentalcars.com/images/site_graphics/newsite/sub_search_tick_icon.jpg') top left no-repeat; }
+#sub_search_trusted_icon { background: url('http://www.rentalcars.com/images/site_graphics/newsite/sub_search_lock_icon.jpg') top left no-repeat; }
+.container#topdeals { background: #fff; padding: 36px 0 36px; }
+.container#secondary { background-color: #f8f8f8; padding: 48px 0 55px; }
+.container#tertiary { background-color: #FFF; padding: 36px 0 36px; }
+.content .hreview-aggregate { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; margin-bottom: 0px; }
+#newsletter { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background: #fff !important; }
+#sub_search_trusted { margin-left: 0px\9; }
+#sub_search_why ul { margin-top: 6px; }
+#sub_search_why li { font-size: 0.875em; padding-bottom: 8px; color: #749e3a; }
+#sub_search_why li.sub_search_why_alt_colour { color: #9a9a9a; }
+#topdeals .content > p { border-bottom: none; padding: 10px 0px; }
+.sub_search_norton { background: url('http://www.rentalcars.com/images/site_graphics/newsite/norton_logo.gif') top right no-repeat; width: 50%; height: 63px; float: right; margin-top: 15px; }
+.sub_search_reviews { float: left; width: 50%; text-align: left; }
+.sub_search_reviews img { margin-top: 20px; }
+.sub_search_rating { color: #369ee5; font-size: 1.313em; display: block; margin-top: 8px; }
+.sub_search_review-count { color: #555; font-size: 13px; margin-top: 10px; }
+.sub_search_reviews .customer-rating-3, .sub_search_reviews .customer-rating-4, .sub_search_reviews .customer-rating-5 { display: block; margin-left: 0px; }
+#mobile_app { background-color: #f8f8f8 !important; }
+#sub_search #callus span { display: block; }
+.mobile_banner_text { width: 57%; margin-right: 3%; }
+#sub_search_star_icon { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_search_star_icon.jpg) top left no-repeat; }
+.affiliate_worldwide_statement { font-size: 0.875em; color: #9a9a9a; margin-top: 6px; }
+.affiliate_worldwide_statement strong { font-weight: bold; }
+#sub_search #sub_search_phone #callus span { display: block; white-space: normal; }
+#about_text{ margin: 27px 0px; }
+#sub_search_trusted { *margin-right: 0px; margin-right: 0\9; }
+#mobile_banner_img { float: left; }
+.hreview-aggregate .item strong { *font-weight: normal; }
+.review-count { *width: 100%; }
+@media screen and (max-width: 1099px) {
+    .sub_search_reviews { float: none; width: 100%; text-align: center; }
+    .sub_search_norton { float: none; width: 100%; background-position: center top; }
+    .sub_search_reviews .customer-rating-3, .sub_search_reviews .customer-rating-4, .sub_search_reviews .customer-rating-5 { margin: 0px auto; }
+}
+@media screen and (max-width: 568px) {
+    .sub_search_section { float: none; width: 92%; padding-left: 4%; padding-right: 4%; margin-top: 36px; margin-right: 0 !important; }
+    .sub_search_reviews { float: left; width: 50%; text-align: left; }
+    .sub_search_norton { float: right; width: 50%; background-position: right top; }
+    #sub_search { padding: 14px 0 27px; }
+    .sub_search_reviews .customer-rating-3, .sub_search_reviews .customer-rating-4, .sub_search_reviews .customer-rating-5 { margin: 5px 0 0 0px; }
+}
+
+/*** [12481] Repeat Logo and call centre information on the footer ***/
+#footer { padding-top: 24px; margin-top: 0px; }
+#footer #norton { background-size: 100% auto; }
+#footer .content { overflow: hidden; }
+#footer .content div { width: 25%; float: left; }
+#footer ul li { padding: 0 7px 15px 0px; }
+#footer .content .footer_intro { width: 30%; text-align: center; padding-right: 2%; margin-right: 2%; border-right: 1px solid #e4dfdf; }
+#footer .content .footer_intro { *width: 27% !important; *padding-right: 1% !important; *margin-right: 1% !important; *width: initial !important; }
+#footer .content .footer_intro div { width: auto; }
+#footer .content div.footer_iframe_links { width: 32%; float: left; }
+#footer .content div.footer_iframe_links iframe { width: 100%; min-height: 210px; }
+#footer .content div.footer_links { width: 16.5%; }
+#footer .content div.footer_links li { padding: 0 7px 10px 0px; }
+#footer .content div.footer_links li a { font-size: 0.875em; line-height: 1.375em; padding: 0px; line-height: 16px; }
+#footer .content div.footer_links h2 { font-size: 0.875em; font-weight: bold; color: #666; }
+.footer_call_centre { background-color: #e0f3fa; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border-bottom: 1px solid #dcdcdc; padding: 0px 0px 8px; font-weight: bold; color: #0069a1; width: 100% !important; }
+.footer_call_centre_msg { background: url(http://www.rentalcars.com/images/site_graphics/newsite/footer_phone_icon.gif) 14px 12px no-repeat #FFF; margin-bottom: 8px; color: #8b8b8b; font-weight: normal; font-size: 80%; padding: 16px 16px 12px 64px; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; text-align: left; line-height: 1.2em; float: none !important; min-height: 28px; }
+#footer #rc_footer_logo { margin: 0 auto 16px; }
+#footer #rc_norton_logo { margin: 16px 0px 0px 16px; }
+#rc_norton_logo_tablet { display: none; }
+#footer .content .footer_sub_footer { float: left; width: 100%; border-top: 1px solid #e6e6e6; padding-top: 10px; margin-top: 20px; }
+#footer .content .footer_sub_footer p { font-size: 0.750em; color: #8b8b8b; float: left; width: 37%; }
+#footer .content .footer_sub_footer #footerlogos { float: right; width: 60%; text-align: right; }
+#footer .content div#footerlogos { padding-top: 16px; }
+#footerlogos img { margin: 0px 0px 20px 30px !important; }
+@media screen and (max-width: 800px) {
+    #footer .content div.footer_iframe_links { float: none; width: 100%; }
+    #footer .content div.footer_iframe_links, #footer .content .footer_intro { float: left; width: 100%; margin-bottom: 18px; }
+    #footer .content div.footer_links { width: 50%; }
+    #footer .content div { min-height: 0; }
+    #footer .content .footer_call_centre { width: 100% !important; padding-bottom: 0; }
+    #footer .content .footer_call_centre span { display: block; margin-top: 23px; }
+    #footer .content .footer_call_centre_msg { margin-bottom: 0; width: 40% !important; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
+    #footer #rc_footer_logo, #footer #rc_norton_logo { margin: 0px; }
+    #footer #rc_footer_logo { float: left; margin-bottom: 14px; width: 56%; max-width: 242px; }
+    #footer #rc_norton_logo_tablet { display: block; float: right; width: 22%; max-width: 87px; margin-bottom: 11px; }
+    #footer #rc_norton_logo { display: none; }
+    #footerlogos img { margin-bottom: 7px; }
+    #footer .content .footer_call_centre_msg { float:left !important; }
+}
+@media screen and (max-width: 600px) {
+    #footer .content .footer_sub_footer p { width: 100%; }
+    #footer .content .footer_sub_footer #footerlogos { width: 100%; text-align: left; }
+    #footerlogos img { margin: 0px 30px 12px 0px; }
+}
+
+/*** [13426] Popular destinations with a customer review ***/
+.container#topdeals { background-color: #f8f8f8 !important; padding: 27px 0 27px; }
+.container#topdeals h3 { color: #0069a0; font-weight: bold; font-size: 1.5em; }
+.container#topdeals .destination { background-color: #FFF; border: #eee 1px solid; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: 5% 4.5%; overflow: hidden; height: auto; }
+.container#topdeals .destination h4 { color: #0069a0; font-size: 1.375em; font-weight: bold; }
+.destinationinfo { padding: 0; margin: 0 0 0 4%; width: 68%; overflow: hidden; }
+.destination_comment { border-top: 1px dotted #d7d7d7; float: left; width: 100%; margin-top: 10px; padding-top: 7px; color: #919191; font-size: 0.813em; line-height: 1.313em; }
+.destination_comment span { color: #618ab7; }
+.destinationinfo p { float: none; }
+.destination_img { width: 27%; height: 100px; background-position: center center; background-repeat: no-repeat; float: left; }
+.destinationinfo img { margin-top: -1px; padding-top: 0; }
+div.destination_price { float: right; text-align: right; width: 70%; color: #919191; }
+div.destination_country { float: left; text-align: left; /*width: 30%;*/ width: auto; color: #919191; margin-top: 3px; }
+.destinationinfo div.destination_country span { color: #919191; font-size: 0.813em; }
+.destination_price span { display: inline; color: #479ae3; font-weight: bold; font-size: 1.125em; }
+.left .destination { margin: 14px 2% 0px 0; }
+.right .destination { margin: 14px 0 0px 2%; }
+.destination > img { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; float: left; }
+.container#popular-destinations-section .destination { height: 230px; } 
+@media screen and (max-width: 568px){
+    .destinationinfo { font-size: 16px; }
+}
+
+/*** [13436] Homepage - Rework of Mobile App, Trustpilot and Newsletter subscribe form ***/
+#sub_footer { background-color: #f8f8f8; padding: 34px 0 38px; border-top: 1px solid #EEE; }
+#sub_footer .content { overflow: hidden; }
+.sub_search_section_footer { min-height: 120px; width: 32% !important; *width: 27% !important; margin-right: 2%; float: left; background-color: #FFF; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; text-align: center; padding: 37px 2% 2% !important; position: relative; margin-top: 21px; }
+#sub_footer .sub_search_section_footer { min-height: 199px; padding-bottom: 0px; border: 1px solid #eee; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.sub_search_section_footer h2 { color: #0069a0; font-size: 1.125em; }
+.sub_search_section_footer:last-child { margin-right: 0; }
+.sub_search_section_footer.last { margin-right: 0; }
+.sub_search_section_footer .rating { float: none; font-size: 1.313em; color: #41a2e1; }
+#sub_search #callHours { padding-bottom: 0px !important; line-height: 1.2em; }
+.sub_search_icons { position: absolute; top: -23px; left: 43%; width: 50px; height: 47px; }
+#sub_footer_mobile { padding-bottom: 0px !important; }
+#sub_footer_mobile_icon { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_mobile_icon.jpg) top left no-repeat; }
+#sub_footer_trustpilot_icon { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_star_icon.jpg) top left no-repeat; }
+#sub_footer_email_icon { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_email_icon.jpg) top left no-repeat; }
+.app_links { float: left; width: 47%; padding-top: 20px; }
+.app_links div { background-color: #f8f8f8; border: 1px solid #eee; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; text-align: left; margin-top: 4px; }
+.app_links div a { color: #0069a0; border-bottom: none; font-size: 0.750em; padding: 9px 6px 9px 32px; display: block; }
+.app_links_apple { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_apple_store_icon.jpg) 6% 4px no-repeat; }
+.app_links_google { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_google_play_icon.jpg) 7% 7px no-repeat; }
+#app_mobiles { float: right; margin-right: -3%; margin-top: 9px; }
+#sub_footer_trustpilot_logo { margin-top: 13px; }
+.sub_footer_trustpilot_rating { color: #41a2e1; font-size: 1.313em; margin-top: 12px; }
+.sub_footer_trustpilot_stars { background: url('http://www.rentalcars.com/images/site_graphics/newsite/sprite-general-v2.png') no-repeat scroll -17px -759px transparent !important; display: inline-block; height: 20px; margin: 7px 0 7px 5px; width: 73px; }
+.sub_footer_trustpilot_based_on { font-size: 0.688em; color: #7d7d7d; }
+#sub_footer_email label { display: none; }
+#sub_footer_email #email { width: 73%; padding: 9px 5%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #d6d6d6; font-size: 0.875em; margin: 7px 0 4px; }
+#sub_footer_email fieldset#signup { margin: 0; max-width: 100%; }
+#sub_footer_email input#subscribe { display: block; padding: 8px 21px; margin: 4px auto 10px; cursor: pointer; font-size: 0.813em; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); border: 1px solid #3564a5; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-radius: 5px; background-color: #2f578f; background-image: url('http://www.rentalcars.com/images/site_graphics/newsite/bg-grad.png'); background-repeat: repeat-x; background-position: 0 -258px; background: -moz-linear-gradient(top, #3f72b9 0%, #2f578f 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3f72b9), color-stop(100%, #2f578f)); background: -webkit-linear-gradient(top, #3f72b9 0%, #2f578f 100%); background: -o-linear-gradient(top, #3f72b9 0%, #2f578f 100%); background: -ms-linear-gradient(top, #3f72b9 0%, #2f578f 100%); background: linear-gradient(to bottom, #3f72b9 0%, #2f578f 100%); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); filter: chroma(color=#000000); -webkit-appearance: none; }
+#about_text { padding: 0 0 27px; margin: 0; background-color: #f8f8f8; }
+h2.aboutHeading { padding: 0px; font-size: 1.125em; line-height: 1.3em; color: #0069a0; font-weight: bold; }
+#about_text p { font-size: 0.938em; }
+@media screen and (max-width: 1099px){
+    #app_mobiles { width: 50%; -ms-interpolation-mode: bicubic; margin-top: 9%; }
+    .app_links { padding: 0px 0px 10px; }
+    .app_links_apple,.app_links_google { background-image: none; }
+    .app_links div a { padding-left: 12px; }
+    #sub_footer_trustpilot_logo { width: 90%; -ms-interpolation-mode: bicubic; }
+}
+@media screen and (max-width: 700px){
+	#pu-fieldset label, #do-fieldset label {
+    width: auto;
+    margin-right: 20px;
+}
+	.faq_tab dd { width: 90%;}
+#pu-fieldset label, #do-fieldset label {width: 100%;}
+#putime-fieldset label, #dotime-fieldset label { width: 100%; }
+#pu-fieldset, #do-fieldset { height: auto;}
+	
+    #app_mobiles { width: auto; margin-top: 10px; }
+    .app_links { padding: 10px 0px 0px; }
+    #sub_footer_trustpilot_logo { width: auto; }
+    #sub_footer { padding: 0 0 38px; }
+    #sub_footer .sub_search_section_footer { width: 96% !important; margin-top: 35px; }
+    #app_mobiles { margin-right: 0; }
+    .app_links_apple { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_apple_store_icon.jpg) 6% 4px no-repeat; }
+    .app_links_google { background: url(http://www.rentalcars.com/images/site_graphics/newsite/sub_footer_google_play_icon.jpg) 7% 7px no-repeat; }
+    .app_links div a { padding-left: 32px; }
+}
+@media screen and (max-width: 480px){
+    .footerbar_right { width: 100%; }
+    #subscribe_footer { float: left; margin-top: 8px; margin-bottom: 8px; }
+    #email_footer { width: 90%; }
+    .footerbar_center { height: auto !important;}
+}
+
+.faq_tab dd { width: 65%;} 
+#header-main .container { max-width: 1100px; }
+
+#location-fieldset { *float: left; *width: 475px; } 
+#wuy_subsection_container .wuy_subsection { *width: 28%;} 
+.sub_search_section_footer { *width: 306px !important; } 
+#faqs_container_box .faqs_container { width: 100%; *width: 1025px; } 
+.footerbar_right LI { *width: 100%;} 
+#second_search_form .content { *width: 1030px; } 
+
+/* FEI-1092 - Questions within Surveys not displaying on Live Chat */
+#lpChat legend { display: block }
+
+body { min-width: 1100px \9; }
+
+@media screen and (max-width: 1099px) {
+
+    body { min-width: 0; }
+}

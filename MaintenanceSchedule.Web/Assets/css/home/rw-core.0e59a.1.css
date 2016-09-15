@@ -1,0 +1,384 @@
+﻿/* ----- Background colours ----- */
+
+/* BRAND - Blues */
+.bg-blue-1 { background-color: #1B65A4;}
+.bg-blue-2 { background-color: #4984B6;}
+.bg-blue-3 { background-color: #76A3C8;}
+.bg-blue-4 { background-color: #A4C1DB;}
+.bg-blue-5 { background-color: #D1E0ED;}
+.bg-blue-6 { background-color: #489AE3;}
+.bg-blue-7 { background-color: #6DAEE9;}
+.bg-blue-8 { background-color: #91c2ee;}
+.bg-blue-9 { background-color: #B6D7F4;}
+.bg-blue-10 { background-color: #DAEBF9;}
+
+/* BRAND - Yellows */               
+.bg-yellow-1 { background-color: #E7BF3A;}
+.bg-yellow-2 { background-color: #ECCC61;}
+.bg-yellow-3 { background-color: #F1D989;}
+.bg-yellow-4 { background-color: #F5E5B0;}
+.bg-yellow-5 { background-color: #FAF2D8;}
+
+/* BRAND - Greys */               
+.bg-grey-1 { background-color: #888;}
+.bg-grey-2 { background-color: #666;}
+.bg-grey-3 { background-color: #e6e6e6;}
+.bg-grey-4 { background-color: #F5F5F5;}
+.bg-grey-5 { background-color: #F1F2F8;}
+
+/* Other colours */
+.bg-green-1 { background-color: #749E3A;}
+.bg-blue-11 { background-color: #0064C8;}
+.bg-yellow-6 { background-color: #e7bf3b;}
+.bg-yellow-8 { background-color: #ffe275;}
+.bg-yellow-7 { background-color: #cc9933;}
+.bg-yellow-9 { background-color: #faf2d8;}
+.bg-grey-6 { background-color: #ddd;}
+.bg-grey-7 { background-color: #444;}
+.bg-grey-8 { background-color: #ccc;}
+.bg-orange-1 { background-color: #f0901e;} 
+.bg-white { background-color: #fff; }
+
+/* ----- Text colours ----- */
+
+/* BRAND - Blues */
+.txt-blue-1 { color: #1B65A4;}
+.txt-blue-2 { color: #4984B6;}
+.txt-blue-3 { color: #76A3C8;}
+.txt-blue-4 { color: #A4C1DB;}
+.txt-blue-5 { color: #D1E0ED;}
+.txt-blue-6 { color: #489AE3;}
+.txt-blue-7 { color: #6DAEE9;}
+.txt-blue-8 { color: #91c2ee;}
+.txt-blue-9 { color: #B6D7F4;}
+.txt-blue-10 { color: #DAEBF9;}
+
+/* BRAND - Yellows */
+.txt-yellow-1 { color: #E7BF3A;}
+.txt-yellow-2 { color: #ECCC61;}
+.txt-yellow-3 { color: #F1D989;}
+.txt-yellow-4 { color: #F5E5B0;}
+.txt-yellow-5 { color: #FAF2D8;}
+
+/* BRAND - Greys */               
+.txt-grey-1 { color: #888;}
+.txt-grey-2 { color: #666;}
+.txt-grey-3 { color: #e6e6e6;}
+.txt-grey-4 { color: #F5F5F5;}
+.txt-grey-5 { color: #F1F2F8;}
+
+
+/* Other colours */
+.txt-green-1 { color: #749E3A;}
+.txt-blue-11 { color: #0064C8;}
+.txt-yellow-6 { color: #e7bf3b;}
+.txt-yellow-8 { color: #ffe275;}
+.txt-yellow-7 { color: #cc9933;}
+.txt-yellow-9 { color: #faf2d8;}
+.txt-grey-6 { color: #ddd;}
+.txt-grey-7 { color: #444;}
+.txt-grey-8 { color: #ccc;}
+.txt-orange-1 { color: #f0901e;} 
+.txt-white { color: #fff; }
+
+/* Inline-Messages */
+body.rtl .inline-message {
+	direction: rtl;
+}
+
+.cf:before,
+.cf:after,
+.inline-message:before,
+.inline-message:after,
+.cta-wrap:before,
+.cta-wrap-message:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after,
+.inline-message:after,
+.cta-wrap:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf,
+.inline-message,
+.cta-wrap {
+    *zoom: 1;
+}
+
+.inline-message {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 10px 10px 52px;
+	font-size: 14px;
+	line-height: 16px;
+	background: url(/images/site_graphics/newsite/icons/ico-generic.png) no-repeat 10px center #ececec;
+	color: #444;
+	border-left: 5px solid #ccc;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	background-repeat:no-repeat;
+	background-position: 1% center;
+}
+
+.rtl .inline-message {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 47px 10px 10px;
+	border-color: #ccc;
+	border-width: 5px;
+	border-style: solid;
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom: 5px;
+	background-position: 99% center;
+	text-align: right;
+}
+	
+	.inline-message h4 {
+		font-weight:bold;
+		margin-bottom: 3px;
+	}	
+
+/* Default Colours */
+.inline-message.warning {
+	background-image: url(/images/site_graphics/newsite/icons/ico-warning.png);
+	background-color: #F9F2E4;
+	border-color: #DDA838;
+}
+
+	.inline-message.warning.cta .cta-wrap a {
+		background-color: #DDA838;
+	}
+	
+	.inline-message.warning.cta.dual .cta-wrap a.alt {
+		background-color: transparent;
+		color: #DDA838;
+	}
+	
+	.inline-message.warning h4 {
+		color: #DDA838;
+	}
+
+.inline-message.error {
+	background-image: url(/images/site_graphics/newsite/icons/ico-error.png);
+	background-color: #fadddd;
+	border-color: #970000;				
+}
+
+	.inline-message.error.cta .cta-wrap a {
+		background-color: #970000;
+	}
+	
+	.inline-message.error h4 {
+		color: #970000;
+	}
+
+.inline-message.positive {
+	background-image: url(/images/site_graphics/newsite/icons/ico-positive.png);
+	background-color: #E3EED9;
+	border-color: #5A9854;
+}
+
+	.inline-message.positive.cta .cta-wrap a {
+		background-color: #5A9854;
+	}
+	
+	.inline-message.positive h4 {
+		color: #5A9854;
+	}
+	
+.inline-message.infomational {
+	background-image: url(/images/site_graphics/newsite/icons/ico-infomational.png);
+	background-color: #eaf5fc;
+	border-color: #2d9edf;
+}
+
+	.inline-message.infomational.cta .cta-wrap a {
+		background-color: #2d9edf;
+	}
+
+	.inline-message.infomational h4 {
+		color: #2d9edf;
+	}
+
+/* Helper overrides */
+
+	.inline-message.no-border {
+		border-left: 0px;
+		border-right: 0px;
+	}
+	
+	.inline-message.no-icon {
+		background-image: none;
+		padding-left: 10px;
+	}
+	
+	.rtl .inline-message.no-icon {
+		background-image: none;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+		
+	.inline-message.cta h4,
+	.inline-message.cta p {
+		width: 75%;
+		float:left;
+	}
+	
+	.rtl .inline-message.cta h4,
+	.rtl .inline-message.cta p {
+		width: 75%;
+		float:right;
+		text-align: right;
+	}
+		
+	.inline-message.cta .cta-wrap {
+		max-width: 25%;
+		float:right;
+	}
+	
+	.rtl .inline-message.cta .cta-wrap {
+		float:left;
+	}
+	
+		.inline-message.cta .cta-wrap a {
+			display: block;
+			background-color: #999;
+			padding: 9px 16px;
+			border-radius: 5px;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+	.inline-message.cta.dual h4,
+	.inline-message.cta.dual p {
+		width: 50%;
+	}
+	
+		.inline-message.cta.dual .cta-wrap  {
+			max-width: 50%;
+		}				
+		
+		.inline-message.cta.dual .cta-wrap a {
+			float: right;
+			margin-left: 10px;
+			text-align: center;
+		}
+		
+		.rtl .inline-message.cta.dual .cta-wrap a {
+			float: left;
+			margin-left: 0px;
+			margin-right: 10px;
+		}
+		
+		.inline-message.cta.dual .cta-wrap a.alt {
+			background-color: transparent;
+		}
+		
+	/* Mobile specific */	
+		
+	.inline-message.mobile {
+		background-size: 24px;
+		background-position-x: 1%;
+		line-height: 12px;
+		padding: 10px 10px 10px 36px;
+	}
+		
+		.rtl .inline-message.mobile {
+			background-position-x: 99%;
+			padding: 10px 36px 10px 10px;
+		}
+	
+	
+		.inline-message.mobile h4 {
+			font-size: 12px;
+		}
+		
+		.inline-message.mobile p {
+			font-size: 11px;
+		}
+
+		.inline-message.mobile.cta h4,
+		.inline-message.mobile.cta p {
+			width: 100%;
+		}
+		
+		.inline-message.mobile.cta .cta-wrap {
+			clear: both;
+			width: 100%;
+			display: block;
+			float: none;
+			max-width: none;
+		}
+		
+			.inline-message.mobile.cta .cta-wrap a {
+				padding: 5px 5px;
+				font-size: 12px;
+				text-align: center;
+				margin-top: 5px;
+			}
+			
+	/* Specific style for "one way" message */
+	
+	.inline-message.one-way { 
+		background-image: url(/images/site_graphics/newsite/icons/ico-one-way.png);
+		color: #444;
+	}
+					
+	/* Specific style for special offer */
+	
+	.inline-message.special-offer {
+		margin: 0px 0px 15px 0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #faf2d8;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	.inline-message.special-offer h4 {
+		color: #cc9933;
+	}
+		
+		.inline-message.special-offer p {
+			color: #444;
+			font-size: 12px;
+			margin-bottom: 0px;
+		}				
+		
+	/* Specific style for demand message */
+	
+	.inline-message.demand { 
+		background-image: url(/images/site_graphics/newsite/icons/ico-demand.png);
+	}
+
+	/* Specific style for no availability */
+	
+	.inline-message.no-avail { 
+		background-image: url(/images/site_graphics/newsite/icons/ico-calendar.png);
+	}
+
+	/* Specific style for free cancellation */
+	
+	.inline-message.free-cancellation { 
+		background-image: url(/images/site_graphics/newsite/icons/ico-positive.png);
+	}
+
+	/* Specific style for no rentalstar-msg */
+
+	.inline-message.rentalstar-msg {
+		background-image: url(/images/site_graphics/newsite/icons/ico-star-solid.png);
+	}
+
+	/* Specific style for no rentalstar-msg */
+	
+	.inline-message.reduce-rental a {
+		max-width: 30%;
+		position:relative;
+	}
+	

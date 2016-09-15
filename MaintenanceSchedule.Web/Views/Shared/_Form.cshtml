@@ -1,0 +1,100 @@
+﻿@using MaintenanceSchedule.Entity.Vienauto;
+@model MaintenanceSchedule.Web.Areas.Common.Models.HomeViewModel
+
+@Styles.Render("~/Css/Home/Form")
+@Scripts.Render("~/Js/Home/Form")
+
+<div id="sub" class="lifestyle_img">
+    <div class="content">
+        <div id="title">
+            <h1 style="text-transform: uppercase;">Chúng tôi luôn nỗ lực vì sự an toàn của bạn !</h1>
+        </div>
+        <div id="subTitle">
+            <p id="h1sub">
+                Để tiết kiệm chi phí, thời gian đi lại cũng như lái xe an toàn hãy đặt lịch bảo dưỡng ngay từ hôm nay
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container" id="form">
+    <div class="content">
+        <div class="left">
+            @using (Html.BeginForm("Index", "Service", FormMethod.Post, new
+            {
+                id = "SearchResultsForm",
+                name = "SearchResultsForm",
+                @class = ""
+            }))
+            {
+                <h2>Đặt lịch cho xe của bạn</h2>
+                <fieldset id="location-fieldset">
+                    <div class="pu-country-container">
+                        <label for="pu-manufacturer">Hãng xe</label>
+                        @Html.DropDownListFor(x => x.ManufacturerId, Model.Manufacturers, new { id = "pu-manufacturer", name = "Manufacturer" })
+                        @Html.HiddenFor(x => x.ManufacturerName)
+                    </div>
+
+                    <div class="pu-city-container">
+                        <label for="pu-model">Dòng xe</label>
+                        <select id="pu-model" name="Model">
+                            <option value="0">Chọn dòng xe</option>
+                        </select>
+                        @Html.HiddenFor(x => x.ModelName)
+                    </div>
+
+                    <div class="pu-location-container">
+                        <label for="pu-year">Năm</label>
+                        <select id="pu-year" name="Year">
+                            <option value="0">Chọn năm</option>
+                        </select>
+                        @Html.HiddenFor(x => x.YearName)
+                    </div>
+                </fieldset>
+
+                <fieldset id="info-fieldset">
+                    <div class="pu-country-container" style="height: 126px;">
+                        <label>Nội dung</label>
+                        @Html.TextAreaFor(x => x.Content, new { placeholder = "Nội dung", rows = "8", cols = "47" })
+                    </div>
+
+                    <div class="pu-city-container">
+                        <label>Họ và tên</label>
+                        @Html.TextBoxFor(x => x.CustomerName, new { placeholder = "Họ tên khách hàng" })
+                    </div>
+
+                    <div class="pu-location-container ">
+                        <label>Số điện thoại</label>
+                        @Html.TextBoxFor(x => x.CustomerPhone, new { placeholder = "Số điện thoại" })
+                    </div>
+                </fieldset>
+
+                <div>
+                    <fieldset id="btn-fieldset">
+                        <input type="submit" value="Gửi đặt lịch bảo dưỡng" id="formsubmit">
+                        <input type="hidden" id="hidMessage" value="@Model.Message" />
+                        <button type="button" class="btnAlert" onclick="showAlert();" style="display: none;">
+                            #D44950
+                        </button>
+                    </fieldset>
+                </div>
+            }
+        </div>
+        <div class="right">
+            <div id="providers">
+                <h3>Chúng tôi đại diện cho</h3>
+                <div class="logos-wrap">
+                    <div class="logos">
+                        @foreach (var logo in Model.Logos)
+                        {
+                            <img src="@logo.PathUrl" alt="@logo.Alt" />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+

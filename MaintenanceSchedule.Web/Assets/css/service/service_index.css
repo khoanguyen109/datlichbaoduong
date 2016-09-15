@@ -1,0 +1,132 @@
+﻿body {
+    font-family: Open Sans, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: Open Sans, sans-serif;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: Open Sans, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h5 {
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+}
+
+#sp-top-bar {
+    color: #cccccc;
+}
+
+#sp-bottom {
+    background-image: url("/Assets/images/world-map-dark.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    color: #69767f;
+    padding: 100px 0px 80px;
+}
+
+    #sp-bottom a {
+        color: #69767f;
+    }
+
+        #sp-bottom a:hover {
+            color: #cccccc;
+        }
+
+#sp-footer {
+    color: #69767f;
+}
+
+    #sp-footer a {
+        color: #a0aeb8;
+    }
+
+        #sp-footer a:hover {
+            color: #ffffff;
+        }
+
+.sppb-container {
+    height: 1265px;
+}
+
+#stripServicePagination li {
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.sprocket-strips-s-content {
+    border-bottom: 3px solid #006639 !important;
+}
+
+    .sprocket-strips-s-content a.readon {
+        color: #fff !important;
+        font-weight: 400;
+        padding: 1px 10px;
+        border-radius: 4px;
+    }
+
+    .sprocket-strips-s-content .readon {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+div.index a, div.index a:hover, div.index a:focus, div.index a:active {
+    text-decoration: none;
+}
+
+.sprocket-strips-s-content h4.sprocket-strips-s-title a {
+    color: #079a59 !important;
+}
+
+.sprocket-strips-c-readon:hover, .sprocket-strips-s-content .readon:hover {
+    background-color: #006639 !important;
+}
+
+.sprocket-strips-c-readon, .sprocket-strips-s-content .readon {
+    color: #fff !important;
+    background-color: #006639 !important;
+    border: 1px solid #034226 !important;
+}
+
+ul.describe {
+    width: 260px;
+    margin: auto;
+    text-align: left;
+    padding-left: 50px;
+}
+
+ul.describe li:before {
+    content: "\009B";
+}
+
+.sppb-addon-describe {
+    width: 70%;
+    margin: auto;
+}

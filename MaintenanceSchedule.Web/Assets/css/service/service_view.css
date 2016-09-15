@@ -1,0 +1,94 @@
+﻿body {
+    font-family: Open Sans, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: Open Sans, sans-serif;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: Open Sans, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h5 {
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+}
+
+#sp-top-bar {
+    color: #cccccc;
+}
+
+#sp-bottom {
+    background-image: url("/Assets/images/world-map-dark.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    color: #69767f;
+    padding: 100px 0px 80px;
+}
+
+    #sp-bottom a {
+        color: #69767f;
+    }
+
+        #sp-bottom a:hover {
+            color: #cccccc;
+        }
+
+#sp-footer {
+    color: #69767f;
+}
+
+    #sp-footer a {
+        color: #a0aeb8;
+    }
+
+        #sp-footer a:hover {
+            color: #ffffff;
+        }
+
+.sppb-container {
+    min-height: 700px;
+}
+
+.post-format {
+    background: #006639;
+}
+
+ul.pager li a {
+    color: #006639;
+}
+
+.sp-column .sp-module-title:after {
+    background: #006639;
+}
+
+.sp-module .latestnews > div > a {
+    color: #006639;
+    font-weight: bold;
+}

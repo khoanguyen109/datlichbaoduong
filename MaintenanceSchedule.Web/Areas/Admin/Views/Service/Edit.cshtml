@@ -1,0 +1,70 @@
+﻿@model MaintenanceSchedule.Web.Areas.Admin.Models.ServiceFormModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="editServiceModal" class="form-container">
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-success" role="alert" style="width: 50%;">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <b>@ViewBag.Message</b>
+        </div>
+    }
+    @if (!MvcHtmlString.IsNullOrEmpty(Html.ValidationSummary()))
+    {
+        @Html.ValidationSummary()
+    }
+
+    @using (Html.BeginForm("Edit", "Service", FormMethod.Post, new
+    {
+        id = "editServiceForm",
+        area = "Admin",
+        @class = "form-service form-horizontal",
+        enctype = "multipart/form-data"
+    }))
+    {
+        @Html.HiddenFor(m => m.Id)
+        <div class="col-md-9 col-sm-10 col-xs-9">
+            <div class="form-group">
+                <b>Tiêu đề</b>
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Title, new { placeholder = "Tiêu đề", @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <b>Mô tả ngắn</b>
+            </div>
+            <div class="form-group">
+                @Html.TextAreaFor(m => m.Description, new { placeholder = "Mô tả ngắn", @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <b>Nội dung</b>
+            </div>
+            <div class="form-group">
+                @Html.Raw(ViewBag.Editor)
+            </div>
+            <div class="form-group">
+                <b>Tags</b>
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Tags, new { placeholder = "Tags", @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <b>Chọn hình ảnh đại diện</b>
+            </div>
+            <div class="form-group">
+                <input type="file" name="files" value="" multiple="multiple" />
+            </div>
+            <div class="form-group">
+                <img src="@Model.DisplayImage" />
+            </div>
+            <div class="form-group" style="float: right;">
+                <button type="submit" id="btnEdit" class="btn btn-primary" data-normal-text="Cập nhật">Cập nhật</button>
+                <button type="button" class="btn btn-default" onclick="window.location.href='/Admin/Service/Index'">Trở về</button>
+            </div>
+        </div>
+    }
+</div>
+

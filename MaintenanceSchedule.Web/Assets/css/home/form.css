@@ -1,0 +1,67 @@
+﻿form fieldset#info-fieldset input[type=text] {
+    width: 71.7%;
+    height: 20px;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    border-width: 1px;
+    font-size: 0.813em;
+    border-radius: 4px;
+    background: #FEFEFE;
+    border-style: solid;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+}
+
+form fieldset#info-fieldset textarea {
+    width: 72.7%;
+    border-radius: 4px;
+    border-width: 1px;
+    background: #FEFEFE;
+    border-style: solid;
+    border-color: #8E8E8E #E1E1E1 #E1E1E1 #8E8E8E;
+}
+
+form fieldset#info-fieldset div {
+    clear: both;
+    height: 32px;
+    line-height: 25px;
+    padding: 0 0 5px;
+}
+
+.facebook {
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    width: 70%;
+    float: left;
+    min-height: 240px;
+    position: relative;
+    /*padding: 3%;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px 0 40px 0;
+}
+
+#sub {
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 960px) {
+    #sub {
+        padding: 20px 0 100px;
+    }
+}
+
+#SearchResultsForm label.error {
+    color: #ec0d09;
+    font-size: 12px;
+    width: 75%;
+    text-align: left;
+    margin-left: 25%;
+    text-shadow: none;
+}
+
+#Content {
+    font: 13.3333px Arial;
+}

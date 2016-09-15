@@ -1,0 +1,171 @@
+﻿
+<div class="rch-container">
+    <div class="rch-content">
+        <div class="rch-content-table">
+
+            <div itemscope=itemscope itemtype="http://schema.org/Organization" class="rch-logo">
+                <a href="http://datlichbaoduong.com" target="_self">
+                    <img itemprop="logo" src="/Assets/images/logo.png" alt="Đặt lịch bảo dưỡng - datlichbaoduong.com" class="rch-logo-image" />
+                </a>
+            </div>
+            <div class="rch-burgermenu">
+                <a class="rch-toggle">
+                    <div class="rch-toggle2"></div>
+                    <div class="rch-toggle2"></div>
+                    <div class="rch-toggle2"></div>
+                </a>
+            </div>
+
+            <div class="rch-navigation">
+                <form action="#" method="post" id="langCurrencyForm" name="langCurrencyForm">
+                    <div class="rch-navigation-button social-div">
+                        <ul class="social">
+                            <li>
+                                <div class="fb-share-button" data-href="http://datlichbaoduong.com" data-layout="button" data-mobile-iframe="true">
+                                    <a class="fb-xfbml-parse-ignore" target="_blank"
+                                       href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.datlichbaoduong.com%2F&amp;src=sdkpreparse">Share</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="google-plus">
+                                    <div class="g-plusone" data-size="medium" data-href="http://datlichbaoduong.com"></div>
+                                    <script type='text/javascript'>
+                                        (function () {
+                                            var po = document.createElement('script');
+                                            po.type = 'text/javascript';
+                                            po.async = true;
+                                            po.src = '//apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+                                </div>
+                            </li>
+                        </ul>
+                        <style>
+                            .fb-share-button, .google-plus {
+                                margin-top: 15px;
+                            }
+                        </style>
+                    </div>
+                    <!-- Change currency section -->
+                    <!-- Currency -->
+                    <div class="rch-navigation-button" id="rch-select-currency">
+                        <i>Nhắc nhở bảo dưỡng</i>
+                    </div>
+
+                    <!-- Manage Booking -->
+                    <div class="rch-navigation-button" id="rch-select-manage-booking">
+                        <span class="rch-icon-button" id="rch-icon-manage-booking"></span>
+                        <i>Đăng ký</i>
+                    </div>
+
+                    <!-- Sign In / Signed In -->
+                    <div class="rch-navigation-button" id="rch-select-sign-in" style="z-index: 9;">
+                        <span class="rch-icon-button" id="rch-icon-sign-in"></span>
+                        <i>Đăng nhập</i>
+                        <span class="badge-unread" style="display: none;">1</span>
+                        <div class="rch-drop-down" id="rch-sign-in">
+                            <div id="login">
+                                <div class="login-wrap">
+                                    <h4>Đăng nhập vào tài khoản của bạn</h4>
+                                    <p>Đăng nhập để quản lý tài khoản và đăng ký của bạn.</p>
+                                    <div class="rch-form-row">
+                                        <label>Địa chỉ email</label>
+                                        <input type="text" name="crmEmail" id="crmEmail" />
+                                    </div>
+
+                                    <div class="rch-form-row">
+                                        <label>Mật khẩu</label>
+                                        <input type="password" autocomplete="off" name="crmPsw" id="crmPsw" />
+
+
+                                        <div class="tb small remember-me" style="border:none;">
+                                            <input type="checkbox" name="remember-me" style="vertical-align: -2px;" checked="checked" value="true" />
+                                            Giữ tôi ở trạng thái đăng nhập
+                                        </div>
+                                        <a class="forgot-res rch-fontfam forgot" href="/account/ForgotPassword.do" id="forgotCRMpassword">Bạn đã quên mật khẩu?</a>
+                                    </div>
+                                    <div class="rch-form-row-cta">
+                                        <input class="rc-btn primary" id="crmLogin" type="button" onclick="return loginTrack();" value="Đăng nhập" />
+                                        <span class="rch-create-account"> hoặc <a id='createAccountModalOpen' href='javascript:void(0);'>Tạo một tài khoản</a></span><br class="clearfix" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="crmCreateEmail" id="crmCreateEmail" />
+                    <input type="hidden" name="crmCreatePsw" id="crmCreatePsw" />
+                    <input type="hidden" name="j_username" value="" />
+                    <input type="hidden" name="j_password" value="" />
+                    <input type="hidden" name="prefcurrency" value="VND" />
+                    <input type="hidden" name="preflang" value="1336" />
+                    <input type="hidden" name="lang" value="1336" />
+                    <input type="hidden" name="crmActionType" value="" />
+                    <input type="hidden" name="langCurrencyActionType" value="" />
+
+                    <input type="hidden" name="country" value="" />
+                    <input type="hidden" name="city" value="" />
+                    <input type="hidden" name="location" value="" />
+                    <input type="hidden" name="locationName" value="" />
+                    <input type="hidden" name="dropCountry" value="" />
+                    <input type="hidden" name="dropCity" value="" />
+                    <input type="hidden" name="dropLocation" value="" />
+                    <input type="hidden" name="dropLocationName" value="" />
+
+                    <input type="hidden" name="ftsAutocomplete" value="" />
+                    <input type="hidden" name="ftsLocationName" value="" />
+                    <input type="hidden" name="dropFtsAutocomplete" value="" />
+                    <input type="hidden" name="dropFtsLocationName" value="" />
+
+                    <input type="submit" value="Submit" style="display:none" />
+
+                </form>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </div>
+    <div id="forgotten-box">
+        <a href="javascript:;" class="close"> Đóng</a>
+        <div id="email-box">
+            <h5>
+                Quên số tham khảo đặt thuê?
+            </h5>
+            <p>
+                Điền email của bạn vào và chúng tôi sẽ gởi số tham khảo cho bạn.
+            </p>
+            <p>
+                <label for="forgotEmail">Email:</label>
+                <input type="text" name="booking.contact.email" id="forgotEmail" />
+            </p>
+            <p>
+                <input id="forgotSubmit" type="submit"
+                       value="Gởi" />
+            </p>
+        </div>
+
+        <div id="sent">
+            <h5>
+                Đã gởi email
+            </h5>
+            <p>
+                Chúng tôi đã gởi số tham khảo đặt thuê đến email của quý khách.
+            </p>
+        </div>
+
+        <div id="not-found">
+            <h5>
+                Không tìm thấy số tham khảo
+            </h5>
+            <p>
+                Chúng tôi không thể tìm thấy đặt thuê nào với email được cung cấp. Vui lòng <a href="/ContactUs.do">Liên Lạc Chúng Tôi</a> qua liên kết này.
+            </p>
+            <p>
+                <a href="javascript:showForgottenBox(true)">Điền lại email</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div id="modal_create_account">
+    </div>
+</div>

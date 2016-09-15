@@ -1,0 +1,148 @@
+﻿@using MaintenanceSchedule.Library.Utilities
+@model MaintenanceSchedule.Web.Areas.Service.Models.ServiceViewModel
+
+@Styles.Render("~/Css/Service/_Detail")
+@Scripts.Render("~/Js/Jquery")
+
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=320721568258779";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+@{
+    var currentLink = "http://" + Request.Url.Host + "/dich-vu/" + Model.TitleFriendlyName + "-" + @Model.Id + ".html";
+}
+<section id="sp-main-body">
+    <div class="container">
+        <div class="row">
+            <div id="sp-component" class="col-sm-9 col-md-9">
+                <div class="sp-column ">
+                    <div id="system-message-container"></div> <article class="item item-page" itemscope itemtype="http://schema.org/Article">
+                        <meta itemprop="inLanguage" content="vi-VN" />
+                        <div class="entry-header has-post-format">
+                            <span class="post-format"><i class="fa fa-thumb-tack"></i></span>
+                            <dl class="article-info">
+                                <dt class="article-info-term"></dt>
+                                <dd class="published">
+                                    <i class="fa fa-calendar-o"></i>
+                                    <time itemprop="datePublished" data-toggle="tooltip" title="Ngày đăng">@Model.EntryDateFormatted </time>
+                                </dd>
+                            </dl>
+                            <h2 class="title" itemprop="name">@Model.Title </h2>
+                        </div>
+                        <div itemprop="articleBody">
+                            <p>
+                                <strong>
+                                    @Model.Description
+                                </strong>
+                            </p>
+                            @Html.Raw(Model.Content)
+                        </div>
+                        <div class="tags">
+                            <span>Tags: </span>
+                            @Model.Tags
+                        </div>
+                        <ul class="pager pagenav">
+                            <li class="previous">
+                                @{
+                                    var linkPrevious = "/dich-vu/" + Model.TitleFriendlyName + "-" + @Model.PreviousService + ".html";
+                                }
+                                <a href="linkPrevious" target="_parent" rel="prev"> <span class="glyphicon glyphicon-chevron-left"></span> Trang trước </a>
+                            </li>
+                            <li class="next">
+                                @{
+                                    var linkNext = "/dich-vu/" + Model.TitleFriendlyName + "-" + @Model.NextService + ".html";
+                                }
+                                <a href="@linkNext" target="_parent" rel="next"> Trang sau <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                            </li>
+                        </ul>
+                        <div class="sp-social-share clearfix">
+                            <ul>
+                                <li>
+                                    <div class="fb-share-button" data-href="@currentLink" data-layout="button_count" data-mobile-iframe="true">
+                                        <a class="fb-xfbml-parse-ignore" target="_blank" href="#">
+                                            Share
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-plusone" data-size="medium" data-href="@currentLink"></div>
+                                    <script>
+                                        (function () {
+                                            var po = document.createElement('script');
+                                            po.type = 'text/javascript';
+                                            po.async = true;
+                                            po.src = '//apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="sp-comments">
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div id="sp-right" class="col-sm-3 col-md-3">
+                <div class="sp-column class2">
+                    <div class="sp-module ">
+                        <h3 class="sp-module-title">Liên hệ</h3>
+                        <div class="sp-module-content">
+                            <div class="custom">
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: 'Open Sans', sans-serif; font-size: 13px; line-height: 24px;">
+                                    <strong style="box-sizing: border-box;">Viện Auto</strong>
+                                </p>
+                                <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: 'Open Sans', sans-serif; font-size: 13px; line-height: 24px;">
+                                    <strong style="box-sizing: border-box;">Địa chỉ</strong> : 10 - 11, Nguyễn Hữu Thọ, Phước Kiển, Nhà Bè, TP.HCM<br style="box-sizing: border-box;" />
+                                    <span class="adress" style="box-sizing: border-box;">
+                                        <strong style="box-sizing: border-box;">Hotline</strong>:
+                                    </span> 0909 878 369<br style="box-sizing: border-box;" />
+                                    <span class="adress" style="box-sizing: border-box;">
+                                        <strong style="box-sizing: border-box;">Email</strong>:
+                                    </span>
+                                    <a class="location" style="box-sizing: border-box; color: #00522e; transition: color 400ms, background-color 400ms; background-color: transparent;"
+                                       href="javascript:void(0);">manhtai@vienauto.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-module ">
+                        <h3 class="sp-module-title">Bài viết mới</h3>
+                        <div class="sp-module-content">
+                            <div class="latestnews">
+                                @foreach (var service in Model.ListLatestServices)
+                                {
+                                    <div itemscope itemtype="http://schema.org/Article">
+                                        @{
+                                            var link = "/dich-vu/" + Characters.ConvertToUnSign3(service.Title) + "-" + service.Id + ".html";
+                                        }
+                                        <a href="@link" itemprop="url" target="_parent">
+                                            <span itemprop="name"> @service.Title </span>
+                                        </a>
+                                        <small>
+                                            @{
+                                                var entryDate = service.EntryDate.HasValue ? (DateTime)service.EntryDate : DateTime.Now;
+                                                var day = entryDate.Day.ToString();
+                                                var month = entryDate.Month.ToString();
+                                                var year = entryDate.Year.ToString();
+                                                var entryDateFormatted = day + " tháng " + month + ", năm " + year;
+                                            }
+                                            @entryDateFormatted
+                                        </small>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
